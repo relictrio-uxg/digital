@@ -1,5 +1,8 @@
-.bg--platinum{
-    background-color: var(--platinum-color);
+.bg--white{
+    background-color: var(--white-color);
+  }
+  .txt__clr--black{
+   color: var(--black-color) !important;
   }
 .dis--flx {
     display: flex !important;
@@ -153,6 +156,9 @@
   .pad-tp--50 {
     padding-top: 50px !important;
   }
+  .pad-tp--40 {
+    padding-top: 40px !important;
+  }
   .pad-tpbt--20 {
     padding: 20px 0 !important;
   }
@@ -209,6 +215,9 @@
   }
   .pad-tpbt--70 {
     padding: 70px 0;
+  }
+  .pad-tpbt--120 {
+    padding: 120px 0;
   }
   .flx-alnsf--end {
     align-self: flex-end !important;

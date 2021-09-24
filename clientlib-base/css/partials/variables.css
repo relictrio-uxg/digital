@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 :root {
 --white-color: #ffffff;
@@ -14,7 +15,9 @@
 --red-color: #EE1B24;
 --eucalyptus-color: #1DE1AE;
 --jordy_blue-color: #8DA4FF;
+--davy_grey-color: #5C5C5C;
 --relictrio-font: "Gilroy-Bold", Helvetica, Arial, Verdana, Tahoma,sans-serif;
 --relictrio-semiBold-font: "Gilroy-SemiBold",Helvetica, Arial, Verdana, Tahoma,sans-serif;
 --relictrio-inter-font: 'Inter', sans-serif;
+--relictrio-arvo-font: 'Arvo', serif;
 }
