@@ -145,3 +145,35 @@ color: var(--darkelectric_blue-color) ;
     line-height: 44px;
     margin-top: -5px;
 }
+.tech__icon{
+    width: 31px;
+    height: 27px;
+    margin-right: 35px;
+    margin-top: 28px; 
+}
+.magento__sec{
+    background: linear-gradient(94.83deg, #E1F9EB 0.9%, #D9D9D9 100%);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+}
+.magento__img{
+    margin: 0 auto;
+    padding-top: 18px;
+}
+.magento__head{
+    color:var(--darkelectric_blue-color);
+    margin: 30px 0px;
+}
+.magento__para{
+font-weight: 600;
+font-size: 25px;
+line-height: 47px;
+letter-spacing: 1px;
+color: var(--darkelectric_blue-color);
+margin-bottom: 20px !important;
+}
+.magento__subtext{
+    align-items: center;
+    justify-content: center;
+}
