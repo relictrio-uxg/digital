@@ -77,6 +77,127 @@
 .help__brand--card.card__two{
     margin-bottom: 50px;
 }
+/**media query : start **/
+@media (max-width: 834px) {
+.help__brand .col--5{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.help__brand--head {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+}
+.help__brand--sec{
+    padding: 5px 38px 20px 38px !important;
+}
+.digitalmb-pad-tpbt{
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+}
+.webmb-pad-tpbt{
+    padding-top: 30px !important;
+    padding-bottom: 50px !important; 
+}
+.slider__pad-tpbt{
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;  
+}
+
+.slider__head{
+    font-size: 16px;
+    line-height: 60px;
+}
+.digital__mature--sec .col--7,
+.web__access--sec .col--7,
+.tech__evaluate--sec .col--7
+{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    order: 2;
+}
+.digital__mature--sec .col--5,
+.web__access--sec .col--5,
+.tech__evaluate--sec .col--5{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    order:1;
+}
+.digital__mature--img{
+    width: 100%;
+}
+.back__slash--img,
+.front__slash--img{
+    display: none;
+}
+.digital__mature--main .col--1{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 20%;
+}
+.digital__mature--main .col--6{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 80%;
+}
+.maturity__head{
+    font-size: 18px!important;
+}
+.maturity__img{
+    width: 33px !important;
+    height: 31px !important;
+}
+.hero__text--head{
+    font-size: 25px;
+    line-height: 22px;
+}
+.hero__text--subhead{
+    font-size: 20px;
+    padding-top: 20px !important;
+}
+.maturity__para{
+    font-size: 12px !important;
+    line-height: 20px !important;
+    width: 100% !important;
+}
+.maturity__text h3{
+    font-size: 14px !important;
+}
+.maturity__sub--text,
+.arrow__right--icon,
+.arrow__text
+{
+    display: none !important;
+}
+.techevalue__head {
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+.magento__head{
+   font-size: 14px;
+   line-height: 20px;
+   margin: 20px 0px;
+}
+.magento__para{
+    font-size: 12px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+}
+.manual__text h3{
+    font-size: 14px;
+    line-height: 20px;
+}
+.left__box img{
+    position: relative !important;
+    top: 2rem;
+    left: -4rem;
+}
+}
+/**media query : end **/
+
 .card__head{
     display: flex;
     justify-content: center;
@@ -191,7 +312,7 @@ margin-bottom: 10px !important;
 .magento__arc--right {
     position: absolute;
     right: 0rem;
-    margin-top: 13.76rem;
+    margin-top: 11.76rem;
 }
 .magento__arc--left{
     position: absolute;
