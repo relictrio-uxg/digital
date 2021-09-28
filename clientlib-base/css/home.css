@@ -125,6 +125,16 @@
 .triangle__img{
     margin-top: 24px;
 }
+@media (max-width: 560px) {
+    .triangle__img{
+        display: none !important;
+    }
+}
+@media (max-width: 834px) {
+    .triangle__img{
+        display: none !important;
+    }
+}
 .arrow__right--icon{
     width: 20px;
     height: 15px;
@@ -171,9 +181,72 @@ font-size: 25px;
 line-height: 47px;
 letter-spacing: 1px;
 color: var(--darkelectric_blue-color);
-margin-bottom: 20px !important;
+margin-bottom: 10px !important;
 }
 .magento__subtext{
     align-items: center;
     justify-content: center;
 }
+
+.magento__arc--right {
+    position: absolute;
+    right: 0rem;
+    margin-top: 13.76rem;
+}
+.magento__arc--left{
+    position: absolute;
+    left: 0rem;
+}
+.front__slash--img{
+    position: absolute;
+    left: -0.66rem;
+}
+.back__slash--img{
+    position: absolute;
+    right: 2.28rem;
+}
+/**slider css: start**/
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+/** slider css: end**/
+.access__icon{
+    width: 29px;
+    height: 24px;
+    margin-top: 30px;
+    margin-right: 33px;
+}
+
