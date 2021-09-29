@@ -397,7 +397,8 @@ get_header();
     <!--website accessibility sec:end-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script> 
-    <script src="../assets/js/slider.js" defer></script>
+    <!-- <script src="../assets/js/slider.js" defer></script> -->
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>../assets/js/slider.js?v=4.76" defer></script>
 </body>
 
 </html>

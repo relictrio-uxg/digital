@@ -346,7 +346,5 @@ get_header(); ?>
         </div>
     </div>
     <!--website accessibility sec:end-->
-    <?php get_footer(); ?>  
-</body>
 
-</html>
+    <?php get_footer(); ?>  
