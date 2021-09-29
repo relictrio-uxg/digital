@@ -5,49 +5,49 @@
  * @package Relictrio Digital
  */
 
-define('TEMPLATEURL', get_template_directory_uri() );
+// define('TEMPLATEURL', get_template_directory_uri() );
 
-if ( ! function_exists( 'uxg_setup' ) ) :
-	function uxg_setup() {
-		add_theme_support( 'automatic-feed-links' );
-		add_theme_support( 'title-tag' );
-		add_theme_support( 'post-thumbnails' );
+// if ( ! function_exists( 'uxg_setup' ) ) :
+// 	function uxg_setup() {
+// 		add_theme_support( 'automatic-feed-links' );
+// 		add_theme_support( 'title-tag' );
+// 		add_theme_support( 'post-thumbnails' );
 
-		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary Menu', RED_DOMAIN )
-		));
+// 		register_nav_menus( array(
+// 			'primary' => esc_html__( 'Primary Menu', 'RED_DOMAIN' )
+// 		));
 
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		));
+// 		add_theme_support( 'html5', array(
+// 			'search-form',
+// 			'comment-form',
+// 			'comment-list',
+// 			'gallery',
+// 			'caption',
+// 		));
 
-		add_theme_support( 'post-formats', array(
-			'image',
-			'video',
-		));
+// 		add_theme_support( 'post-formats', array(
+// 			'image',
+// 			'video',
+// 		));
 
-		$defaults = array(
-			'default-image'          => '',
-			'header-text'            => false,
-			'wp-head-callback'       => '',
-			'admin-head-callback'    => '',
-			'admin-preview-callback' => '',
-		);
+// 		$defaults = array(
+// 			'default-image'          => '',
+// 			'header-text'            => false,
+// 			'wp-head-callback'       => '',
+// 			'admin-head-callback'    => '',
+// 			'admin-preview-callback' => '',
+// 		);
 
-		add_theme_support( 'custom-header', $defaults );
-		add_theme_support( 'post-thumbnails', array('post', 'page') );
-		set_post_thumbnail_size( 200, 170, true ); // Sets the Post Main Thumbnails 
-		add_image_size( 'delicious-recent-thumbnails', false ); // Sets Recent Posts Thumbnails 
-	}
-endif; // uxg_setup
-add_action( 'after_setup_theme', 'uxg_setup' );
+// 		add_theme_support( 'custom-header', $defaults );
+// 		add_theme_support( 'post-thumbnails', array('post', 'page') );
+// 		set_post_thumbnail_size( 200, 170, true ); // Sets the Post Main Thumbnails 
+// 		add_image_size( 'delicious-recent-thumbnails', false ); // Sets Recent Posts Thumbnails 
+// 	}
+// endif; // uxg_setup
+// add_action( 'after_setup_theme', 'uxg_setup' );
 ?>
 
-<?php
+<!-- <?php
 function delicious_recent_posts() {
     $del_recent_posts = new WP_Query();
     $del_recent_posts->query('showposts=5');
@@ -132,4 +132,23 @@ function get_all_posts($category_id, $from_index_value, $to_index_value) {
 	<?php endwhile;
     wp_reset_postdata();
 }
+?> -->
+
+<?php 
+
+	function relictrio_register_styles(){
+        $version = wp_get_theme()->get('Version');
+        
+		wp_enqueue_style('fonts', get_template_directory_uri()."/assets/css/partials/fonts.css", array(), $version, 'all');
+        wp_enqueue_style('grid-layout', get_template_directory_uri()."/assets/css/partials/grid.css", array(), $version, 'all');
+        wp_enqueue_style('mixins', get_template_directory_uri()."/assets/css/partials/mixins.css", array(), $version, 'all');
+        wp_enqueue_style('reset', get_template_directory_uri()."/assets/css/partials/reset.css", array(), $version, 'all');
+        wp_enqueue_style('typography', get_template_directory_uri()."/assets/css/partials/typography.css", array(), $version, 'all');
+        wp_enqueue_style('variables', get_template_directory_uri()."/assets/css/partials/variables.css", array(), $version, 'all');
+        
+		wp_enqueue_style('service-style', get_template_directory_uri()."/assets/css/services.css", array(), $version, 'all');
+	}
+
+    add_action('wp_enqueue_scripts', 'relictrio_register_styles');
+
 ?>
