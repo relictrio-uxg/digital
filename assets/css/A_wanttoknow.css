@@ -1,0 +1,29 @@
+.wanttoknowsection{
+  background: linear-gradient(90deg, #C1C0C0 0%, #E9EAFA 100%);
+  padding: 68px 0;
+}
+
+@media (max-width: 768px) {
+  .wanttoknowsection [class*="col--"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wanttoknowsection h3{
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+  .wanttoknowsection{
+    padding: 15px 0;
+  }
+  .wanttoknowsection__btn{
+    min-width: 115px !important;
+    min-height: 38px !important;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
