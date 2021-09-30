@@ -21,4 +21,5 @@
 --relictrio-inter-font: 'Inter', sans-serif;
 --relictrio-arvo-font: 'Arvo', serif;
 --content-width: 1280px;
+--content-mb-width: calc(100% - 40px);
 }

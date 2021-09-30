@@ -13,6 +13,7 @@ get_header();
      <!--hero section:start-->
      <div class="container container--fluid pos--rel ">
         <div class="container--content container--fullwdh">
+            <div class="relictrio--row ">
             <div class=" hero__banner">
                 <img class="hero__image " src="<?php echo get_template_directory_uri();?>../assets/resources/images/heroimg.png"
                         alt="Relictrio digital hero image" />
@@ -22,6 +23,7 @@ get_header();
                     <source media="(max-width: 375px)" srcset="../assets/resources/images/heroimg.png">                   
                 </picture> -->
             </div>
+            </div>
             <div class="hero__text">
              <h1 class="hero__text--head">relictrio  digital</h1>
              <p class="hero__text--subhead pad-tp--40">Full Spectrum Digital Commerce Agency</p>
@@ -30,7 +32,7 @@ get_header();
     </div>
     <!--hero section:end-->
     <!--helping brands: start-->
-    <div class="container container--fluid  help__brand">
+    <div class="container container--fluid  help__brand hide__help--mb">
         <div class="container--content container--fxdwdh">
             <div class="relictrio--row ">
             <div class="col--5 help__brand--sec">
@@ -94,11 +96,38 @@ get_header();
             </div>
         </div>
     </div>
+    <!--helping brand mobile sec: start-->
+    <div class="container container--fluid pad-t--30 hide__help--desktop">
+        <div class="container--content container--fxdwdh">
+            <div class="relictrio--row ">
+            <h2 class="heading heading--variation1 text--center help__brand--mbhead">
+                    Helping brands to evolve in every phase of their digital commerce journey</h2>
+            <div class="col--1 brdr__img">
+            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card_icon1.png"
+                                alt="design & develoment icon" />
+            </div>
+            <div class="col--1 brdr__img">
+            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card_icon2.png"
+                                alt="design & develoment icon" />
+                
+            </div>
+            <div class="col--1 brdr__img">
+            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card__icon3.png"
+                                alt="design & develoment icon" />   
+            </div>
+            <div class="col--1 brdr__img">
+            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card__icon4.png"
+                                alt="design & develoment icon" />   
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--helping brand mobile sec: end-->
     <!--helping brands: end-->
     <!--digital maturity sec:start-->
     <div class="container container--fluid  bg--white pad-tpbt--120 digitalmb-pad-tpbt">
         <div class="container--content container--fxdwdh">
-            <div class="relictrio--row ">               
+            <div class="relictrio--row digital__mature">               
                 <div class="col--1">
                     <img class="maturity__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/maturity_img.png"
                         alt="card one icon" />

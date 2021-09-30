@@ -74,7 +74,7 @@
           display: none !important;
         }
     .hide--desktop {
-          display: block !important;
+          display: none !important;
         }
     .container--fxdwdh {
           max-width: 90% !important;
