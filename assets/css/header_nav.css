@@ -1,0 +1,84 @@
+
+.relictrio_header_nav_container{
+    background:var(--white-color);
+    position:absolute;
+    width:100%;
+    color:black;
+    z-index: 1000;
+    
+}
+.relictrio_header_nav{
+    display:flex;
+    margin: 20px 80px;
+    align-items:center;
+    justify-content:space-between;
+}
+.relictrio__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:black;
+    font-family: var(--relictrio-font);
+}
+.relictrio__nav_icon{
+   display: inline-block;
+}
+.relictrio__nav_icon span{  
+   display:block;
+   height:4px;
+   width: 30px;
+   margin:4px 0;
+   background:black;
+   cursor:pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .relictrio_header_nav_container {
+      background-color: #D6D2D1;
+      height:80px;
+    }
+    .relictrio_header_nav{
+        display:flex;
+        margin: 20px 20px;
+        align-items:center;
+        justify-content:space-between;
+        height:49px;
+    }
+    .relictrio__logo a img{
+        height:49px;
+        width:120px;
+    }
+    .relictrio__nav_icon span {
+        display: block;
+    height: 4px;
+    width: 35px;
+    margin: 7px 0;
+    background: black;
+    cursor: pointer;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .relictrio_header_nav_container {
+        background-color: #D6D2D1;
+        height:70px;
+      }
+      .relictrio_header_nav{
+          display:flex;
+          margin: 20px 15px;
+          align-items:center;
+          justify-content:space-between;
+          height:40px;
+      }
+      .relictrio__logo a img{
+          height:35px;
+          width:90px;
+      }
+      .relictrio__nav_icon span {
+          display: block;
+      height: 3.5px;
+      width: 30px;
+      margin: 6px 0;
+      background: black;
+      cursor: pointer;
+      }
+  }
