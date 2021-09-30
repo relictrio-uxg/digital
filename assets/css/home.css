@@ -1,0 +1,373 @@
+.hero__image {
+    width: 100%;
+    height: 724px;
+}
+.hero__banner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+}
+.hero__banner:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 724px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+.hero__banner img {
+    display: block;
+}
+.hero__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero__text--head{
+    font-family: var(--relictrio-arvo-font);
+    font-style: regular;
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 72px;
+    color: var(--eucalyptus-color);
+    /* text-align: center;
+    margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+.hero__text--subhead{
+    font-family: var(--relictrio-font);
+    font-style: regular;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 25px;
+    color: var(--white-color); 
+    letter-spacing: 1px;
+}
+.help__brand{
+    background: rgba(37, 48, 201, 0.1);
+    width: 100%;
+}
+.help__brand--head{
+    width: 508px;
+}
+.help__brand--sec{
+    padding: 263px 0px;
+}
+.help__brand--card{
+    background: var(--white-color);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    height: 351px;
+    width: 320px;
+    margin-bottom: 30px;
+}
+.help__brand--card.card__one{
+    margin: 117px 0px 30px 0px;
+}
+.help__brand--card.card__two{
+    margin-bottom: 50px;
+}
+/**media query : start **/
+@media (max-width: 834px) {
+.help__brand .col--5{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.help__brand--head {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+}
+.help__brand--sec{
+    padding: 5px 38px 20px 38px !important;
+}
+.digitalmb-pad-tpbt{
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+}
+.webmb-pad-tpbt{
+    padding-top: 30px !important;
+    padding-bottom: 50px !important; 
+}
+.slider__pad-tpbt{
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;  
+}
+
+.slider__head{
+    font-size: 16px;
+    line-height: 60px;
+}
+.digital__mature--sec .col--7,
+.web__access--sec .col--7,
+.tech__evaluate--sec .col--7
+{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    order: 2;
+}
+.digital__mature--sec .col--5,
+.web__access--sec .col--5,
+.tech__evaluate--sec .col--5{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    order:1;
+}
+.digital__mature--img{
+    width: 100%;
+}
+.back__slash--img,
+.front__slash--img{
+    display: none;
+}
+.digital__mature--main .col--1{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 20%;
+}
+.digital__mature--main .col--6{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 80%;
+}
+.maturity__head{
+    font-size: 18px!important;
+}
+.maturity__img{
+    width: 33px !important;
+    height: 31px !important;
+}
+.hero__text--head{
+    font-size: 25px;
+    line-height: 22px;
+}
+.hero__text--subhead{
+    font-size: 20px;
+    padding-top: 20px !important;
+}
+.maturity__para{
+    font-size: 12px !important;
+    line-height: 20px !important;
+    width: 100% !important;
+}
+.maturity__text h3{
+    font-size: 14px !important;
+}
+.maturity__sub--text,
+.arrow__right--icon,
+.arrow__text
+{
+    display: none !important;
+}
+.techevalue__head {
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+.magento__head{
+   font-size: 14px;
+   line-height: 20px;
+   margin: 20px 0px;
+}
+.magento__para{
+    font-size: 12px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+}
+.manual__text h3{
+    font-size: 14px;
+    line-height: 20px;
+}
+.left__box img{
+    position: relative !important;
+    top: 2rem;
+    left: -4rem;
+}
+}
+/**media query : end **/
+
+.card__head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    background: rgba(249, 201, 206, 0.5);
+    border-radius: 38px;
+    width: 76px;
+    height: 76px;
+}
+.card__img{
+    width: 39px;
+    height: 53px;
+    
+}
+.card__txt{
+    padding: 20px 0px 12px 0px !important;
+    margin: 0px !important;
+}
+.card__para{
+    padding: 0px 20px 8px 20px;
+}
+.maturity__head{
+    font-size: 44px;
+    line-height: 34px;
+    margin-top: 14px;
+}
+.maturity__para{
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--davy_grey-color);
+    width: 719px;
+}
+.maturity__img {
+    width: 66px;
+    height: 61px;
+}
+.maturity__icon{
+    width: 32px;
+    height: 36px;
+    margin-right: 33px;
+    margin-top: 28px;
+}
+.triangle__img{
+    margin-top: 24px;
+}
+@media (max-width: 560px) {
+    .triangle__img{
+        display: none !important;
+    }
+}
+@media (max-width: 834px) {
+    .triangle__img{
+        display: none !important;
+    }
+}
+.arrow__right--icon{
+    width: 20px;
+    height: 15px;
+    margin-right: 28px;
+    margin-top: 5px;
+}
+.maturity__sub--text{
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0.142px;
+color: var(--darkelectric_blue-color) ;
+}
+.arrow__text{
+    padding: 15px 0px 37px 0px;
+}
+.techevalue__head{
+    font-size: 44px;
+    line-height: 44px;
+    margin-top: -5px;
+}
+.tech__icon{
+    width: 31px;
+    height: 27px;
+    margin-right: 35px;
+    margin-top: 28px; 
+}
+.magento__sec{
+    background: linear-gradient(94.83deg, #E1F9EB 0.9%, #D9D9D9 100%);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+}
+.magento__img{
+    margin: 0 auto;
+    padding-top: 18px;
+}
+.magento__head{
+    color:var(--darkelectric_blue-color);
+    margin: 30px 0px;
+}
+.magento__para{
+font-weight: 600;
+font-size: 25px;
+line-height: 47px;
+letter-spacing: 1px;
+color: var(--darkelectric_blue-color);
+margin-bottom: 10px !important;
+}
+.magento__subtext{
+    align-items: center;
+    justify-content: center;
+}
+
+.magento__arc--right {
+    position: absolute;
+    right: 0rem;
+    margin-top: 11.76rem;
+}
+.magento__arc--left{
+    position: absolute;
+    left: 0rem;
+}
+.front__slash--img{
+    position: absolute;
+    left: -0.66rem;
+}
+.back__slash--img{
+    position: absolute;
+    right: 2.28rem;
+}
+/**slider css: start**/
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+/** slider css: end**/
+.access__icon{
+    width: 29px;
+    height: 24px;
+    margin-top: 30px;
+    margin-right: 33px;
+}
+

@@ -12,7 +12,7 @@
     margin: 25px 0px;
   }
   .heading--variation1 {
-    font-weight: 900;
+    font-weight: normal;
     font-size: 44px;
     line-height: 60px;
   }
@@ -170,4 +170,18 @@
   .tab .disactive{
     border:2px solid var(--jordy_blue-color);
     color: var(--jordy_blue-color);
+  }
+  .parent {
+    display: none;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    position: fixed;
+    z-index: 1;
+    width: var(--content-width);
+    height: 100%;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: calc( (-1 * (var(--content-width) / 2)) );
   }
