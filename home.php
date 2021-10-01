@@ -10,26 +10,8 @@ get_header();
 ?>
 	
     <div class="parent"> </div>
-     <!--hero section:start-->
-     <div class="container container--fluid pos--rel ">
-        <div class="container--content container--fullwdh">
-            <div class="relictrio--row ">
-            <div class=" hero__banner">
-                <img class="hero__image " src="<?php echo get_template_directory_uri();?>../assets/resources/images/heroimg.png"
-                        alt="Relictrio digital hero image" />
-                <!-- <picture>
-                    <source media="(min-width: 1200px)" srcset="../assets/resources/images/heroimg.png">
-                    <source media="(min-width: 376px)" srcset="../assets/resources/images/heroimg.png">
-                    <source media="(max-width: 375px)" srcset="../assets/resources/images/heroimg.png">                   
-                </picture> -->
-            </div>
-            </div>
-            <div class="hero__text">
-             <h1 class="hero__text--head">relictrio  digital</h1>
-             <p class="hero__text--subhead pad-tp--40">Full Spectrum Digital Commerce Agency</p>
-            </div>
-        </div>
-    </div>
+    <!--hero section:start-->
+    <?php include('templates/hero__banner.php') ?>
     <!--hero section:end-->
     <!--helping brands: start-->
     <div class="container container--fluid  help__brand hide__help--mb">
@@ -318,8 +300,7 @@ get_header();
                 <div class="slide"><img src="<?php echo get_template_directory_uri();?>../assets/resources/images/shopify.png" alt=""></div>
                 <div class="slide"><img src="<?php echo get_template_directory_uri();?>../assets/resources/images/vuejs.png" alt=""></div>
                 <div class="slide"><img src="<?php echo get_template_directory_uri();?>../assets/resources/images/pentaho.png" alt=""></div>
-                <div class="slide"><img src="<?php echo get_template_directory_uri();?>../assets/resources/images/wordpress.png" alt=""></div>
-                
+                <div class="slide"><img src="<?php echo get_template_directory_uri();?>../assets/resources/images/wordpress.png" alt=""></div>                
             </section>
         </div>
     </div>
@@ -327,10 +308,17 @@ get_header();
     <!--magento sec: start-->
     <div class="container container--fluid magento__sec">
         <div class="container--content container--fxdwdh">
-        <img class="magento__arc--left" src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento_left.png" alt="">
-        <div class="left__box">
+        <!-- <img class="magento__arc--left" src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__left.png" alt=""> -->
+        <picture>
+            <source media="(min-width: 1200px)" srcset="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__left.png">
+            <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__left.png">
+            <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__left-mb.png">
+            <img class="magento__arc--left " src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__left.png"
+             alt="digital mature image" />
+        </picture>
+        <!-- <div class="left__box">
         <img  src="<?php echo get_template_directory_uri();?>../assets/resources/images/left__box--icon.png" alt="">
-        </div>
+        </div> -->
        
             <div class="relictrio--row pad-bt--40 "> 
                 <img class="magento__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento1.png"
@@ -348,8 +336,15 @@ get_header();
                     <div><p class="para maturity__sub--text">know more about Magento 2 migration.</p></div>
                 </div>  
             </div>
-            <img class="" src="<?php echo get_template_directory_uri();?>../assets/resources/images/right__box--icon.png" alt="">
-            <img class="magento__arc--right" src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento_right.png" alt="">
+            <!-- <img class="" src="<?php echo get_template_directory_uri();?>../assets/resources/images/right__box--icon.png" alt=""> -->
+            <!-- <img class="magento__arc--right" src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__right.png" alt=""> -->
+            <picture>
+            <source media="(min-width: 1200px)" srcset="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__right.png">
+            <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__right.png">
+            <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__right-mb.png">
+            <img class="magento__arc--right" src="<?php echo get_template_directory_uri();?>../assets/resources/images/magento__right.png"
+             alt="digital mature image" />
+        </picture>
             </div>  
         </div>
     </div>
