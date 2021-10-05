@@ -1,0 +1,172 @@
+.preLive__desSection {
+}
+
+/* for tablets */
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .col--1,
+  .col--3 {
+    flex: 0 0 0%;
+    max-width: 0%;
+  }
+  .col--2{
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .col--4 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  
+  .col--5, .col--7 {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+
+  /* margin */
+  .mar-top--120{
+    margin-top: 48px !important;
+  }
+  .mar-top--75{
+    margin-top: 38px !important;
+  }
+  .mar-top--50,.mar-top--60{
+    margin-top: 28px !important;
+  }
+
+  /* Headings */
+
+  .heading,
+  .heading--variation1,
+  .heading--variation3 {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+
+  .heading {
+    margin: 0px !important;
+  }
+
+  .heading--variation1,
+  .heading--variation3 {
+    font-weight: 600 !important;
+  }
+
+  .heading--variation6 {
+    font-size: 26px !important;
+    line-height: 28px !important;
+  }
+
+  /* Paragraph */
+  .para--variation4 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+  .para--variation5 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  /* custom classes */
+
+  .service__sectionNumbers {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .inception__sectionHeading {
+    margin-top: 22px !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .right__arrow {
+    display: none;
+  }
+
+  .section--heading{
+    margin-left: 29px !important;
+  }
+
+}
+
+
+/* mobile screens */
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .col--1,
+  .col--3 {
+    flex: 0 0 0%;
+    max-width: 0%;
+  }
+  .col--2{
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .col--4 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  
+  .col--5, .col--7 {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+
+  /* margin */
+  .mar-top--120{
+    margin-top: 40px !important;
+  }
+  .mar-top--75{
+    margin-top: 30px !important;
+  }
+  .mar-top--50,.mar-top--60{
+    margin-top: 20px !important;
+  }
+
+  /* Headings */
+
+  .heading {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin: 0px !important;
+  }
+
+  .heading--variation1,
+  .heading--variation3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600 !important;
+  }
+
+  .heading--variation6 {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+
+  /* Paragraph */
+  .para--variation4 {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .para--variation5 {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  /* custom classes */
+
+  .service__sectionNumbers {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .inception__sectionHeading {
+    margin-top: 14px !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .right__arrow {
+    display: none;
+  }
+
+  .section--heading{
+    margin-left: 21px !important;
+  }
+}

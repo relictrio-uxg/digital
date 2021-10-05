@@ -78,7 +78,14 @@ p:last-child {
 .para--variation4 {
   font-size: 25px;
   line-height: 40px;
-  color: var(--para_grey-color);
+  color: var(--davy_grey-color);
+}
+
+.para--variation5 {
+  font-family: var(--relictrio-semiBold-font);
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
 }
 
 .btn-fill--pri {
@@ -194,11 +201,18 @@ p:last-child {
   text-align: center !important;
 }
 
+.txt-align--left{
+  text-align: left !important;
+}
+.txt--semi_bold{
+  font-weight: 600 !important;
+}
+
 .txt--white {
   color: var(--white-color);
 }
 
-.txt--black{
+.txt--black {
   color: var(--black-color);
 }
 
@@ -210,18 +224,26 @@ p:last-child {
   color: var(--eucalyptus-color);
 }
 
-.txt--cetacean_blue{
+.txt--cetacean_blue {
   color: var(--cetacean_blue-color);
 }
 
-.txt--electric_blue{
+.txt--electric_blue {
   color: var(--darkelectric_blue-color);
 }
 
-.opacity--20{
+.txt--davy_grey {
+  color: var(--davy_grey-color);
+}
+
+.txt-spacing--2 {
+  letter-spacing: 2px !important;
+}
+
+.opacity--20 {
   opacity: 20% !important;
 }
 
-.opacity--80{
+.opacity--80 {
   opacity: 80% !important;
 }

@@ -1,15 +1,15 @@
 <div class="container--fluid container--fullhgt dis--flx flex--column flx-alnitm--cent">
+    <!-- banner -->
     <div class="container--fluid pos--rel">
         <picture>
-            <source media="(min-width: 1420px)" srcset="wp-content/themes/digital/assets/images/banner@2x.png"/>
-            <source media="(min-width: 650px)" srcset="wp-content/themes/digital/assets/images/banner@1x.png"/>
-            <source media="(min-width: 376px)" srcset="wp-content/themes/digital/assets/images/banner@pt75x.png"/>
-            <source media="(max-width: 375px)" srcset="wp-content/themes/digital/assets/images/banner@pt5x.png"/>
-            <img class="res-img" src="wp-content/themes/digital/assets/images/banner@1x.png" alt="banner bg img" />
+            <source media="(min-width: 1420px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/banner@2x.png"/>
+            <source media="(min-width: 650px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/banner@1x.png"/>
+            <source media="(min-width: 376px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/banner@pt75x.png"/>
+            <source media="(max-width: 375px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/banner@pt5x.png"/>
+            <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/banner@1x.png" alt="banner bg img" />
         </picture>
-        <!-- <img class="res-img" src="wp-content/themes/digital/assets/images/banner@1x.png" alt="banner bg img"> -->
-
-        <img class="res-img pos--abs z-index--2 service__bannerBackdrop" src="wp-content/themes/digital/assets/images/backdrop@3x1.png" alt="banner bg">
+        <!-- <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/banner@1x.png" alt="banner bg img"> -->
+        <img class="res-img pos--abs z-index--2 service__bannerBackdrop" src="<?php echo get_template_directory_uri()?>/assets/images/backdrop@3x1.png" alt="banner bg">
         <div class="container pos--abs service--bannerHeading">
             <div class="container--fluid dis--flx jus-cnt--cent">
                 <div class="col--3 bannerHeading__placeholders"></div>
@@ -42,8 +42,9 @@
                 <div class="dis--flx align-items--end">
                     <p class="txt--cetacean_blue heading--variation6 opacity--20 service__sectionNumbers">01</p>
                     <picture>
-                        <source media="(max-width: 600px)" srcset="wp-content/themes/digital/assets/images/Inception-mobile-group@1x.png">
-                        <img src="wp-content/themes/digital/assets/images/Inception-group@1x.png" alt="inception group icon">
+                        <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/Inception-group-mobile@1x.png">
+                        <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/Inception-group-tab@1x.png">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/Inception-group@1x.png" alt="inception group icon">
                     </picture>
                 </div>
                 <div class="heading heading--variation6 mar-top--90 dis--flx justify-content--center inception__sectionHeading">
@@ -52,9 +53,9 @@
             </div>
             <div class="col--1"></div>
             <div class="col--7">
-                <div class="serviceImage_container dis--flx">
-                    <img class="res-img" src="wp-content/themes/digital/assets/images/Inception-image@1x.png" alt="inception image">
-                    <img class="res-img pos--abs serviceInception__backdrop" src="wp-content/themes/digital/assets/images/backdrop0.2@1x.png" alt="backdrop light">
+                <div class="serviceImage_container pos--rel dis--flx">
+                    <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/Inception-image@1x.png" alt="inception image">
+                    <img class="res-img pos--abs serviceInception__backdrop" src="<?php echo get_template_directory_uri()?>/assets/images/backdrop0.2@1x.png" alt="backdrop light">
                 </div>
             </div>
         </div>
@@ -67,7 +68,7 @@
                 </div>
             </div>
             <div class="col--2 right__arrow">
-                <img src="wp-content/themes/digital/assets/images/right-arrow-group.png" alt="right arrow group icon">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow-group.png" alt="right arrow group icon">
             </div>
         </div>
 
@@ -83,8 +84,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/digital-maturity-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/digital-maturity@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/digital-maturity-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/digital-maturity-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/digital-maturity@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -94,8 +96,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/business-analysis-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/business-analysis@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/business-analysis-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/business-analysis-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/business-analysis@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -105,8 +108,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/tech-analysis-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/tech-analysis@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/tech-analysis-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/tech-analysis-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/tech-analysis@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -116,8 +120,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/go-live-management-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/go-live-management@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/go-live-management-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/go-live-management-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/go-live-management@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -127,8 +132,9 @@
                 <div class="dis--flx mar-top--15 align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/rightArrow_icon-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation4 mar-lft--28 txt--electric_blue ltr-spacing--pt14 view__fullDetails">
@@ -143,8 +149,9 @@
                 <div class="dis--flx align-items--end">
                     <p class="txt--cetacean_blue heading--variation6 opacity--20 service__sectionNumbers">02</p>
                     <picture>
-                        <source media="(max-width: 600px)" srcset="wp-content/themes/digital/assets/images/DesignDevelopment-group-mobile@1x.png">
-                        <img src="wp-content/themes/digital/assets/images/DesignDevelopment-group@1x.png" alt="inception group icon">
+                        <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/DesignDevelopment-group-mobile@1x.png">
+                        <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/DesignDevelopment-group-tab@1x.png">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/DesignDevelopment-group@1x.png" alt="inception group icon">
                     </picture>
                 </div>
                 <div class="heading heading--variation6 mar-top--90 dis--flx justify-content--center inception__sectionHeading">
@@ -153,9 +160,9 @@
             </div>
             <div class="col--1"></div>
             <div class="col--7">
-                <div class="serviceImage_container dis--flx">
-                    <img class="res-img" src="wp-content/themes/digital/assets/images/DesignDevelopment-image@1x.png" alt="inception image">
-                    <img class="res-img pos--abs serviceInception__backdrop" src="wp-content/themes/digital/assets/images/backdrop0.2@1x.png" alt="backdrop light">
+                <div class="serviceImage_container pos--rel dis--flx">
+                    <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/DesignDevelopment-image@1x.png" alt="inception image">
+                    <img class="res-img pos--abs serviceInception__backdrop" src="<?php echo get_template_directory_uri()?>/assets/images/backdrop0.2@1x.png" alt="backdrop light">
                 </div>
             </div>
         </div>
@@ -168,7 +175,7 @@
                 </div>
             </div>
             <div class="col--5 right__arrow">
-                <img src="wp-content/themes/digital/assets/images/right-arrow-group.png" alt="right arrow group icon">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow-group.png" alt="right arrow group icon">
             </div>
         </div>
 
@@ -186,8 +193,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/B2C-implementation-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/B2C-implementation@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/B2C-implementation-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/B2C-implementation-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/B2C-implementation@1x.png" alt="B2C implementation icon" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -197,8 +205,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                     <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/B2B-implementation-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/B2B-implementation@1x.png" alt="B2B E-commerce Implementation" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/B2B-implementation-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/B2B-implementation-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/B2B-implementation@1x.png" alt="B2B E-commerce Implementation" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -208,8 +217,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/enterprise-integrations-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/enterprise-integrations@1x.png" alt="Enterprise Integrations" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/enterprise-integrations-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/enterprise-integrations-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/enterprise-integrations@1x.png" alt="Enterprise Integrations" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -219,8 +229,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/B2B-B2C-Accelerator-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/B2B-B2C-Accelerator@1x.png" alt="B2C & B2B Accelerator" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/B2B-B2C-Accelerator-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/B2B-B2C-Accelerator-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/B2B-B2C-Accelerator@1x.png" alt="B2C & B2B Accelerator" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -230,8 +241,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/Frameworks-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/Frameworks@1x.png" alt="Frameworks" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/Frameworks-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/Frameworks-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/Frameworks@1x.png" alt="Frameworks" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -241,8 +253,9 @@
                 <div class="dis--flx mar-top--15 align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/rightArrow_icon-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation4 mar-lft--28 txt--electric_blue ltr-spacing--pt14 view__fullDetails">
@@ -257,8 +270,9 @@
                 <div class="dis--flx align-items--end">
                     <p class="txt--cetacean_blue heading--variation6 opacity--20 service__sectionNumbers">03</p>
                     <picture>
-                        <source media="(max-width: 600px)" srcset="wp-content/themes/digital/assets/images/PreLive-group-mobile@1x.png">
-                        <img src="wp-content/themes/digital/assets/images/PreLive-group@1x.png" alt="pre live group icon">
+                        <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/PreLive-group-mobile@1x.png">
+                        <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/PreLive-group-tab@1x.png">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/PreLive-group@1x.png" alt="pre live group icon">
                     </picture>
                 </div>
                 <div class="heading heading--variation6 mar-top--90 dis--flx justify-content--center inception__sectionHeading">
@@ -267,9 +281,9 @@
             </div>
             <div class="col--1"></div>
             <div class="col--7">
-                <div class="serviceImage_container dis--flx">
-                    <img class="res-img" src="wp-content/themes/digital/assets/images/preLive-image@1x.png" alt="inception image">
-                    <img class="res-img pos--abs serviceInception__backdrop" src="wp-content/themes/digital/assets/images/backdrop0.2@1x.png" alt="backdrop light">
+                <div class="serviceImage_container pos--rel dis--flx">
+                    <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/preLive-image@1x.png" alt="inception image">
+                    <img class="res-img pos--abs serviceInception__backdrop" src="<?php echo get_template_directory_uri()?>/assets/images/backdrop0.2@1x.png" alt="backdrop light">
                 </div>
             </div>
         </div>
@@ -282,7 +296,7 @@
                 </div>
             </div>
             <div class="col--5 right__arrow">
-                <img src="wp-content/themes/digital/assets/images/right-arrow-group.png" alt="right arrow group icon">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow-group.png" alt="right arrow group icon">
             </div>
         </div>
 
@@ -300,8 +314,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/enterprise-integrations-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/enterprise-integrations@1x.png" alt="Enterprise Integrations" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/enterprise-integrations-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/enterprise-integrations-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/enterprise-integrations@1x.png" alt="E-commerce platform training" />
                         </picture>        
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -311,8 +326,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                     <picture>
-                            <source media="(max-width: 320px)" srcset="wp-content/themes/digital/assets/images/Site-Merchandising-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/Site-Merchandising@1x.png" alt="Site Merchandising" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/Site-Merchandising-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/Site-Merchandising-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/Site-Merchandising@1x.png" alt="Site Merchandising" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -322,8 +338,9 @@
                 <div class="dis--flx mar-top--15 align-items--center">
                     <div>
                     <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/rightArrow_icon-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation4 mar-lft--28 txt--electric_blue ltr-spacing--pt14 view__fullDetails">
@@ -338,8 +355,9 @@
                 <div class="dis--flx align-items--end">
                     <p class="txt--cetacean_blue heading--variation6 opacity--20 service__sectionNumbers">04</p>
                     <picture>
-                        <source media="(max-width: 600px)" srcset="wp-content/themes/digital/assets/images/PostLive-group-mobile@1x.png">
-                        <img src="wp-content/themes/digital/assets/images/PostLive-group@1x.png" alt="Post Live">
+                        <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/PostLive-group-mobile@1x.png">
+                        <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/PostLive-group-tab@1x.png">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/PostLive-group@1x.png" alt="Post Live">
                     </picture>
                 </div>
                 <div class="heading heading--variation6 mar-top--90 dis--flx justify-content--center inception__sectionHeading">
@@ -348,9 +366,9 @@
             </div>
             <div class="col--1"></div>
             <div class="col--7">
-                <div class="serviceImage_container dis--flx">
-                    <img class="res-img" src="wp-content/themes/digital/assets/images/PostLive-image@1x.png" alt="Post Live image">
-                    <img class="res-img pos--abs serviceInception__backdrop" src="wp-content/themes/digital/assets/images/backdrop0.2@1x.png" alt="backdrop light">
+                <div class="serviceImage_container pos--rel dis--flx">
+                    <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/PostLive-image@1x.png" alt="Post Live image">
+                    <img class="res-img pos--abs serviceInception__backdrop" src="<?php echo get_template_directory_uri()?>/assets/images/backdrop0.2@1x.png" alt="backdrop light">
                 </div>
             </div>
         </div>
@@ -363,7 +381,7 @@
                 </div>
             </div>
             <div class="col--5 right__arrow">
-                <img src="wp-content/themes/digital/assets/images/right-arrow-group.png" alt="right arrow group icon">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow-group.png" alt="right arrow group icon">
             </div>
         </div>
 
@@ -379,8 +397,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/site-audit-asses-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/site-audit-asses@1x.png" alt="Site Auditing & Assessments" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/site-audit-asses-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/site-audit-asses-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/site-audit-asses@1x.png" alt="Site Auditing & Assessments" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -390,8 +409,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/technology-management-services-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/technology-management-services@1x.png" alt="Technology Management Services" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/technology-management-services-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/technology-management-services-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/technology-management-services@1x.png" alt="Technology Management Services" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -401,8 +421,9 @@
                 <div class="dis--flx align-items--center">
                     <div>
                         <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/market-management-services-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/market-management-services@1x.png" alt="Marketplace Management Services" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/market-management-services-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/market-management-services-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/market-management-services@1x.png" alt="Marketplace Management Services" />
                         </picture>
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
@@ -412,8 +433,9 @@
                 <div class="dis--flx mar-top--15 align-items--center">
                     <div>
                     <picture>
-                            <source media="(min-width: 320px)" srcset="wp-content/themes/digital/assets/images/rightArrow_icon-mobile@1x.png">
-                            <img src="wp-content/themes/digital/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
+                            <source media="(max-width: 600px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-mobile@1x.png">
+                            <source media="(max-width: 1024px)" srcset="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon-tab@1x.png">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
                         </picture>
                     </div>
                     <div class="heading--variation4 mar-lft--28 txt--electric_blue ltr-spacing--pt14 view__fullDetails">
@@ -426,61 +448,61 @@
     <div class="container--fluid dis--flx justify-content--center heading heading--variation1 mar-top--120">
         We are Experts in
     </div>
-        <div class="container container--fluid magento__sec mar-top--60">
+        <div class="container container--fluid mar-top--60">
         <div class="container--fluid container--fxdwdh dis--flx flex--wrap">
             <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-aptos@1x.png" alt="aptos">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-aptos@1x.png" alt="aptos">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-shopify@1x.png" alt="shopify">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-shopify@1x.png" alt="shopify">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-oro@1x.png" alt="oro">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-oro@1x.png" alt="oro">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-drupal@1x.png" alt="drupal">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-drupal@1x.png" alt="drupal">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-wp@1x.png" alt="wordpress">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-wp@1x.png" alt="wordpress">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-alfresco@1x.png" alt="alfresco">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-alfresco@1x.png" alt="alfresco">
              </div>
             <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-pentaho@1x.png" alt="pentaho">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-pentaho@1x.png" alt="pentaho">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-vue@1x.png" alt="vue">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-vue@1x.png" alt="vue">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-magento@1x.png" alt="magento">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-magento@1x.png" alt="magento">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-wc@1x.png" alt="woo commerce">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-wc@1x.png" alt="woo commerce">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-oracle@1x.png" alt="oracle">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-oracle@1x.png" alt="oracle">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-kibo@1x.png" alt="kibo">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-kibo@1x.png" alt="kibo">
              </div>
             <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-node@1x.png" alt="node">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-node@1x.png" alt="node">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-ember@1x.png" alt="ember">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-ember@1x.png" alt="ember">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-angular@1x.png" alt="angular">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-angular@1x.png" alt="angular">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-react@1x.png" alt="react">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-react@1x.png" alt="react">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-sapHybris@1x.png" alt="SAP Hybris">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-sapHybris@1x.png" alt="SAP Hybris">
              </div>
              <div class="col--2 ">
-                <img class="res-img" src="wp-content/themes/digital/assets/images/tech-icon-scc@1x.png" alt="salesforce commerce cloud">
+                <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/tech-icon-scc@1x.png" alt="salesforce commerce cloud">
              </div>  
         </div>
         </div>

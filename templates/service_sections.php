@@ -2,7 +2,7 @@
             <div class="col--4 dis--flx flex--column flx-alnitm--cent justify-content--center">
                 <div class="dis--flx align-items--end">
                     <p class="txt--cetacean_blue heading--variation6">01</p>
-                    <img src="wp-content/themes/digital/assets/images/Inception-group@1x.png" alt="inception group icon">
+                    <img src="<?php echo get_template_directory_uri()?>/assets/images/Inception-group@1x.png" alt="inception group icon">
                 </div>
                 <div class="heading heading--variation6 mar-top--90 dis--flx justify-content--center">
                     Inception
@@ -11,8 +11,8 @@
             <div class="col--1"></div>
             <div class="col--7">
                 <div class="serviceImage_container dis--flx">
-                    <img class="res-img" src="wp-content/themes/digital/assets/images/Inception-image@1x.png" alt="inception image">
-                    <img class="res-img pos--abs serviceInception__backdrop" src="wp-content/themes/digital/assets/images/backdrop0.2@1x.png" alt="backdrop light">
+                    <img class="res-img" src="<?php echo get_template_directory_uri()?>/assets/images/Inception-image@1x.png" alt="inception image">
+                    <img class="res-img pos--abs serviceInception__backdrop" src="<?php echo get_template_directory_uri()?>/assets/images/backdrop0.2@1x.png" alt="backdrop light">
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col--2">
-                <img src="wp-content/themes/digital/assets/images/right-arrow-group.png" alt="right arrow group icon">
+                <img src="<?php echo get_template_directory_uri()?>/assets/images/right-arrow-group.png" alt="right arrow group icon">
             </div>
         </div>
 
@@ -40,7 +40,7 @@
             <div class="col--11 dis--flx flex--column gap--25">
                 <div class="dis--flx align-items--center">
                     <div>
-                        <img src="wp-content/themes/digital/assets/images/digital-maturity@1x.png" alt="digital maturity icon" />
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/digital-maturity@1x.png" alt="digital maturity icon" />
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
                         Digital Maturity Assessments
@@ -48,7 +48,7 @@
                 </div>
                 <div class="dis--flx align-items--center">
                     <div>
-                        <img src="wp-content/themes/digital/assets/images/business-analysis@1x.png" alt="digital maturity icon" />
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/business-analysis@1x.png" alt="digital maturity icon" />
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
                         Business Analysis
@@ -56,7 +56,7 @@
                 </div>
                 <div class="dis--flx align-items--center">
                     <div>
-                        <img src="wp-content/themes/digital/assets/images/tech-analysis@1x.png" alt="digital maturity icon" />
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/tech-analysis@1x.png" alt="digital maturity icon" />
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
                         Technology Assessments &  Procurement Support
@@ -64,7 +64,7 @@
                 </div>
                 <div class="dis--flx align-items--center">
                     <div>
-                        <img src="wp-content/themes/digital/assets/images/go-live-management@1x.png" alt="digital maturity icon" />
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/go-live-management@1x.png" alt="digital maturity icon" />
                     </div>
                     <div class="heading--variation3 mar-lft--31 txt--black">
                         Implementation & Go-Live Management
@@ -72,7 +72,7 @@
                 </div>
                 <div class="dis--flx mar-top--15 align-items--center">
                     <div>
-                        <img src="wp-content/themes/digital/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
+                        <img src="<?php echo get_template_directory_uri()?>/assets/images/rightArrow_icon@1x.png" alt="digital maturity icon" />
                     </div>
                     <div class="heading--variation4 mar-lft--28 txt--electric_blue ltr-spacing--pt14">
                         View Full Details
