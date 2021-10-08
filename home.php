@@ -11,6 +11,6 @@
     ?>
 </head>
 <body>
-    <?php include("pre__live.php"); ?>
+
 </body>
 </html>
