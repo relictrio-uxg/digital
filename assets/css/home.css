@@ -167,7 +167,12 @@
         max-width: 100%;
         flex: 0 0 80%;
     }
-    
+    .magento__icon {
+        text-align: center;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
     .maturity__head{
         font-size: 18px!important;
         margin: 0px !important;
@@ -201,6 +206,7 @@
     .techevalue__head {
         font-size: 18px !important;
         line-height: 20px !important;
+        margin-top: 10px !important;
     }
     .magento__head{
        font-size: 14px;
@@ -227,7 +233,12 @@
     }
 }
 @media (max-width: 834px) {
-
+    .hero__banner{
+       
+        margin-left: -40px;
+    width: calc(100% + 80px);
+    margin-right: -40px;
+    }
 
 }
 /**media query : end **/
@@ -351,15 +362,15 @@ margin-bottom: 10px !important;
     align-items: center;
     justify-content: center;
 }
-
 .magento__arc--right {
     position: absolute;
-    right: 0rem;
-    margin-top: 11.76rem;
+    right: 0;
+    bottom: 0;
 }
 .magento__arc--left{
     position: absolute;
     left: 0rem;
+    top:0; 
 }
 .front__slash--img{
     position: absolute;
@@ -368,6 +379,11 @@ margin-bottom: 10px !important;
 .back__slash--img{
     position: absolute;
     right: 2.28rem;
+}
+.help__brandlist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /**slider css: start**/
 .slick-slide{
@@ -413,4 +429,7 @@ margin-bottom: 10px !important;
     margin-top: 30px;
     margin-right: 33px;
 }
-
+.magento__icon{
+    width: 100%;
+    text-align: center;
+}

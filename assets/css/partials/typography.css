@@ -62,6 +62,17 @@
     letter-spacing: 2px;
     text-transform: uppercase;
   }
+  .para--variation4 {
+    font-family: var(--relictrio-roboto-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px; 
+    padding:17px 139px ;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border-radius: 33px;
+  }
   .btn-fill--pri{
     background: var(--white-color);
     font-family: var(--relictrio-inter-font);
@@ -71,7 +82,7 @@
     line-height: 32px;
     color: var(--cetacean_blue-color);
     padding: 24px 3px 4px;
-    min-width: 230px;
+    /* min-width: 230px; */
     border: 1px solid var(--cetacean_blue-color);
     border-radius: 28px;
     cursor: pointer;
@@ -127,6 +138,7 @@
     line-height: 30px;
     color: var(--darkelectric_blue-color);
     opacity: 0.8;
+    
   }
   .label .active,
   .label .error,
@@ -143,7 +155,7 @@
     border: 1.2px solid var(--darkelectric_blue-color);
     border-radius: 4px;
     color: var(--cetacean_blue-color);
-    padding: 39px 0px 39px 50px;
+    padding: 35px 0px 35px 50px;
     width: 100%;
     opacity: 0.8;
   }

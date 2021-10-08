@@ -269,7 +269,7 @@
   .align-self--stretch {
     align-self: stretch !important;
   }
-  @media (min-width: 320px) {
+  @media (min-width: 320px) and (max-width: 834px) {
     .container {
       max-width: 90%;
     }
@@ -281,7 +281,7 @@
       max-width: var(--content-mb-width) !important;
     }
   }
-  @media (min-width: 540px) {
+  @media (max-width: 539.98px) {
     .container {
       max-width: 90%;
     }
@@ -293,7 +293,7 @@
       max-width: var(--content-mb-width) !important;
     }
   }
-  @media (min-width: 834px) {
+  @media (max-width: 834px) {
     .container {
       max-width: 90%;
     }
