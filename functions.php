@@ -19,6 +19,14 @@
         wp_enqueue_style('relictrio-A_wanttoknow-style', get_template_directory_uri()."/assets/css/A_wanttoknow.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_whyus-style', get_template_directory_uri()."/assets/css/A_whyus.css", array(), $version, 'all');
 
+        wp_enqueue_style('relictrio-D&D_banner-style', get_template_directory_uri()."/assets/css/D&D_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_commerce-style', get_template_directory_uri()."/assets/css/D&D_commerce.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_digitaldesign-style', get_template_directory_uri()."/assets/css/D&D_digitaldesign.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_digitalservices-style', get_template_directory_uri()."/assets/css/D&D_digitalservices.css", array(), $version, 'all');
+
+        wp_enqueue_style('relictrio-P_banner-style', get_template_directory_uri()."/assets/css/P_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-P_digitalmanaged-style', get_template_directory_uri()."/assets/css/P_digitalmanaged.css", array(), $version, 'all');
+
     }
 
     add_action('wp_enqueue_scripts', 'relictrio_register_styles');

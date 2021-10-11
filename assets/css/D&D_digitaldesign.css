@@ -1,0 +1,138 @@
+.designdevelop__digital--para{
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #5C5C5C;
+}
+
+.designdevelop__digital--icons{
+  margin: 0 auto;
+  display: block;
+}
+
+.designdevelop__digital--blocks{
+  margin: 20px 0;
+  padding: 20px 40px;
+}
+
+.designdevelop__digital--blocks p{
+  text-align: center;
+  color: #5C5C5C;
+}
+
+@media (max-width: 1024px) {
+  .designdevelop__digital h2{
+    font-size: 42px;
+    line-height: 58px;
+  }
+  .designdevelop__digital--para{
+    font-size: 22px;
+    line-height: 48px;
+  }
+  .designdevelop__digital--blocks h3{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .designdevelop__digital--blocks p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .designdevelop__digital--includeblock h3{
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .designdevelop__digital--includeblock h4{
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 834px) {
+  .designdevelop__digital h2{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .designdevelop__digital--para{
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .designdevelop__digital p:nth-child(4){
+    font-size: 20px !important;
+    line-height: 45px !important;
+  }
+  .designdevelop__digital--blocks{
+    padding: 20px 100px;
+  }
+  .designdevelop__digital--blocks h3{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .designdevelop__digital--blocks p{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .designdevelop__digital--includeblock h3{
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .designdevelop__digital--includeblock h4{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .designdevelop__digital--blocklist [class*="col--"]{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .designdevelop__digital h2{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 20px 0 !important;
+  }
+  .designdevelop__digital--para{
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px 0 !important;
+  }
+  .designdevelop__digital p:nth-child(4){
+    font-size: 12px !important;
+    line-height: 20px !important;
+    margin: 15px 0 !important;
+  }
+  .designdevelop__digital--blocks{
+    background: #E9EAFA;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .designdevelop__digital--icons{
+    max-width: 75px;
+    max-height: auto;
+  }
+  .designdevelop__digital--blocks h3{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 20px 0;
+  }
+  .designdevelop__digital--blocks p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .designdevelop__digital--includeblock div{
+    align-items: baseline;
+    margin: 0 !important;
+  }
+  .designdevelop__digital--includeblock h3{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .designdevelop__digital--includeblock h4{
+    font-size: 12px;
+    line-height: 13px;
+    margin: 15px 0 !important;
+  }
+  .designdevelop__digital--includeblock img{
+    max-width: 45px;
+  }
+}

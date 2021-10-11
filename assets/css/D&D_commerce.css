@@ -1,0 +1,105 @@
+.designdevelop__commerce h3{
+  display: flex;
+  align-items: center;
+}
+
+.designdevelop__commerce img{
+  padding-right: 50px;
+  max-width: 100%;
+}
+
+.designdevelop__commerce--para p{
+  color: #5C5C5C;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.designdevelop__commerce--logo{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.designdevelop__commerce--logo img{
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .designdevelop__commerce{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .designdevelop__commerce h3{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .designdevelop__commerce--para p{
+    font-size: 22px;
+    line-height: 55px;
+    margin-top: 5px;
+  }
+  .designdevelop__commerce--block h4{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 834px) {
+  .designdevelop__commerce--block div:first-child{
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .designdevelop__commerce--block div:nth-child(2){
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .designdevelop__commerce--block div:nth-child(3){
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .designdevelop__commerce img{
+    padding-right: 40px;
+    max-width: 120px;
+  }
+
+  .designdevelop__commerce h3{
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .designdevelop__commerce--para p{
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 4px;
+  }
+  .designdevelop__commerce--block h4{
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 540px) {
+  .designdevelop__commerce img{
+    padding-right: 20px;
+    max-width: 60px;
+  }
+  .designdevelop__commerce h3{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 15px 0 !important;
+  }
+  .designdevelop__commerce--para p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .designdevelop__commerce--block h4{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px 0 !important;
+  }
+  .designdevelop__commerce--logo img{
+    max-width: 120px;
+  }
+}
