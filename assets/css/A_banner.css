@@ -1,6 +1,4 @@
 .aboutussection__content p{
-  font-family: var(--relictrio-semiBold-font);
-  font-size: 32px;
   line-height: 50px;
   text-align: center;
   letter-spacing: 1px;
@@ -10,10 +8,16 @@
 .aboutussection__img{
   display: block;
   margin: 0 auto;
+  padding: 5px;
+  max-width: 100%;
 }
 
 .aboutussection__services{
   margin: 80px 0;
+}
+
+.aboutussection__services img{
+  max-width: 100%;
 }
 
 .aboutussection__services--block{
@@ -23,18 +27,55 @@
 .aboutussection__services--block img{
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .aboutussection__content p{
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .aboutussection__mobile{
+    margin-top: 80px !important;
+    margin-bottom: 40px !important;
+  }
+  .aboutussection__services{
+    margin: 50px 0;
+  }
+  .aboutussection__services--block h4{
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 834px) {
   .aboutussection__col--6{
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .aboutussection__img{
-    width: 154px;
-    height: 86px;
-    margin-bottom: 20px;
+  .aboutussection__content p{
+    font-size: 24px;
+    line-height: 40px;
   }
+  .aboutussection__mobile{
+    margin-top: 60px !important;
+    margin-bottom: 30px !important;
+  }
+  .aboutussection__services{
+    margin: 35px 0;
+  }
+  .aboutussection__services--block{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .aboutussection__services--block h4{
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 540px) {
   .aboutussection__content p{
     font-size: 14px;
     line-height: 24px;
@@ -46,10 +87,6 @@
   .aboutussection__services{
     margin: 20px auto;
   }
-  .aboutussection__services img{
-    width: 248px;
-    height: 72px;
-  }
   .aboutussection__services--block{
     flex: 0 0 100%;
     max-width: 100%;
@@ -57,7 +94,7 @@
   }
   .aboutussection__services--block h4{
     font-size: 12px;
-    line-height: 28px;
+    line-height: 14px;
     margin: 7px 0px;
   }
 }

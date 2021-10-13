@@ -6,53 +6,88 @@
   */
   ?>
 
-  <section>
+<section>
     <div class="container container--fluid">
       <div class="container--content">
+
         <div class="relictrio--row justify-content--between mar-tpbt--80 aboutussection__mobile">
+          
+          <?php 
+            $hero_section_image_block = get_field('hero_section_image_block');
+            if( $hero_section_image_block ) {
+            foreach( $hero_section_image_block as $row ) {
+          ?>
           <div class="col--3 aboutussection__col--6">
-            <img class="aboutussection__img" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-banner-1.png" alt="aboutus-banner-1">
+            <picture>
+              <source media="(max-width: 540px)" srcset="<?php echo $row['banner_image_mobile'] ;?>">
+              <source media="(max-width: 834px)" srcset="<?php echo $row['banner_image_tab'] ;?>">
+              <img class="aboutussection__img" src="<?php echo $row['banner_image'] ;?>" alt="aboutus-banner">
+            </picture>
           </div>
-          <div class="col--3 aboutussection__col--6">
-            <img class="aboutussection__img" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-banner-2.png" alt="aboutus-banner-2">
-          </div>
-          <div class="col--3 aboutussection__col--6">
-            <img class="aboutussection__img" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-banner-3.png" alt="aboutus-banner-3">
-          </div>
-          <div class="col--3 aboutussection__col--6">
-            <img class="aboutussection__img" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-banner-4.png" alt="aboutus-banner-4">
-          </div>
+          <?php
+                }
+              }
+          ?>
+
         </div>
+
         <div class="aboutussection__content">
-          <p class="col--12">Relictrio digital is a global digital commerce agency with a core focus on creative, content and commerce. We provide a holistic suite of digital services covering overall digital empowerment , from assessing digital maturity to bespoke user experience design and innovative ecommerce solutions.</p>
+
+          <?php 
+                $hero_section_banner_content = get_field('hero_section_banner_content');
+                if( $hero_section_banner_content ) {
+            ?>
+          <p class="col--12 heading heading--variation2">
+          <?php echo $hero_section_banner_content; ?>
+          </p>
+          <?php 
+                }
+            ?>
+
         </div>
+
+        <?php 
+            $hero_section_digital_advisory_image = get_field('hero_section_digital_advisory_image');
+            if( $hero_section_digital_advisory_image ) {
+            foreach( $hero_section_digital_advisory_image as $row ) {
+        ?>
         <div class="aboutussection__services relictrio--row jus-cnt--cent">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-img.png" alt="aboutus-services-img">
+          <picture>
+            <source media="(max-width: 540px)" srcset="<?php echo $row['digital_advisory_image_mobile'] ;?>">
+            <source media="(max-width: 834px)" srcset="<?php echo $row['digital_advisory_image_tab'] ;?>">
+            <img src="<?php echo $row['digital_advisory_image'] ;?>" alt="aboutus-services-img">
+          </picture>
         </div>
+        <?php
+                }
+              }
+        ?>
+
         <div class="relictrio--row jus-cnt--spcard">
           <div class="col--2"></div>
+
           <div class="aboutussection__services--block col--8 relictrio--row jus-cnt--spcard">
+
+          <?php 
+            $hero_section_services_block = get_field('hero_section_services_block');
+            if( $hero_section_services_block ) {
+            foreach( $hero_section_services_block as $row ) {
+          ?>
             <div>
-              <img class="hide--mobile"  src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-1.png" alt="aboutus-services-1">
-              <img class="hide--desktop" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-mobile-1.png" alt="aboutus-services-1">
-              <h4 class="heading heading--variation4 text--center">Inception</h4>
+              <picture>
+                <source media="(max-width: 540px)" srcset="<?php echo $row['services_image_mobile'] ;?>">
+                <source media="(max-width: 834px)" srcset="<?php echo $row['services_image_tab'] ;?>">
+                <img src="<?php echo $row['services_image'] ;?>" alt="aboutus-services">
+              </picture>
+              <h4 class="heading heading--variation4 text--center">
+                <?php echo $row['services_heading'] ;?>
+              </h4>
             </div>
-            <div>
-              <img class="hide--mobile"  src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-2.png" alt="aboutus-services-2">
-              <img class="hide--desktop" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-mobile-2.png" alt="aboutus-services-2">
-              <h4 class="heading heading--variation4 text--center">Design & <br>
-                Development</h4>
-            </div>
-            <div>
-              <img class="hide--mobile"  src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-3.png" alt="aboutus-services-3">
-              <img class="hide--desktop" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-mobile-3.png" alt="aboutus-services-3">
-              <h4 class="heading heading--variation4 text--center">Pre Live</h4>
-            </div>
-            <div>
-              <img class="hide--mobile"  src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-4.png" alt="aboutus-services-4">
-              <img class="hide--desktop" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-services-mobile-4.png" alt="aboutus-services-4">
-              <h4 class="heading heading--variation4 text--center">Post Live</h4>
-            </div>
+          <?php
+              }
+            }
+          ?>
+
           </div>
           <div class="col--2"></div>
         </div>

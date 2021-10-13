@@ -3,7 +3,20 @@
   padding: 68px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .wanttoknowsection h3{
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 834px) {
+  .wanttoknowsection h3{
+    font-size: 35px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
   .wanttoknowsection [class*="col--"] {
     width: 100%;
     flex: 0 0 100%;
@@ -11,6 +24,12 @@
     display: flex;
     justify-content: center;
   }
+  .wanttoknowsection{
+    padding: 48px 0;
+  }
+}
+
+@media (max-width: 540px) {
   .wanttoknowsection h3{
     font-size: 14px;
     line-height: 20px;

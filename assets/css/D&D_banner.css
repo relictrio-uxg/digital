@@ -50,10 +50,6 @@
     font-size: 48px;
     line-height: 48px;
   }
-  
-  .designdevelop__banner img{
-    max-width: 120px;
-  }
 }
 
 @media (max-width: 834px) {
@@ -65,10 +61,6 @@
   .designdevelop__banner--heading {
     font-size: 40px;
     line-height: 40px;
-  }
-
-  .designdevelop__banner img{
-    max-width: 100px;
   }
 }
 
@@ -85,9 +77,5 @@
 
   .designdevelop__banner h3{
     margin-bottom: 5px !important;
-  }
-
-  .designdevelop__banner img{
-    max-width: 40px;
   }
 }

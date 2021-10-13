@@ -7,7 +7,7 @@
 }
 
 .whyussection__card{
-  width: 390px;
+  max-width: 390px;
   height: 632px;
   background: #E9EAFA;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.25);
@@ -18,12 +18,10 @@
 
 .whyussection__card--logo{
   display: block;
-  margin: 0 auto 85px;
+  margin: 0 auto 65px;
 }
 
 .whyussection__card--heading{
-  font-family: var(--relictrio-semiBold-font);
-  font-size: 32px;
   line-height: 34px;
   color: var(--black-color);
   text-align: center;
@@ -31,28 +29,71 @@
 }
 
 .whyussection__card--para{
-  font-family: var(--relictrio-inter-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.142857px;
   color: #5C5C5C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .whyussection__card{
+    padding: 35px 15px;
+  }
+  .whyussection__card--logo{
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .whyussection__card--heading{
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .whyussection h2{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .whyussection__card--heading{
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .whyussection__card--para{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 834px) {
+  .whyussection h2{
+    font-size: 35px;
+    line-height: 50px;
+  }
   .whyussection__cardblock [class*="col--"]{
     width: 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .whyussection__card{
+    height: 432px;
+    margin-bottom: 35px;
+  }
+  .whyussection__card--heading{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .whyussection__card--para{
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 540px) {
   .whyussection h2{
     font-size: 16px;
     line-height: 60px;
   }
   .whyussection__card{
-    width: 335px;
+    max-width: 335px;
     height: 304px;
     margin-bottom: 20px;
     padding: 20px;
@@ -66,8 +107,6 @@
   .whyussection__card--logo{
     display: block;
     margin: 0 auto;
-    width: 80px;
-    height: 80px;
   }
   .whyussection__card--heading{
     font-size: 18px;

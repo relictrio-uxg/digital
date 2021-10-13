@@ -18,6 +18,7 @@
         wp_enqueue_style('relictrio-footer-style', get_template_directory_uri()."/assets/css/footer.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_wanttoknow-style', get_template_directory_uri()."/assets/css/A_wanttoknow.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_whyus-style', get_template_directory_uri()."/assets/css/A_whyus.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-A_weareexperts-style', get_template_directory_uri()."/assets/css/A_weareexperts.css", array(), $version, 'all');
 
         wp_enqueue_style('relictrio-D&D_banner-style', get_template_directory_uri()."/assets/css/D&D_banner.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-D&D_commerce-style', get_template_directory_uri()."/assets/css/D&D_commerce.css", array(), $version, 'all');

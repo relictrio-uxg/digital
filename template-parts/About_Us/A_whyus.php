@@ -6,33 +6,49 @@
   */
  ?>
 
-  <section class="whyussection container container--fluid">
+<section class="whyussection container container--fluid">
     <div class="container--content">
       <div class="relictrio--row jus-cnt--cent">
-        <h2 class="heading heading--variation1">Why us?</h2>
+
+      <?php 
+          $why_us_heading = get_field('why_us_heading');
+          if( $why_us_heading ) {
+      ?>
+        <h2 class="heading heading--variation1">
+          <?php echo $why_us_heading; ?>
+        </h2>
+      <?php 
+          }
+      ?>
+
       </div>
       <div class="whyussection__cardblock relictrio--row">
+
+      <?php 
+            $why_us_block = get_field('why_us_block');
+            if( $why_us_block ) {
+            foreach( $why_us_block as $row ) {
+      ?>
         <div class="col--4">
           <div class="whyussection__card">
-            <img class="whyussection__card--logo" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-whyus-card-1.png" alt="whyus-card-logo">
-            <h3 class="whyussection__card--heading">Expertise</h3>
-            <p class="whyussection__card--para">Our team comprises of a combination of experts including eCommerce Strategists, Designers, Front End and Technical developers, Architects, SEO and marketing experts, Project Managers and Client Partners. Our principals have owned publicly traded P&L responsibilities   </p>
+            <picture>
+              <source media="(max-width: 540px)" srcset="<?php echo $row['block_image_mobile'] ;?>">
+              <source media="(max-width: 834px)" srcset="<?php echo $row['block_image_tab'] ;?>">
+              <img class="whyussection__card--logo" src="<?php echo $row['block_image'] ;?>" alt="whyus-card-logo">
+            </picture>
+            <h3 class="heading heading--variation2 whyussection__card--heading">
+              <?php echo $row['block_heading'] ;?>
+            </h3>
+            <p class="para whyussection__card--para">
+              <?php echo $row['block_paragraph'] ;?>
+            </p>
           </div>
         </div>
-        <div class="col--4">
-          <div class="whyussection__card">
-            <img class="whyussection__card--logo" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-whyus-card-2.png" alt="whyus-card-logo">
-            <h3 class="whyussection__card--heading">Experience</h3>
-            <p class="whyussection__card--para">Our team of experts bring with them several (sometimes decades) years of technical experience. They have worked with a wide range of technologies and with different types of eCommerce industries    </p>
-          </div>
-        </div>
-        <div class="col--4">
-          <div class="whyussection__card">
-            <img class="whyussection__card--logo" src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/aboutus-whyus-card-3.png" alt="whyus-card-logo">
-            <h3 class="whyussection__card--heading pad-tp--20">Knowledge Sharing</h3>
-            <p class="whyussection__card--para">We are a highly collaborative and close-knit team. Experts and Leads within the team share their knowledge, best practices and experience to the rest of the team ensuring knowledge transfer and retention of anecdotal experience </p>
-          </div>
-        </div>
+        <?php
+                }
+              }
+        ?>
+
       </div>
     </div>
   </section>

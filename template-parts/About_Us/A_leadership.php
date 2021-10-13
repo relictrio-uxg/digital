@@ -6,12 +6,45 @@
   */
   ?>
 
-  <section class="leadershipsection container--fullwdh">
-    <div class="container--content">
-    <h2 class="heading heading--variation1 text--center">Leadership Background</h1>
-      <h3>We are the last systems integrations partner you will ever need !!</h3>
-      <div class="relictrio--row col--12">
-        <p>Relictrio digital's Leadership Team is a unique blend of talent. At Relictrio digital, we believe a successful digital commerce transformation can be realised when right people from the right background come together and that is why our leadership team comprises of experts from supply chain, retail & technology implementations. Over the years, our leaders have successfully executed hundreds of ecommerce implementations for brands & retailers across the globe.</p>
-      </div>
+<section class="leadershipsection container--fullwdh">
+  <div class="container--content">
+
+    <?php 
+      $background_section_heading = get_field('background_section_heading');
+      if( $background_section_heading ) {
+    ?>
+    <h2 class="heading heading--variation1 text--center">
+    <?php echo $background_section_heading; ?>
+    </h2>
+    <?php 
+        }
+    ?>
+
+    <?php 
+      $background_section_content = get_field('background_section_content');
+      if( $background_section_content ) {
+    ?>
+    <h3 class="heading heading--variation2 text--center">
+    <?php echo $background_section_content; ?>
+    </h3>
+    <?php 
+        }
+    ?>
+
+    <div class="relictrio--row col--12">
+
+      <?php 
+        $background_section_paragraph = get_field('background_section_paragraph');
+        if( $background_section_paragraph ) {
+      ?>
+      <p class="para para--variation5 text--center">
+      <?php echo $background_section_paragraph; ?>
+      </p>
+      <?php 
+          }
+      ?>
+
     </div>
-  </section>
+
+  </div>
+</section>

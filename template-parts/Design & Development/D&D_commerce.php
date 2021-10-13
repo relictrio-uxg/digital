@@ -9,20 +9,79 @@
   <div class="container container--fluid">
     <div class="container--content">
       <div class="relictrio--row mar-tpbt--30 designdevelop__commerce">
-        <h3 class="heading heading--variation1"><img src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/d&d-commerce-icon.png" alt="d&d-commerce-icon">Commerce + Content</h3>
+        
+            <?php 
+                $commerce_section_icon = get_field('commerce_section_icon');
+                if( $commerce_section_icon ) {
+            ?>
+            <h3 class="heading heading--variation1">
+            <img src="<?php echo $commerce_section_icon; ?>" alt="d&d-commerce-icon">
+            <?php 
+                }
+            ?>
+            <?php 
+                $commerce_section_heading = get_field('commerce_section_heading');
+                if( $commerce_section_heading ) {
+            ?>
+          <?php echo $commerce_section_heading; ?></h3>
+          <?php 
+                }
+            ?>
       </div>
       <div class="designdevelop__commerce--para">
-        <p class="heading heading--variation3">Content is key ! It's the driving force behind successful Ecommerce. Content leads customers to your site, increases your brand loyalty, and shows that you really do know what you're talking about. There's just one problem: figuring out how to create and manage the high-quality content that your customers are looking for in order to create a content-driven Ecommerce experience.</p>
+
+            <?php 
+                $commerce_section_paragraph = get_field('commerce_section_paragraph');
+                if( $commerce_section_paragraph ) {
+            ?>
+            <p class="heading heading--variation3">
+            <?php echo $commerce_section_paragraph; ?>
+            </p>
+            <?php 
+                }
+            ?>
+        
       </div>
       <div class="relictrio--row mar-bot--50 designdevelop__commerce--block">
         <div class="col--7">
-          <h4 class="heading heading--variation2">We are certified solutions partner with the industry leading Content Management systems. </h4>
+
+            <?php 
+                $commerce_section_bottom_paragraph = get_field('commerce_section_bottom_paragraph');
+                if( $commerce_section_bottom_paragraph ) {
+            ?>
+            <h4 class="heading heading--variation2">
+            <?php echo $commerce_section_bottom_paragraph; ?>
+            </h4>
+            <?php 
+                }
+            ?>
+
         </div>
+
         <div class="col--3 designdevelop__commerce--logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/d&d-commerce-logo-1.png" alt="d&d-commerce-logo-1">
+
+            <?php 
+                $commerce_section_bottom_paragraph_icon_1 = get_field('commerce_section_bottom_paragraph_icon_1');
+                if( $commerce_section_bottom_paragraph_icon_1 ) {
+            ?>
+            <img src="<?php echo $commerce_section_bottom_paragraph_icon_1; ?>" alt="d&d-commerce-logo-1">
+            <?php 
+                }
+            ?>
+
+          
         </div>
         <div class="col--2 designdevelop__commerce--logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resources/images/d&d-commerce-logo-2.png" alt="d&d-commerce-logo-2">
+          
+            <?php 
+                $commerce_section_bottom_paragraph_icon_2 = get_field('commerce_section_bottom_paragraph_icon_2');
+                if( $commerce_section_bottom_paragraph_icon_2 ) {
+            ?>
+            <img src="<?php echo $commerce_section_bottom_paragraph_icon_2; ?>" alt="d&d-commerce-logo-2">
+            <?php 
+                }
+            ?>
+
         </div>
       </div>
     </div>

@@ -29,8 +29,9 @@
 
 <?php include('template-parts/About_Us/A_banner.php') ?>
 <?php include('template-parts/About_Us/A_leadership.php') ?>
-<?php include('template-parts/About_Us/A_wanttoknow.php') ?>
+<?php include('template-parts/About_Us/A_weareexperts.php') ?>
 <?php include('template-parts/About_Us/A_whyus.php') ?>
+<?php include('template-parts/About_Us/A_wanttoknow.php') ?>
 
     
 <?php 
