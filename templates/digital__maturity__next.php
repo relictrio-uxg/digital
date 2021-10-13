@@ -3,12 +3,12 @@
                     if( $digital_maturity_list ) {
                         $index = 0;
                         foreach( $digital_maturity_list as $digital_maturity ) {
-                            if( $index < 2 )
+                            if( $index >= 2 )
                             {
 
                             
     ?>
-<div class="container container--fluid  bg--white  <?php echo $digital_maturity['modifier_padtpbtm_mobile'] ; ?> <?php echo $digital_maturity['modifier_class'] ; ?>">
+<div class="container container--fluid  bg--white <?php echo $digital_maturity['modifier_padtpbtm_mobile'] ; ?> <?php echo $digital_maturity['modifier_class'] ; ?>">
 <div class="container--content container--fxdwdh ">
     <div class="relictrio--row digital__mature ">  
         <div class="col--1">
@@ -56,17 +56,15 @@
                 
             ?>
         </div>
-                    <div class="col--5" class="digital__img">
+                    <div class="col--5">
                     <picture>
-                            <source media="(min-width: 1200px)" srcset="<?php echo $digital_maturity['digital_maturity_image'] ;?>" />
-                            <source media="(min-width: 768px)" srcset="<?php echo $digital_maturity['digital_maturity_img_tab'] ;?>" />
-                            <source media="(max-width: 767px)" srcset="<?php echo $digital_maturity['digital_maturity_img_mobile'] ;?>"  />
+                            <source media="(min-width: 1200px)" srcset="<?php echo $digital_maturity['digital_maturity_image'] ;?>">
+                            <source media="(min-width: 768px)" srcset="<?php echo $digital_maturity['digital_maturity_img_tab'] ;?>">
+                            <source media="(max-width: 767px)" srcset="<?php echo $digital_maturity['digital_maturity_img_mobile'] ;?>">
                             <img class="digital__mature--img " src="<?php echo $digital_maturity['digital_maturity_image'] ;?>"
                             alt="digital mature image" />
                     </picture>
-                    
                     <img class="back__slash--img" src="<?php echo $digital_maturity['digital_maturity_subimage'] ;?>" />
-                    
                     </div>
                     </div>
         </div>

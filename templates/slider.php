@@ -13,20 +13,20 @@
                 ?>
                 </div>
             </div>
-            <section class="customer-logos slider mar-top--50">
+            <section class="customer-logos slider">
             <?php 
                 $slider_logos = get_field('slider_logos');
                 if( $slider_logos ) {
                 foreach( $slider_logos as $row ) {
-                ?>
+            ?>
                 <div class="slide">
                 <img src="<?php echo $row['logo_images'] ;?>" alt="slider images">
                    
                 </div>
-                <?php
-                    }
-                   }
-                ?>   
+            <?php
+            }
+            }
+            ?>   
             </section>
         </div>
     </div>

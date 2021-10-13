@@ -8,58 +8,29 @@
 */
 get_header();
 ?>
-	
-    <div class="parent"> </div>
     <!--hero section:start-->
     <?php include('templates/hero__banner.php') ?>
     <!--hero section:end-->
-
     <!--helping brands: start-->
     <?php include('templates/helping__brands.php') ?>
     <!--helping brand mobile sec: start-->
-
-    <!-- <div class="container container--fluid pad-t--30 hide__help--desktop">
-        <div class="container--content container--fxdwdh">
-            <div class="relictrio--row ">
-            <h2 class="heading heading--variation1 text--center help__brand--mbhead">
-                    Helping brands to evolve in every phase of their digital commerce journey</h2>
-            <div class="col--1 brdr__img">
-            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card_icon1.png"
-                                alt="design & develoment icon" />
-            </div>
-            <div class="col--1 brdr__img">
-            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card_icon2.png"
-                                alt="design & develoment icon" />
-                
-            </div>
-            <div class="col--1 brdr__img">
-            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card__icon3.png"
-                                alt="design & develoment icon" />   
-            </div>
-            <div class="col--1 brdr__img">
-            <img class="card__img " src="<?php echo get_template_directory_uri();?>../assets/resources/images/card__icon4.png"
-                                alt="design & develoment icon" />   
-            </div>
-            </div>
-        </div>
-    </div> -->
+    <?php include('templates/helping__brands__mb.php') ?>
     <!--helping brand mobile sec: end-->
-
     <!--helping brands: end-->
     <!--digital maturity sec:start-->
     <?php include('templates/digital__maturity.php') ?>
     <!--digital maturity sec:end-->
-    <!--technology evaluation sec: start-->
-
-    <!--technology evaluation sec: end-->
       <!--slider sec: start-->
       <?php include('templates/slider.php') ?>
     <!--slider sec: end-->
     <!--magento sec: start-->
     <?php include('templates/magento__sec.php') ?>
     <!--magento sec: end-->
-    <!--website accessibility sec:start-->
-    <div class="container container--fluid  bg--white pad-tpbt--120 webmb-pad-tpbt">
+   <!--website accessibility sec:start-->
+    <?php include('templates/digital__maturity__next.php') ?>
+   <!--website accessibility sec:end-->
+  
+    <!-- <div class="container container--fluid  bg--white pad-tpbt--120 webmb-pad-tpbt">
         <div class="container--content container--fxdwdh">
         <div class="relictrio--row digital__mature">
                 <div class="col--1">
@@ -127,11 +98,10 @@ get_header();
             
         </div>
     </div>
-    <!--website accessibility sec:end-->
+  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script> 
     <!-- <script src="../assets/js/slider.js" defer></script> -->
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>../assets/js/slider.js?v=4.76" defer></script>
 </body>
-
 </html>
