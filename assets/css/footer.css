@@ -2,16 +2,9 @@
   padding: 30px 0 30px;
 }
 
-.relictriofooter__logo{
-  width: 120px;
-  height: 44px;
-}
-
 .relictriofooter__heading{
-  font-family: var(--relictrio-semiBold-font);
-  font-size: 20px;
   line-height: 34px;
-  color: var(--cetacean_blue-color);
+  margin: 0;
 }
 
 .relictriofooter__link{
@@ -24,6 +17,21 @@
   padding-right: 20px;
 }
 
+.relictriofooter__hover--1:hover .relictriofooter__heading,
+.relictriofooter__hover--1:hover .relictriofooter__link li{
+  color: #A73D4D;
+}
+
+.relictriofooter__hover--2:hover .relictriofooter__heading,
+.relictriofooter__hover--2:hover .relictriofooter__link li{
+  color: #A73D4D;
+}
+
+.relictriofooter__hover--3:hover .relictriofooter__heading,
+.relictriofooter__hover--3:hover .relictriofooter__link li{
+  color: #A73D4D;
+}
+
 /*footer bottom*/
 
 .relictriofooterbottom{
@@ -34,14 +42,42 @@
 
 .relictriofooterbottom p {
   color: var(--white-color);
-  text-align: left;
 }
 
 .relictriofooterbottom__icon img{
   padding-top: 3px;
+  margin: 0 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
+  .relictriofooter__heading{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .relictriofooter__link li{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .relictriofooter__img{
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .relictriofooter__heading{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .relictriofooter__link li{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .relictriofooter__img{
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
   footer [class*="col--"] {
     width: 100%;
     flex: 0 0 100%;
@@ -52,11 +88,11 @@
     margin-bottom: 18px;
   }
   .relictriofooter__heading{
-    font-size: 14px;
+    font-size: 18px;
     line-height: 34px;
   }
   .relictriofooter__link li{
-    font-size: 14px;
+    font-size: 18px;
     line-height: 28px;
     margin-bottom: 20px;
   }
@@ -81,9 +117,21 @@
     margin-bottom: 10px;
   }
   .relictriofooter__order--2 p{
-    font-size: 12px;
+    font-size: 14px;
   }
   .relictriofooterbottom__icon{
     margin: 10px;
+  }
+}
+
+@media (max-width: 834px) {
+  .relictriofooter__heading{
+    font-size: 14px;
+  }
+  .relictriofooter__link li{
+    font-size: 14px;
+  }
+  .relictriofooter__order--2 p{
+    font-size: 12px;
   }
 }

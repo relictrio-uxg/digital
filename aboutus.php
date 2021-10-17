@@ -32,7 +32,6 @@
 <?php include('template-parts/About_Us/A_weareexperts.php') ?>
 <?php include('template-parts/About_Us/A_whyus.php') ?>
 <?php include('template-parts/About_Us/A_wanttoknow.php') ?>
-
     
 <?php 
   get_footer();

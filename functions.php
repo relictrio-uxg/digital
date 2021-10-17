@@ -15,7 +15,6 @@
         wp_enqueue_style('relictrio-style', get_template_directory_uri()."/style.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_banner-style', get_template_directory_uri()."/assets/css/A_banner.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_leadership-style', get_template_directory_uri()."/assets/css/A_leadership.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-footer-style', get_template_directory_uri()."/assets/css/footer.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_wanttoknow-style', get_template_directory_uri()."/assets/css/A_wanttoknow.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_whyus-style', get_template_directory_uri()."/assets/css/A_whyus.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-A_weareexperts-style', get_template_directory_uri()."/assets/css/A_weareexperts.css", array(), $version, 'all');
@@ -28,6 +27,7 @@
         wp_enqueue_style('relictrio-P_banner-style', get_template_directory_uri()."/assets/css/P_banner.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-P_digitalmanaged-style', get_template_directory_uri()."/assets/css/P_digitalmanaged.css", array(), $version, 'all');
 
+        wp_enqueue_style('relictrio-footer-style', get_template_directory_uri()."/assets/css/footer.css", array(), $version, 'all');
     }
 
     add_action('wp_enqueue_scripts', 'relictrio_register_styles');
