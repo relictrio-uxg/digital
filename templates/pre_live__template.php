@@ -2,10 +2,9 @@
 <div class="container--fluid">
     <div class="container">
         <?php 
-            $page_builder = get_field('page_builder');
+            $page_builder = get_field('page_builder');  
             if($page_builder){
-                foreach($page_builder as $page_builder){
-            
+                foreach($page_builder as $page_builder){  
         ?>
         <div class="container--fluid dis--flx mar-top--120">
             <div class="col--4 dis--flx flex--column flx-alnitm--cent justify-content--center">
