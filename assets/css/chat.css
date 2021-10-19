@@ -81,8 +81,30 @@
     width: 437px;
     border-radius: 33px  33px 0px   0px !important;
  }
+ .chat__sec__head{
+    display: none;
+ }
+ .chat__sec__head span{
+   padding: 17px 90px !important;
+ }
+ .chat__icon:hover .chat__sec__head{
+   display: block;
+   position: absolute;
+   left: -21rem;
+   top: 4rem;
+ }
+ #chat__expand{
+    display: none;
+ }
 
- @media (min-width: 320px) and (max-width:768px)
+.chatmsg__expand--sec{
+   position: absolute;
+   top: 39rem;
+   right: 4rem;
+   z-index: 3;
+}
+
+ @media (min-width: 320px) and (max-width: 539.98px)  
 {
    .textinput {
       padding: 10px 0px 10px 20px;
@@ -101,3 +123,7 @@
       padding: 20px 0px 20px 0px;
    }
 }
+@media (min-width: 540px) and (max-width: 834px) 
+{
+   
+} 
