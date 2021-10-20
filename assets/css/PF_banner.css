@@ -1,0 +1,40 @@
+.portfolio__banner--heading{
+  text-align: center;
+  color: var(--eucalyptus-color);
+}
+
+.portfolio__banner--para{
+  text-align: center;
+  color: var(--darkelectric_blue-color);
+}
+
+@media (max-width: 1024px){
+  .portfolio__banner--heading{
+    font-size: 48px;
+    line-height: 68px;
+  }
+}
+
+@media (max-width: 834px){
+  .portfolio__banner--heading{
+    font-size: 40px;
+    line-height: 64px;
+    margin-bottom: 15px;
+  }
+  .portfolio__banner--para{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 540px){
+  .portfolio__banner--heading{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .portfolio__banner--para{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

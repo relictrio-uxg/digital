@@ -1,6 +1,6 @@
 <?php
   /*
-  * Template part for Design & Development D&D_commerce commponent
+  * Template part for Design & Development D&D_commerce component
   *
   * @package Relictrio Digital
   */
@@ -11,14 +11,21 @@
       <div class="relictrio--row mar-tpbt--30 designdevelop__commerce">
         
             <?php 
-                $commerce_section_icon = get_field('commerce_section_icon');
-                if( $commerce_section_icon ) {
+            $commerce_section_icon_block = get_field('commerce_section_icon_block');
+            if( $commerce_section_icon_block ) {
+            foreach( $commerce_section_icon_block as $row ) {
             ?>
             <h3 class="heading heading--variation1">
-            <img src="<?php echo $commerce_section_icon; ?>" alt="d&d-commerce-icon">
-            <?php 
+            <picture>
+              <source media="(max-width: 540px)" srcset="<?php echo $row['commerce_section_icon_mobile'] ;?>">
+              <source media="(max-width: 834px)" srcset="<?php echo $row['commerce_section_icon_tab'] ;?>">
+              <img src="<?php echo $row['commerce_section_icon'] ;?>" alt="d&d-commerce-icon">
+            </picture>
+            <?php
                 }
+              }
             ?>
+
             <?php 
                 $commerce_section_heading = get_field('commerce_section_heading');
                 if( $commerce_section_heading ) {
@@ -60,26 +67,38 @@
 
         <div class="col--3 designdevelop__commerce--logo">
 
-            <?php 
-                $commerce_section_bottom_paragraph_icon_1 = get_field('commerce_section_bottom_paragraph_icon_1');
-                if( $commerce_section_bottom_paragraph_icon_1 ) {
+        <?php 
+            $commerce_section_bottom_paragraph_icon_block_1 = get_field('commerce_section_bottom_paragraph_icon_block_1');
+            if( $commerce_section_bottom_paragraph_icon_block_1 ) {
+            foreach( $commerce_section_bottom_paragraph_icon_block_1 as $row ) {
             ?>
-            <img src="<?php echo $commerce_section_bottom_paragraph_icon_1; ?>" alt="d&d-commerce-logo-1">
-            <?php 
+            <picture>
+              <source media="(max-width: 540px)" srcset="<?php echo $row['commerce_section_bottom_paragraph_icon_mobile'] ;?>">
+              <source media="(max-width: 834px)" srcset="<?php echo $row['commerce_section_bottom_paragraph_icon_tab'] ;?>">
+              <img src="<?php echo $row['commerce_section_bottom_paragraph_icon'] ;?>" alt="d&d-commerce-logo-1">
+            </picture>
+            <?php
                 }
+              }
             ?>
 
           
         </div>
         <div class="col--2 designdevelop__commerce--logo">
           
-            <?php 
-                $commerce_section_bottom_paragraph_icon_2 = get_field('commerce_section_bottom_paragraph_icon_2');
-                if( $commerce_section_bottom_paragraph_icon_2 ) {
+        <?php 
+            $commerce_section_bottom_paragraph_icon_block_2 = get_field('commerce_section_bottom_paragraph_icon_block_2');
+            if( $commerce_section_bottom_paragraph_icon_block_2 ) {
+            foreach( $commerce_section_bottom_paragraph_icon_block_2 as $row ) {
             ?>
-            <img src="<?php echo $commerce_section_bottom_paragraph_icon_2; ?>" alt="d&d-commerce-logo-2">
-            <?php 
+            <picture>
+              <source media="(max-width: 540px)" srcset="<?php echo $row['commerce_section_bottom_paragraph_icon_mobile'] ;?>">
+              <source media="(max-width: 834px)" srcset="<?php echo $row['commerce_section_bottom_paragraph_icon_tab'] ;?>">
+              <img src="<?php echo $row['commerce_section_bottom_paragraph_icon'] ;?>" alt="d&d-commerce-logo-2">
+            </picture>
+            <?php
                 }
+              }
             ?>
 
         </div>

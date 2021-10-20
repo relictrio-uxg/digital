@@ -1,3 +1,11 @@
+<?php
+  /*
+  * Template part for Post Live P_digitalmanaged component
+  *
+  * @package Relictrio Digital
+  */
+ ?>
+
 <div class="container container--fluid">
   <div class="container--content">
     <div class="relictrio--row jus-cnt--cent postlive__digital">

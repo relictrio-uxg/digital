@@ -27,6 +27,9 @@
         wp_enqueue_style('relictrio-P_banner-style', get_template_directory_uri()."/assets/css/P_banner.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-P_digitalmanaged-style', get_template_directory_uri()."/assets/css/P_digitalmanaged.css", array(), $version, 'all');
 
+        wp_enqueue_style('relictrio-PF_banner-style', get_template_directory_uri()."/assets/css/PF_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_card-style', get_template_directory_uri()."/assets/css/PF_card.css", array(), $version, 'all');
+
         wp_enqueue_style('relictrio-footer-style', get_template_directory_uri()."/assets/css/footer.css", array(), $version, 'all');
     }
 

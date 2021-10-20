@@ -1,6 +1,6 @@
 <?php
   /*
-  * Template part for About us weareexperts commponent
+  * Template part for About us weareexperts component
   *
   * @package Relictrio Digital
   */

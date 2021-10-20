@@ -1,6 +1,6 @@
 <?php
   /*
-  * Template part for Post Live P_banner commponent
+  * Template part for Post Live P_banner component
   *
   * @package Relictrio Digital
   */

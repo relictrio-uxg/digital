@@ -1,6 +1,6 @@
   <?php
   /*
-  * Template part for About us banner commponent
+  * Template part for About us banner component
   *
   * @package Relictrio Digital
   */

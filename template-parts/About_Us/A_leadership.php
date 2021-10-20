@@ -1,6 +1,6 @@
 <?php
   /*
-  * Template part for About us Leadership commponent
+  * Template part for About us Leadership component
   *
   * @package Relictrio Digital
   */

@@ -1,6 +1,6 @@
 <?php
   /*
-  * Template part for About us Why us commponent
+  * Template part for About us Why us component
   *
   * @package Relictrio Digital
   */

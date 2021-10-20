@@ -1,6 +1,6 @@
 <?php
   /*
-  * Template part for Design & Development D&D_digitaldesign commponent
+  * Template part for Design & Development D&D_digitaldesign component
   *
   * @package Relictrio Digital
   */
