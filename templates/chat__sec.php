@@ -3,12 +3,14 @@
         <div class=" chat__sec mar-top--10 pad-tp--50 ">
             <h2 class="heading heading--variation1 ">Let’s talk.</h2>
             <h3 class="heading heading--variation2 pad-bt--40 pad-tp--30">
-            The journey of 1,000 sales begins with the first click. </h3>
-            <img class="" src="../assets/resources/images/relictrio__logo.png" alt=" relictrio logo">
+                The journey of 1,000 sales begins with the first click. 
+            </h3>
+            <img class="" src="<?php echo get_template_directory_uri();?>/assets/resources/images/relictrio__logo.png" alt=" relictrio logo">
             <p class="para text--center chat__sec--para">Now, a bit about you.</p>
         </div>
         <div class="relictriochatform relictrio--row"> 
             <div class="col--8">
+                <?php echo do_shortcode('[contact-form-7 id="235" title="contact-form"]'); ?>
                     <form action="#" autocomplete="off"  >
                         <div class="relictriochatform__field ">
                             <label class="label mar-bot--30 " for="want">I want to*</label>
@@ -39,11 +41,11 @@
             </div>
             <div class="col--1"> </div>
             <div class="col--1">
-                <img class="chat__sec__img" src="../assets/resources/images/chat__icon.png" alt=" chat icon">
+                <img class="chat__sec__img" src="<?php echo get_template_directory_uri();?>/assets/resources/images/chat__icon.png" alt=" chat icon" onclick="myFunction()">
             </div>
 
             <div><span class="para para--variation4">Leave a message</span></div>
-            <div class="chatmsg__expand--sec">
+            <div class="chatmsg__expand--sec" id="chat__expand" >
                 <div class="chatmsg__expand--head" >
                     <span class="para--variation4">Leave your message here</span>
                 </div>

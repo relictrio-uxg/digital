@@ -18,8 +18,10 @@
         wp_enqueue_style('variables', get_template_directory_uri()."/assets/css/partials/variables.css", array(), $version, 'all');
         wp_enqueue_style('media', get_template_directory_uri()."/assets/css/media.css", array(), $version, 'all');
         wp_enqueue_style('home-style', get_template_directory_uri()."/assets/css/home.css", array(), $version, 'all');
-        // wp_enqueue_style('chat-style', get_template_directory_uri()."/assets/css/chat.css", array(), $version, 'all');
+        wp_enqueue_style('chat-style', get_template_directory_uri()."/assets/css/chat.css", array(), $version, 'all');
        
+
+        wp_enqueue_script( 'chat-js-file', get_template_directory_uri()."/assets/js/chat.js", array(), false );
 		
 	}
 
