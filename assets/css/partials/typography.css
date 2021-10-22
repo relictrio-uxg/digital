@@ -204,6 +204,11 @@ p:last-child {
 .txt-align--left{
   text-align: left !important;
 }
+
+.txt--normal{
+  font-weight: 400 !important;
+}
+
 .txt--semi_bold{
   font-weight: 600 !important;
 }
@@ -229,7 +234,7 @@ p:last-child {
 }
 
 .txt--electric_blue {
-  color: var(--darkelectric_blue-color);
+  color: var(--darkelectric_blue-color) !important;
 }
 
 .txt--davy_grey {
@@ -238,6 +243,14 @@ p:last-child {
 
 .txt-spacing--2 {
   letter-spacing: 2px !important;
+}
+
+.txt-spacing--7per{
+  letter-spacing: 7% !important;
+}
+
+.txt-decoration--underline{
+  text-decoration: underline !important;
 }
 
 .opacity--20 {
