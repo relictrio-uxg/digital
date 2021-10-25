@@ -184,13 +184,16 @@
   order: 12;
 }
 .gap--15{
-  gap: 15px;
+  gap: 15px !important;
 }
 .gap--25{
-  gap: 25px;
+  gap: 25px !important;
 }
 .gap--31{
-  gap: 31px;
+  gap: 31px !important;
+}
+.gap--60{
+  gap: 60px !important;
 }
 .flex--row {
   flex-direction: row !important;

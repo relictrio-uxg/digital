@@ -241,6 +241,9 @@ p:last-child {
   color: var(--davy_grey-color);
 }
 
+.txt-spacing--0{
+  letter-spacing: 0 !important;
+}
 .txt-spacing--2 {
   letter-spacing: 2px !important;
 }
