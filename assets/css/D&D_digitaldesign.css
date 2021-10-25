@@ -106,10 +106,6 @@
     border-radius: 10px;
     padding: 20px;
   }
-  .designdevelop__digital--icons{
-    max-width: 75px;
-    max-height: auto;
-  }
   .designdevelop__digital--blocks h3{
     font-size: 18px;
     line-height: 20px;
@@ -131,8 +127,5 @@
     font-size: 12px;
     line-height: 13px;
     margin: 15px 0 !important;
-  }
-  .designdevelop__digital--includeblock img{
-    max-width: 45px;
   }
 }

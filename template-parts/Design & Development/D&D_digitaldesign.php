@@ -68,8 +68,13 @@
         ?>
         <div class="col--6">
           <div class="designdevelop__digital--blocks">
+
+          <picture>
+            <source media="(max-width: 540px)" srcset="<?php echo $row['block_image_mobile'] ;?>">
             <img class="designdevelop__digital--icons" src="<?php echo $row['block_image'] ;?>"
-              alt="d&d-digitaldesign-icon-1">
+              alt="d&d-digitaldesign-icon">
+          </picture>
+
             <h3 class="heading heading--variation3 text--center">
             <?php echo $row['block_heading'] ;?>
             </h3>
@@ -105,7 +110,12 @@
           foreach( $digital_design_section_creative_block as $row ) {
         ?>
           <div class="text--center">
-            <img src="<?php echo $row['creative_icon'] ;?>">
+
+          <picture>
+            <source media="(max-width: 540px)" srcset="<?php echo $row['creative_icon_mobile'] ;?>">
+            <img src="<?php echo $row['creative_icon'] ;?>" alt="dd-digitaldesign-include-icon">
+          </picture>
+
             <h4 class="heading heading--variation4">
             <?php echo $row['creative_heading'] ;?>
             </h4>
