@@ -18,8 +18,8 @@
         wp_enqueue_style('variables', get_template_directory_uri()."/assets/css/partials/variables.css", array(), $version, 'all');
         wp_enqueue_style('media', get_template_directory_uri()."/assets/css/media.css", array(), $version, 'all');
         wp_enqueue_style('home-style', get_template_directory_uri()."/assets/css/home.css", array(), $version, 'all');
-       
-		
+        wp_enqueue_style('services-style', get_template_directory_uri()."/assets/css/services.css", array(), $version, 'all');
+        wp_enqueue_style('preLive-style', get_template_directory_uri()."/assets/css/preLive.css", array(), $version, 'all');
 	}
 
     add_action('wp_enqueue_scripts', 'relictrio_register_styles');
