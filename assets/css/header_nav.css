@@ -1,0 +1,679 @@
+
+/* Navigation Css */
+nav {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: var(--font-family);
+	padding: 0 10%;
+	height: 80px;
+    background-color: var(--primary);
+}
+/* nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+    text-transform: uppercase;
+	font-size: 24px;
+	color: var(--pure);
+    font-weight: 900;
+} */
+
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--lightpure);
+  font-family:var(--relictrio-font) ;
+	text-decoration: none;
+    text-transform: uppercase;
+    margin:15px;
+}
+a.active {
+    color: var(--dark) !important;
+}
+a.number{
+    color: var(--pure) !important;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: block;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+  z-index: 9999;
+}
+nav .icon-burger .line {
+	width: 25px;
+	height: 4px;
+	background-color: black;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+nav .icon-burger .line :checked{
+	background-color:white;
+}
+
+nav .links {
+  float: none;
+  position: fixed;
+  z-index: 9;
+  left: 100%;
+  right: 0;
+  top: 0px;
+  width: auto;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,.8);
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+  color: white;
+}
+.links_nav {
+  background: #000000  ;
+  margin: 0px 0px 0px 900px;
+  height: 70vh;
+  line-height: 2;
+  padding: 80px 0px 0px 90px;
+}
+.res_links{
+  display: none;
+}
+
+  a.active {
+      color: var(--primary) !important;
+  }
+  a.number{
+      color: var(--primary) !important;
+  }
+nav :checked ~ .links {
+  left: 0px;
+  background: rgba(0, 0, 0, 0.9);
+}
+nav :checked{
+  background-color:white !important;
+  color:white;
+}
+nav :checked ~ .icon-burger .line:nth-child(1) {
+  background-color:white;
+  color:white;
+}
+nav :checked ~ .icon-burger .line:nth-child(3) {
+  background-color:white;
+  color:white;
+}
+nav :checked ~ .icon-burger .line:nth-child(2) {
+  background-color:white;
+  color:white;
+}
+
+.res_links ul {
+  padding: 20px;
+}
+.ul_img{
+  float: left;
+    height: 60px;
+    width: 50px;
+}
+.a_img{
+  padding-left: 20px;
+}
+.social_group{
+ display:none;
+}
+
+
+
+
+.wpcf7-drag-n-drop-file.d-none {
+  display: block; 
+  opacity: 9; 
+  visibility: inherit; 
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 1366px) {
+  nav .links a {
+    font-size: 20px;
+    display: flex;
+}
+}
+
+/* On screens width 1024px*/
+@media screen and (max-width: 1024px) {
+    
+  .relictrio_header_nav {
+    display: flex;
+    padding: 20px 80px;
+    align-items: center;
+    justify-content: space-between;
+    background: #D6D2D1;
+}
+
+nav .links {
+  float: none;
+  position: fixed;
+  z-index: 9;
+  left: 100%;
+  right: 0;
+  top: 0px;
+  width: auto;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,.8);
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+  color: white;
+}
+.links_nav {
+  background: #000000  ;
+  margin: 0px 0px 0px 0px !important;
+  height: 100vh;
+  line-height: 2;
+  padding:50px;
+}
+.ul_res_link {
+ padding: 0px 20px 20px 20px;
+}
+.res_links{
+  display: inline-block;
+}
+.res_links ul{
+  
+}
+nav .links a {
+  font-size: 30px ;
+  display: flex;
+      color:var(--primary);
+}
+.ul_img {
+  float: left;
+  height: 47px;
+    width: 45px;
+}
+.res_links ul {
+  padding: 0px 20px 0px 20px;
+}
+    
+.social_group{
+  display:inline-block;
+  height:50px;
+  margin: 50px 57px 50px 160px;
+}
+}
+
+
+
+
+
+
+
+
+.relictrio_header_nav_container{
+    position:absolute;
+    width:100%;
+    color:black;
+    z-index: 1000;
+    
+}
+.relictrio_header_nav{
+    display:flex;
+    padding: 20px 80px;
+    align-items:center;
+    justify-content:space-between;
+}
+.relictrio__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:black;
+    font-family: var(--relictrio-font);
+}
+.relictrio__nav_icon{
+   display: inline-block;
+}
+.relictrio__nav_icon span{  
+   display:block;
+   height:4px;
+   width: 35px;
+   margin:6px 0;
+   background:black;
+   cursor:pointer;
+}
+.relictrio__nav_icon_menu span {
+    display: block;
+    height: 4px;
+    width: 35px;
+    margin: 6px 0;
+    background: white;
+    cursor: pointer;
+}
+
+
+
+img.ul_img {
+  margin-left: 25px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+   
+  .relictrio_header_nav {
+    display: flex;
+    padding: 20px 80px;
+    align-items: center;
+    justify-content: space-between;
+    background: #D6D2D1;
+}
+nav .links {
+  float: none;
+  position: fixed;
+  z-index: 9;
+  left: 100%;
+  right: 0;
+  top: 0px;
+  width: auto;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,.8);
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+  color: white;
+}
+.links_nav {
+  background: #000000  ;
+  margin: 0px 0px 0px 0px !important;
+  height: 100vh;
+  line-height: 2;
+  padding:30px 0px 0px 0px;
+}
+.ul_res_link {
+ padding: 0px;
+}
+.res_links{
+  display: inline-block;
+}
+.res_links ul{
+  
+}
+nav .links a {
+  font-size: 15px ;
+  display: flex;
+      color:var(--primary);
+}
+.ul_img {
+  float: left;
+  height: 25px;
+  width: 18px;
+}
+.res_links ul {
+  padding: 0px;
+}
+
+.social_group{
+  display:inline-block;
+  height:20px;
+  margin: 10px 0px 0px 70px;
+}
+  }
+
+@media only screen and (max-width: 600px) {
+  .relictrio_header_nav {
+    display: flex;
+    padding: 20px 80px;
+    align-items: center;
+    justify-content: space-between;
+    background: #D6D2D1;
+}
+  .links_nav {
+    background: #000000 !important;
+    margin: 0px 0px 0px 0px !important;
+    height: 100vh;
+    line-height: 2;
+    padding:30px 20px 20px 20px;
+  }
+  .res_links{
+    display: inline-block;
+  }
+  }
+
+  @media screen and (max-height: 450px) {
+    .relictrio_header_nav {
+      display: flex;
+      padding: 20px 80px;
+      align-items: center;
+      justify-content: space-between;
+      background: #D6D2D1;
+  }
+    .links_nav {
+      background: #000000 !important;
+      margin: 0px 0px 0px 0px !important;
+      height: 70vh;
+      line-height: 2;
+      padding:50px;
+    }
+    .res_links{
+      display: block;
+    }
+  }
+
+  @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .relictrio_header_nav {
+      display: flex;
+      padding: 20px 80px;
+      align-items: center;
+      justify-content: space-between;
+      background: #D6D2D1;
+  }
+    nav .links {
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 100%;
+      right: 0;
+      top: 0px;
+      width: auto;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgba(0,0,0,.8);
+      overflow: hidden;
+      box-sizing: border-box;
+      transition: all .5s ease-in-out;
+      color: white;
+    }
+    .links_nav {
+      background: #000000  ;
+      margin: 0px 0px 0px 0px !important;
+      height: 100vh;
+      line-height: 2;
+      padding:30px 30px 0px 30px;
+    }
+    .ul_res_link {
+     padding: 0px;
+    }
+    .res_links{
+      display: inline-block;
+    }
+    .res_links ul{
+      padding: 10px 0px 0px 0px;
+     margin-top: 18px;
+    }
+    nav .links a {
+      font-size: 22px ;
+      display: flex;
+          color:var(--primary);
+    }
+    .ul_img {
+      float: left;
+      height: 25px;
+      width: 18px;
+    }
+    
+    .social_group{
+      display:inline-block;
+      height:20px;
+      margin: 10px 0px 0px 70px;
+    }
+  }
+  
+
+  @media screen and (max-width: 360px) {
+    .relictrio_header_nav {
+      display: flex;
+      padding: 20px 80px;
+      align-items: center;
+      justify-content: space-between;
+      background: #D6D2D1;
+  }
+    .links_nav {
+      background: #000000 !important;
+      margin: 0px 0px 0px 0px !important;
+      height: 100vh;
+      line-height: 2;
+      padding:50px;
+    }
+    .res_links{
+      display: block;
+    }
+    nav .links a {
+      font-size: 12px ;
+      display: flex;
+
+    }
+    .ul_img {
+      float: left;
+      height: 25px;
+      width: 18px;
+  }
+  .social_group {
+    display: inline-block;
+    height: 25px;
+    margin: 10px 0px 0px 30px;
+}
+.ul_res_link {
+  padding: 0px;
+}
+.res_links ul {
+  padding: 5px 0px 0px 2px;
+}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* 
+
+#mySidenav {
+    height: 83vh;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #mobileSidenav{
+    height: 75vh;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display:none;
+  }
+  .mySidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 25;
+    right: 75px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color:white;
+  }
+  .nav_list{
+    margin-top: 50px;
+  }
+  .nav_link{
+      display: block;
+      padding:20px 100px;
+      color:white;
+      font-family: Gilroy-Bold;
+      font-size: 25px;
+      line-height: 34px;
+
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media only screen and (max-width: 768px) {
+    .relictrio_header_nav_container {
+      background-color: #D6D2D1 !important;
+      height:80px;
+    }
+    
+.relictrio_header_nav_container{
+  background:#D6D2D1 !important; 
+  height:80px;
+}
+    
+    .relictrio_header_nav{
+        display:flex;
+        margin: 20px 20px;
+        align-items:center;
+        justify-content:space-between;
+        height:49px;
+    }
+    .relictrio__logo a img{
+        height:49px;
+        width:120px;
+    }
+    .relictrio__nav_icon span {
+        display: block;
+    height: 4px;
+    width: 35px;
+    margin: 7px 0;
+    background: black;
+    cursor: pointer;
+    }
+    #mySidenav {
+      width: 100% !important;
+    }
+    #mobileSidenav{
+      height: 75vh;
+      width: 0px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #000000;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      display:inline-block !important;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .relictrio_header_nav_container {
+        background-color: #D6D2D1 !important;
+        height:70px;
+      }
+      .relictrio_header_nav_container{
+        background:#D6D2D1 !important; 
+        height:70px;
+      }
+      .relictrio_header_nav{
+          display:flex;
+          margin: 20px 15px;
+          align-items:center;
+          justify-content:space-between;
+          height:40px;
+      }
+      .relictrio__logo a img{
+          height:35px;
+          width:90px;
+      }
+      .relictrio__nav_icon span {
+          display: block;
+      height: 3.5px;
+      width: 30px;
+      margin: 6px 0;
+      background: black;
+      cursor: pointer;
+      }
+      #mySidenav {
+        height: 100vh !important;
+      }
+      #mobileSidenav{
+        height: 75vh;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display: inline-block !important;
+      }
+  }
+
+ */
+
+
+
+ @media screen and (min-device-width: 400px) and (max-device-width: 1344px){
+.relictrio_header_nav {
+    display: flex;
+    padding: 20px 80px;
+    align-items: center;
+    justify-content: space-between;
+    background: #D6D2D1;
+}
+ }
+ @media screen and (min-device-width: 360px) and (max-device-width: 640px){
+  .relictrio_header_nav {
+      display: flex;
+      padding: 20px 80px;
+      align-items: center;
+      justify-content: space-between;
+      background: #D6D2D1;
+  }
+   }

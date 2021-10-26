@@ -1,0 +1,70 @@
+
+.relictrio--contact--Box-model{
+    border: 1px solid rgba(34, 28, 28, 0.342);
+    box-shadow: 0 0 10px rgba(153, 153, 153, 0.342);
+}
+.form_col{
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+.relictrio__Contact__heading{
+    height:80px;
+}
+.logo__img{
+    height:70px;
+    width:180px;
+}
+.relictrio__contact__logoimg {
+    text-align: center !important;
+    padding:20px 0px;
+}
+.relictrio__Contact__para1{
+    font-size: 30px;
+    text-align: center;
+    line-height:41px;
+    letter-spacing:0.21px;
+    font-family: inter;   
+    color: var(--cetacean_blue-color);
+}
+
+@media only screen and (min-width: 1024px) {
+    .relictrio--contactus--container{
+        padding:100px 20px;
+    }
+    .relictrio--contact--Box-model{
+        border-radius: 10px;
+    }
+ 
+    .relictrio--row{
+        margin:25px;
+        
+    }
+    .form_col{
+        
+        padding:0px 0px
+        }
+    .col__2{
+        display: none;
+    }
+    .relictrio__Contact__heading{
+        font-size: 18px;
+        height:auto;
+    }
+    .relictrio__contact__para{
+        font-size: 14px;
+        line-height: 20px;
+        padding:0px 50px;
+    }
+    .logo__img{
+        height:40px;
+        width:120px;
+        text-align: center !important;
+        padding:0px 0px;
+    }
+    .relictrio__Contact__para1{
+        font-weight: 600;
+font-size: 14px;
+line-height: 41px;
+    }
+}

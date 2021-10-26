@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+--white-color: #ffffff;
+--black-color: #000000;
+--cetacean_blue-color: #00005C;
+--royal_blue-color: #3C50E0;
+--darkelectric_blue-color: #536083;
+--gainsboro-color: #D6D9EB;
+--piggy_pink-color: #F3DDE4;
+--pale_blue-color: #B9F3E6;
+--platinum-color: #E5E5E5;
+--red-color: #EE1B24;
+--eucalyptus-color: #1DE1AE;
+--jordy_blue-color: #8DA4FF;
+--Gray36_color:#5C5C5C;
+--relictrio-font: "Gilroy-Bold", Helvetica, Arial, Verdana, Tahoma,sans-serif;
+--relictrio-semiBold-font: "Gilroy-SemiBold",Helvetica, Arial, Verdana, Tahoma,sans-serif;
+--relictrio-inter-font: 'Inter', sans-serif;
+
+--content-width: 1280px;
+}
