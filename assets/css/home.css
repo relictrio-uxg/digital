@@ -1,12 +1,8 @@
-.hero__image {
-    width: 100%;
-    height: 724px;
-}
+
 .hero__banner {
     position: relative;
     display: inline-block;
     width: 100%;
-
 }
 .hero__banner:after {
     content: '';
@@ -15,18 +11,41 @@
     top: 0;
     width: 100%;
     height: 100%;
-    max-height: 724px;
+    max-height: auto;
     display: inline-block;
     background: rgba(0, 0, 0, 0.6) !important;
 }
 .hero__banner img {
     display: block;
 }
-.hero__text{
+.hero__image {
+    width: 100%;
+    height: auto;
+}
+.scroll__icon{
+    position: relative;
+}
+.scroll__icon img{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-bottom: 11px;
+}
+.hide__scroll--desktop{
+    display: none !important;
+}
+section{
+    position: relative;
+}
+ .hero__text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .hero__text--head{
     font-family: var(--relictrio-arvo-font);
@@ -52,7 +71,30 @@
     line-height: 25px;
     color: var(--white-color); 
     letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 40px;
 }
+.digital__img{
+    position: relative;
+}
+.back__slash--img {
+    position: absolute;
+    right:0;
+}
+.digital__mature--img{
+    width: 100% !important;
+}
+/** helping brand css :start**/
 .help__brand{
     background: rgba(37, 48, 201, 0.1);
     width: 100%;
@@ -77,127 +119,6 @@
 .help__brand--card.card__two{
     margin-bottom: 50px;
 }
-/**media query : start **/
-@media (max-width: 834px) {
-.help__brand .col--5{
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-}
-.help__brand--head {
-    width: 100%;
-    font-size: 16px;
-    line-height: 20px;
-}
-.help__brand--sec{
-    padding: 5px 38px 20px 38px !important;
-}
-.digitalmb-pad-tpbt{
-    padding-top: 50px !important;
-    padding-bottom: 30px !important;
-}
-.webmb-pad-tpbt{
-    padding-top: 30px !important;
-    padding-bottom: 50px !important; 
-}
-.slider__pad-tpbt{
-    padding-top: 30px !important;
-    padding-bottom: 50px !important;  
-}
-
-.slider__head{
-    font-size: 16px;
-    line-height: 60px;
-}
-.digital__mature--sec .col--7,
-.web__access--sec .col--7,
-.tech__evaluate--sec .col--7
-{
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-    order: 2;
-}
-.digital__mature--sec .col--5,
-.web__access--sec .col--5,
-.tech__evaluate--sec .col--5{
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-    order:1;
-}
-.digital__mature--img{
-    width: 100%;
-}
-.back__slash--img,
-.front__slash--img{
-    display: none;
-}
-.digital__mature--main .col--1{
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 20%;
-}
-.digital__mature--main .col--6{
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 80%;
-}
-.maturity__head{
-    font-size: 18px!important;
-}
-.maturity__img{
-    width: 33px !important;
-    height: 31px !important;
-}
-.hero__text--head{
-    font-size: 25px;
-    line-height: 22px;
-}
-.hero__text--subhead{
-    font-size: 20px;
-    padding-top: 20px !important;
-}
-.maturity__para{
-    font-size: 12px !important;
-    line-height: 20px !important;
-    width: 100% !important;
-}
-.maturity__text h3{
-    font-size: 14px !important;
-}
-.maturity__sub--text,
-.arrow__right--icon,
-.arrow__text
-{
-    display: none !important;
-}
-.techevalue__head {
-    font-size: 18px !important;
-    line-height: 20px !important;
-}
-.magento__head{
-   font-size: 14px;
-   line-height: 20px;
-   margin: 20px 0px;
-}
-.magento__para{
-    font-size: 12px !important;
-    line-height: 20px !important;
-    font-weight: 500 !important;
-}
-.manual__text h3{
-    font-size: 14px;
-    line-height: 20px;
-}
-.left__box img{
-    position: relative !important;
-    top: 2rem;
-    left: -4rem;
-}
-}
-/**media query : end **/
-
 .card__head{
     display: flex;
     justify-content: center;
@@ -212,8 +133,7 @@
 }
 .card__img{
     width: 39px;
-    height: 53px;
-    
+    height: 53px; 
 }
 .card__txt{
     padding: 20px 0px 12px 0px !important;
@@ -222,6 +142,11 @@
 .card__para{
     padding: 0px 20px 8px 20px;
 }
+.hide__help--desktop{
+    display: none;
+}
+/** helping brand css :end**/
+/** digital maturity: start **/
 .maturity__head{
     font-size: 44px;
     line-height: 34px;
@@ -240,21 +165,11 @@
 .maturity__icon{
     width: 32px;
     height: 36px;
-    margin-right: 33px;
-    margin-top: 28px;
+    margin-right: 33px !important;
+    margin-top: 28px !important;
 }
 .triangle__img{
     margin-top: 24px;
-}
-@media (max-width: 560px) {
-    .triangle__img{
-        display: none !important;
-    }
-}
-@media (max-width: 834px) {
-    .triangle__img{
-        display: none !important;
-    }
 }
 .arrow__right--icon{
     width: 20px;
@@ -271,22 +186,25 @@ color: var(--darkelectric_blue-color) ;
 .arrow__text{
     padding: 15px 0px 37px 0px;
 }
-.techevalue__head{
-    font-size: 44px;
-    line-height: 44px;
-    margin-top: -5px;
+.front__slash--img{
+    position: absolute;
+    left: -0.66rem;
 }
-.tech__icon{
-    width: 31px;
-    height: 27px;
-    margin-right: 35px;
-    margin-top: 28px; 
+/* .back__slash--img{
+    position: absolute;
+    right: 2.28rem;
+} */
+.help__brandlist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+/** digital maturity: start **/
+/**magento sec :start **/
 .magento__sec{
     background: linear-gradient(94.83deg, #E1F9EB 0.9%, #D9D9D9 100%);
     box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 .magento__img{
     margin: 0 auto;
@@ -308,23 +226,37 @@ margin-bottom: 10px !important;
     align-items: center;
     justify-content: center;
 }
-
 .magento__arc--right {
     position: absolute;
-    right: 0rem;
-    margin-top: 11.76rem;
+    right: 0;
+    bottom: 0;
 }
 .magento__arc--left{
     position: absolute;
     left: 0rem;
+    top:0; 
 }
-.front__slash--img{
-    position: absolute;
-    left: -0.66rem;
+.access__icon{
+    width: 29px;
+    height: 24px;
+    margin-top: 30px;
+    margin-right: 33px;
 }
-.back__slash--img{
-    position: absolute;
-    right: 2.28rem;
+.magento__icon{
+    width: 100%;
+    text-align: center;
+}
+/**magento sec : end **/
+.techevalue__head{
+    font-size: 44px;
+    line-height: 44px;
+    margin-top: -5px;
+}
+.tech__icon{
+    width: 31px;
+    height: 27px;
+    margin-right: 35px;
+    margin-top: 28px; 
 }
 /**slider css: start**/
 .slick-slide{
@@ -363,11 +295,243 @@ margin-bottom: 10px !important;
 .slick-initialized .slick-slide{
     display: block;
 }
-/** slider css: end**/
-.access__icon{
-    width: 29px;
-    height: 24px;
-    margin-top: 30px;
-    margin-right: 33px;
+.slider{
+    margin-top: 50px;
 }
+/** slider css: end**/
+
+@media (min-width: 320px) and (max-width:768px)
+{
+    .techevalue__head {
+        font-size: 18px !important;
+        line-height: 20px !important;
+        margin-top: 10px !important;
+    }
+    
+}
+/**media query for mobile **/
+@media (min-width: 320px) and (max-width:539.98px){
+   .hero__image{
+        height: 662px;
+    } 
+    .hero__text--head{
+        font-size: 25px;
+        line-height: 22px;
+    }
+    .hero__text--subhead{
+        font-size: 20px;
+        padding-top: 25px !important;
+        text-align: center;
+    }
+    .triangle__img{
+        display: none !important;
+    }
+    .help__brand--mbhead {
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px !important;
+        margin-top: 0px;
+    }
+    .maturity__head{
+        font-size: 17px!important;
+        margin: 0px !important;
+        line-height: 26px;
+    }
+    .maturity__para{
+        font-size: 12px !important;
+        line-height: 20px !important;
+        width: 100% !important;
+        padding-top: 9px;
+    }
+    .maturity__text h3{
+        font-size: 14px !important;
+    }
+    .maturity__img{
+        width: 33px !important;
+        height: 31px !important;
+    }
+    .magento__head{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 20px 0px;
+     }
+    .magento__para{
+        font-size: 12px !important;
+        line-height: 20px !important;
+        font-weight: 500 !important;
+    }
+    .slider__head{
+        font-size: 16px;
+        line-height: 36px;
+    }
+}
+@media (min-width: 320px) and (max-width:540px){
+    .hero__image{
+         height: 662px;
+     } 
+    }
+/**media query for tab **/
+@media (min-width: 540px) and (max-width:834px){
+    .hero__text--head{
+        font-size: 32px;
+        line-height: 25px;
+    }
+    .hero__text--subhead{
+        font-size: 25px;
+        padding-top: 25px !important;
+    }
+    .help__brand--mbhead {
+        width: 100%;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 20px !important;
+        margin-top: 0px;
+    }
+    .maturity__head{
+        font-size: 24px!important;
+        margin: 0px !important;
+        line-height: 32px;
+    }
+    .maturity__para{
+        font-size: 19px !important;
+        line-height: 27px !important;
+        width: 100% !important;
+        padding-top: 14px;
+    }
+    .maturity__text h3{
+        font-size: 20px !important;
+    }
+    .maturity__img{
+        width: 38px !important;
+        height: 36px !important;
+        margin-left: 4px;
+    }
+    .magento__head{
+        font-size: 20px;
+        line-height: 24px;
+        margin: 24px 0px;
+     }
+    .magento__para{
+        font-size: 19px !important;
+        line-height: 26px !important;
+        font-weight: 500 !important;
+    }
+    .slider__head{
+        font-size: 24px;
+        line-height: 64px;
+    }
+}
+@media (min-width: 320px) and (max-width: 834px) {
+    .hero__banner{ 
+        margin-left: -40px;
+        width: calc(100% + 80px);
+        margin-right: -40px;
+    }
+    .show__scroll--mb{
+        display: block !important;
+    }
+    .hide__help--mb{
+        display: none !important;
+    }
+    .hide__help--desktop{
+        display: block !important;
+    }
+    .triangle__img{
+        display: none !important;
+    }
+    .back__slash--img,
+    .front__slash--img{
+        display: none;
+    }
+    .help__brand .col--5{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .help__brand--sec{
+        padding: 5px 38px 20px 38px !important;
+    }
+    .digitalmb-pad-tpbt{
+        padding-top: 50px !important;
+        padding-bottom: 30px !important;
+    }
+    .webmb-pad-tpbt{
+        padding-top: 30px !important;
+        padding-bottom: 50px !important; 
+    }
+    .brdr__img{
+        background: rgba(249, 201, 206, 0.5);
+        border-radius: 38px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+    }
+    .digital__mature--sec .col--7,
+    .web__access--sec .col--7,
+    .tech__evaluate--sec .col--7
+    {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        order: 2;
+    }
+    .digital__mature--sec .col--5,
+    .web__access--sec .col--5,
+    .tech__evaluate--sec .col--5{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        order:1;
+    }
+    .digital__mature .col--6{
+        max-width: calc(100% - 8.33% - 45px) !important;
+        flex: 0 0 calc(100% - 8.33% - 45px) !important;
+        margin-left: 15px;
+    }
+    .digital__mature .col--2,
+    .digital__mature .col--3
+    {
+       display: none !important;
+    }
+    .digital__mature--main .col--1{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 20%;
+    }
+    .digital__mature--main .col--6{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 80%;
+    }
+    .magento__icon {
+        text-align: center;
+    }
+    .maturity__sub--text,
+    .arrow__right--icon,
+    .arrow__text
+    {
+        display: none !important;
+    }
+    .slider__pad-tpbt{
+        padding-top: 30px !important;
+        padding-bottom: 50px !important;  
+    }
+    .card__img {
+        width: 25px !important;
+        height: 34px !important;
+    }
+    .slider{
+        margin-top: 0px !important;
+    }
+}
+
+
+
+
+
 
