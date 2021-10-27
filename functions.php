@@ -20,7 +20,8 @@
         wp_enqueue_style('home-style', get_template_directory_uri()."/assets/css/home.css", array(), $version, 'all');
         wp_enqueue_style('services-style', get_template_directory_uri()."/assets/css/services.css", array(), $version, 'all');
         wp_enqueue_style('preLive-style', get_template_directory_uri()."/assets/css/preLive.css", array(), $version, 'all');
-	}
+        wp_enqueue_style('rozgarkart-style', get_template_directory_uri()."/assets/css/portfolio_rozgarkart.css", array(), $version, 'all');
+    }
 
     add_action('wp_enqueue_scripts', 'relictrio_register_styles');
 
