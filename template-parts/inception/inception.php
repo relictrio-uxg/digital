@@ -184,7 +184,7 @@
             ?>
 
               <div class="">
-                <div class="maturity__text  ">
+                <div class="maturity__text  mar-top--30">
 
                   <?php 
             $digital_maturity_list_1 = get_field('digital_maturity_list_1');
