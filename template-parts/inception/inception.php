@@ -74,13 +74,18 @@
       <div class="col--7">
         <div class="serviceImage_container dis--flx">
 
-          <?php 
-                $hero_section_right_image = get_field('hero_section_right_image');
-                if( $hero_section_right_image ) {
+        <?php 
+            $hero_section_right_image = get_field('hero_section_right_image');
+            if( $hero_section_right_image ) {
+            foreach( $hero_section_right_image as $row ) {
             ?>
-          <img class="res-img" src="<?php echo $hero_section_right_image; ?>" alt="inception image">
-          <?php 
+             <picture>
+            <source media="(max-width: 600px)" srcset="<?php echo $row['right_mobile_image'] ;?>">
+            <img class="res-img" src="<?php echo $row['rightimage'] ;?>" alt="inception image">
+          </picture>
+          <?php
                 }
+              }
             ?>
 
         </div>
@@ -550,7 +555,9 @@
                 <div class="dis--flx">
                   <div class="maturity__text">
                     <h3 class="heading10 heading--variation22 txt__clr--black">
+                      <div>
                     <?php echo $row['heading'] ;?>
+            </div>
                     </h3>
                   </div>
                 </div>
@@ -571,7 +578,9 @@
                 <div class="dis--flx">
                   <div class="Implementation__text">
                     <h3 class="heading10 heading--variation22 txt__clr--black">
+                      <div>
                     <?php echo $row['content'] ;?>
+                     </div>
                 </h3>
                   </div>
                 </div>

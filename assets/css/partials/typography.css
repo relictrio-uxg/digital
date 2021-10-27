@@ -91,7 +91,7 @@
     font-style: normal;
     color: var(--cetacean_blue-color);
     margin: 25px 0px 25px 11px;
-    line-height: 2 !important;
+    /* line-height: 2 !important; */
   }
   .para {
     font-family: var(--relictrio-inter-font);
