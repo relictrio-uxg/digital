@@ -20,3 +20,24 @@
     left: 14%;
     top: 32%;
 }
+
+.property__menutabsticky{
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    background-color: var(--white-color);
+    z-index: 1;
+}
+
+.property__menutab--list a{
+    font-size: 30px;
+    line-height: 30px;
+    opacity: 0.3;
+    color: var(--cetacean_blue-color);
+}
+
+.active{
+    opacity: 1 !important;
+    text-decoration: underline !important;
+}

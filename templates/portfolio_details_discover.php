@@ -3,7 +3,7 @@
     if($discover_section){
         foreach($discover_section as $discover_section){ 
 ?>
-<div class="container dis--flx">
+<div id="<?php echo $discover_section['section_id']; ?>" class="container dis--flx">
     <div class="col--3 mar-top--120">
       <h1 class="heading sec--title txt-align--left txt-decoration--underline"><?php echo $discover_section['section_heading']; ?></h1>
     </div>

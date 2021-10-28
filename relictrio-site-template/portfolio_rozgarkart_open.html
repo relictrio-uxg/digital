@@ -109,8 +109,28 @@
           </div>
         </div>
       </div>
-      <div class="container dis--flx">
-        <div class="col--3 mar-top--120">
+
+      <div class="container--fluid property__menutabsticky mar-top--80">
+        <div class="container">
+          <ul class="property__menutab dis--flx gap--60">
+            <li class="heading heading--variation3 property__menutab--list">
+              <a class="active" href="#brief">Brief</a>
+            </li>
+            <li class="heading heading--variation3 property__menutab--list">
+              <a class="" href="#discover">Discover</a>
+            </li>
+            <li class="heading heading--variation3 property__menutab--list">
+              <a class="" href="#define">Define</a>
+            </li>
+            <li class="heading heading--variation3 property__menutab--list">
+              <a class="" href="#design">Design</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="brief" class="container dis--flx">
+        <div class="col--3 mar-top--60">
           <h1 class="heading sec--title txt-align--left txt-decoration--underline">Challenge</h1>
         </div>
         <div
@@ -189,7 +209,7 @@
           />
         </div>
       </div>
-      <div class="container dis--flx">
+      <div id="discover" class="container dis--flx">
         <div class="col--3 mar-top--120">
           <h1 class="heading sec--title txt-align--left txt-decoration--underline">Discover</h1>
         </div>
@@ -208,7 +228,7 @@
         </div>
       </div>
 
-      <div class="container dis--flx">
+      <div id="define" class="container dis--flx">
         <div class="col--3 mar-top--120">
           <h1 class="heading sec--title txt-align--left txt-decoration--underline">Define</h1>
         </div>
@@ -250,7 +270,7 @@
         </div>
       </div>
 
-      <div class="container dis--flx flex--column">
+      <div id="design" class="container dis--flx flex--column">
         <div class="mar-top--120">
           <h1 class="heading sec--title txt-align--left txt-decoration--underline">Design</h1>
         </div>
@@ -587,5 +607,14 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("ul li a").click(function () {
+          $("li a").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
   </body>
 </html>

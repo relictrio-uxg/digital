@@ -3,7 +3,7 @@
     if($define_section_info){
         foreach($define_section_info as $define_section_info){ 
 ?>
-<div class="container dis--flx">
+<div id="<?php echo $define_section_info['section_id']; ?>" class="container dis--flx">
     <div class="col--3 mar-top--120">
       <h1 class="heading sec--title txt-align--left txt-decoration--underline"><?php echo $define_section_info['section_heading']; ?></h1>
     </div>

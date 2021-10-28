@@ -1,4 +1,11 @@
-<div class="container dis--flx flex--column">
+<?php
+  $section_id = get_field('section_id');
+  if($section_id){
+?>
+<div id="<?php echo $section_id; ?>" class="container dis--flx flex--column">
+  <?php
+    }
+  ?>
         <?php
             $section_main_heading = get_field('section_main_heading');
             if($section_main_heading){
@@ -123,130 +130,212 @@
                 }
             }
         ?>
-
+        <?php
+          $icon_section = get_field('icon_section');
+          if($icon_section){
+              foreach($icon_section as $icon_section){
+        ?>
         <div class="mar-top--90 dis--flx">
           <div class="col--1"></div>
           <div class="txt-align--left heading heading--variation1">
-            Icon, Illustration
+            <?php
+              echo $icon_section['section_heading'];
+            ?>
           </div>
         </div>
 
         <div class="dis--flx">
           <div class="col--2"></div>
+          <?php
+            $ui_icon_section = $icon_section['ui_icon_section'];
+            if($ui_icon_section){
+              foreach($ui_icon_section as $ui_icon){
+          ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left">UI Icons</h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $ui_icon['section_heading']; ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
               <div class="dis--flx gap--60">
-                <img src="../assets/images/ui-icons/icon-calculator.png" alt="calculator icon"/>
-                <img src="../assets/images/ui-icons/icon-contact.png" alt="contact icon"/>
-                <img src="../assets/images/ui-icons/icon-chat.png" alt="chat icon"/>
-                <img src="../assets/images/ui-icons/icon-camera.png" alt="camera icon"/>
-                <img src="../assets/images/ui-icons/icon-imageGallery.png" alt="image gallery icon"/>
-                <img src="../assets/images/ui-icons/icon-maleUser.png" alt="male user icon"/>
-                <img src="../assets/images/ui-icons/icon-femaleUser.png" alt="female user icon"/>
-                <img src="../assets/images/ui-icons/icon-cancel.png" alt="cancel icon"/>
+                <?php
+                  $row_1_icons = $ui_icon['row_1_icons'];
+                  if($row_1_icons){
+                    foreach($row_1_icons as $row_icon){
+                ?>
+                  <img class="<?php echo $row_icon['row_1_icon_class']; ?>" src="<?php echo $row_icon['row_1_icon']; ?>" alt="<?php echo $row_icon['row_1_icon_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
               </div>
               <div class="dis--flx gap--60 mar-top--75">
-                <img src="../assets/images/ui-icons/icon-userSetting.png" alt="user Setting icon"/>
-                <img src="../assets/images/ui-icons/icon-addUser.png" alt="add user icon"/>
-                <img src="../assets/images/ui-icons/icon-education.png" alt="education icon"/> 
-                <img src="../assets/images/ui-icons/icon-profile.png" alt="profile icon"/>
-                <img src="../assets/images/ui-icons/icon-bag.png" alt="bag icon"/>
-                <img src="../assets/images/ui-icons/icon-filesVerified.png" alt="verified files icon"/>
-                <img src="../assets/images/ui-icons/icon-handshake.png" alt="user handshake icon"/>
-                <img src="../assets/images/ui-icons/icon-meetSchedule.png" alt="meeting schedule icon"/>
-                <img src="../assets/images/ui-icons/icon-meeting.png" alt="meeting icon"/>
+              <?php
+                  $row_2_icons = $ui_icon['row_2_icons'];
+                  if($row_2_icons){
+                    foreach($row_2_icons as $row_icon){
+                ?>
+                  <img class="<?php echo $row_icon['row_2_icon_class']; ?>" src="<?php echo $row_icon['row_2_icon']; ?>" alt="<?php echo $row_icon['row_2_icon_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
               </div>
               <div class="dis--flx gap--60 mar-top--75">
-                <img src="../assets/images/ui-icons/icon-search.png" alt="search icon"/>
-                <img src="../assets/images/ui-icons/icon-searchJob.png" alt="job search icon"/>
-                <img src="../assets/images/ui-icons/icon-location.png" alt="location icon"/>
-                <img src="../assets/images/ui-icons/icon-star.png" alt="star icon"/>
-                <img src="../assets/images/ui-icons/icon-phone.png" alt="phone icon"/>
-                <img src="../assets/images/ui-icons/icon-help.png" alt="help icon"/>
-                <img src="../assets/images/ui-icons/icon-filter.png" alt="filter icon"/>
-                <img src="../assets/images/ui-icons/icon-leftArrow-back.png" alt="left arrow icon"/>
+
+              <?php
+                  $row_3_icons = $ui_icon['row_3_icons'];
+                  if($row_3_icons){
+                    foreach($row_3_icons as $row_icon){
+                ?>
+                  <img class="<?php echo $row_icon['row_3_icon_class']; ?>" src="<?php echo $row_icon['row_3_icon']; ?>" alt="<?php echo $row_icon['row_3_icon_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
               </div>
             </div>
           </div>
+          <?php
+              }
+            }
+          ?>
         </div>
 
         <div class="dis--flx">
           <div class="col--2"></div>
+          <?php 
+            $workers_section = $icon_section['workers_section'];
+            if($workers_section){
+              foreach($workers_section as $workers_section){
+          ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left">Workers</h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $workers_section['section_heading']; ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
               <div class="dis--flx justify-content--between"> 
-                <img src="../assets/images/workers/worker-1.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-2.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-3.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-4.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-5.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-6.png" alt="worker icon"/>
+                <?php
+                  $workers_images_row_1 = $workers_section['workers_images_row_1'];
+                  if($workers_images_row_1){
+                    foreach($workers_images_row_1 as $workers_image){
+                ?>
+                  <img class="<?php echo $workers_image['worker_image_class']; ?>" src="<?php echo $workers_image['worker_image']; ?>" alt="<?php echo $workers_image['worker_image_alt_text']; ?>"/>
+                <?php 
+                    }
+                  }
+                ?>
               </div>
               <div class="dis--flx justify-content--between mar-top--60"> 
-                <img src="../assets/images/workers/worker-7.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-8.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-9.png" alt="worker icon"/> 
-                <img src="../assets/images/workers/worker-10.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-11.png" alt="worker icon"/>
-                <img src="../assets/images/workers/worker-12.png" alt="worker icon"/>
+              <?php
+                  $workers_images_row_2 = $workers_section['workers_images_row_2'];
+                  if($workers_images_row_2){
+                    foreach($workers_images_row_2 as $workers_image){
+                ?>
+                  <img class="<?php echo $workers_image['worker_image_class']; ?>" src="<?php echo $workers_image['worker_image']; ?>" alt="<?php echo $workers_image['worker_image_alt_text']; ?>"/>
+                <?php 
+                    }
+                  }
+                ?>
               </div>
             </div>
           </div>
+          <?php
+              }
+            }
+          ?>
         </div>
 
         <div class="dis--flx">
           <div class="col--2"></div>
+          <?php
+            $cities_section = $icon_section['cities_section'];
+            if($cities_section){
+              foreach($cities_section as $cities_section){
+          ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left">Cities</h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $cities_section['section_heading']; ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
-              <div class="dis--flx justify-content--between"> 
-                <img src="../assets/images/city-icon/city1.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city2.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city3.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city4.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city5.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city6.png" alt="city icon"/>
-              </div>
-              <div class="dis--flx justify-content--between mar-top--60"> 
-                <img src="../assets/images/city-icon/city7.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city8.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city9.png" alt="city icon"/> 
-                <img src="../assets/images/city-icon/city10.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city11.png" alt="city icon"/>
-                <img src="../assets/images/city-icon/city12.png" alt="city icon"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="dis--flx">
-          <div class="col--2"></div>
-          <div class="dis--flx flex--column">
-            <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left">Illustrations</h4>
-            </div>
-            <div class="mar-top--50 dis--flx flex--column">
-              <div class="dis--flx justify-content--between"> 
-                <img src="../assets/images/Illustrations/illustration-1.png" alt="illustration icon"/>
-                <img src="../assets/images/Illustrations/illustration-2.png" alt="illustration icon"/>
-                <img src="../assets/images/Illustrations/illustration-3.png" alt="illustration icon"/>
+              <div class="dis--flx justify-content--between">
+                <?php
+                  $city_images_row_1 = $cities_section['city_images_row_1'];
+                  if($city_images_row_1){
+                    foreach($city_images_row_1 as $city_image){
+                ?> 
+                  <img class="<?php echo $city_image['city_image_class']; ?>" src="<?php echo $city_image['city_image']; ?>" alt="<?php echo $city_image['city_image_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
               </div>
               <div class="dis--flx justify-content--between mar-top--60">
-                <img src="../assets/images/Illustrations/illustration-4.png" alt="illustration icon"/>
-                <img src="../assets/images/Illustrations/illustration-5.png" alt="illustration icon"/>
-                <img src="../assets/images/Illustrations/illustration-6.png" alt="illustration icon"/>
+              <?php
+                  $city_images_row_2 = $cities_section['city_images_row_2'];
+                  if($city_images_row_2){
+                    foreach($city_images_row_2 as $city_image){
+                ?> 
+                  <img class="<?php echo $city_image['city_image_class']; ?>" src="<?php echo $city_image['city_image']; ?>" alt="<?php echo $city_image['city_image_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
               </div>
             </div>
           </div>
+          <?php
+              }
+            }
+          ?>
         </div>
+
+        <div class="dis--flx">
+          <div class="col--2"></div>
+          <?php
+            $illustrations_section = $icon_section['illustrations_section'];
+            if($illustrations_section){
+              foreach($illustrations_section as $illustrations_section){
+          ?>
+          <div class="dis--flx flex--column">
+            <div class="mar-top--50 dis--flx">
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $illustrations_section['section_heading'] ?></h4>
+            </div>
+            <div class="mar-top--50 dis--flx flex--column">
+              <div class="dis--flx justify-content--between">
+              <?php
+                  $illustrations_images_row_1 = $illustrations_section['illustrations_images_row_1'];
+                  if($illustrations_images_row_1){
+                    foreach($illustrations_images_row_1 as $illustrations_image){
+                ?> 
+                  <img class="<?php echo $illustrations_image['illustration_image_class']; ?>" src="<?php echo $illustrations_image['illustration_image']; ?>" alt="<?php echo $illustrations_image['illustration_image_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
+              </div>
+              <div class="dis--flx justify-content--between mar-top--60">
+              <?php
+                  $illustrations_images_row_2 = $illustrations_section['illustrations_images_row_2'];
+                  if($illustrations_images_row_2){
+                    foreach($illustrations_images_row_2 as $illustrations_image){
+                ?> 
+                  <img class="<?php echo $illustrations_image['illustration_image_class']; ?>" src="<?php echo $illustrations_image['illustration_image']; ?>" alt="<?php echo $illustrations_image['illustration_image_alt_text']; ?>"/>
+                <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <?php
+              }
+            }
+          ?>
+        </div>
+        <?php
+              }
+            }
+        ?>
       </div>
 
 </div>
