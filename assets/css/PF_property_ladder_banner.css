@@ -1,0 +1,60 @@
+.property__banner{
+  margin-left: 70px;
+}
+
+.property__banner--heading{
+  font-size: 40px;
+  line-height: 30px;
+  color: var(--eucalyptus-color);
+  margin: 100px 0 55px 0;
+}
+
+.property__banner--list{
+  display: flex;
+}
+
+.property__banner--list li{
+  margin-right: 60px;
+  margin-bottom: 55px;
+}
+
+.property__banner--list-para1{
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.property__banner--list-para2{
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.property__banner--overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.property__banner--img{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlaytext{
+  position: absolute;
+}
+
+.property__banner--overlayheading{
+  font-family: var(--relictrio-semiBold-font);
+  color: var(--white-color);
+  font-weight: normal;
+  text-align: center;
+  max-width: 1280px;
+}

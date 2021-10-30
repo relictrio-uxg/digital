@@ -76,6 +76,14 @@
     font-size: 32px;
     line-height: 56px; 
   }
+  .para--variation6 {
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--cetacean_blue-color);
+  }
   .btn-fill--pri{
     background: var(--white-color);
     font-family: var(--relictrio-inter-font);

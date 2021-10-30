@@ -1,0 +1,145 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.property__menutabsticky{
+  position: sticky;
+  top: 0;
+  display: block;
+  width: 100%;
+  background-color: var(--white-color);
+  z-index: 1;
+}
+
+.property__menutab{
+  display: flex;
+  margin: 80px 0 0 0;
+}
+
+.property__menutab li{
+  display: flex;
+  margin-right: 60px;
+}
+
+.property__menutab--list a{
+  font-size: 30px;
+  line-height: 30px;
+  opacity: 0.3;
+  color: var(--cetacean_blue-color);
+}
+
+.active{
+  opacity: 1 !important;
+  text-decoration: underline !important;
+}
+
+.property__challenge--heading{
+  font-size: 30px;
+  line-height: 35px;
+  text-decoration-line: underline;
+  margin: 0;
+}
+
+.property__challenge h3{
+  padding-top: 80px;
+}
+
+.property__challenge--para{
+  margin: 20px 0;
+  color: var(--darkelectric_blue-color);
+}
+
+.property__challenge--icon{
+  margin-right: 60px;
+}
+
+.property__discover{
+  margin: 80px 0 0 0;
+}
+
+.property__design{
+  margin: 80px 0 0 0;
+}
+
+.property__design--subheading{
+  font-size: 30px;
+  line-height: 35px;
+  color: #076EBA;
+  margin: 75px 0;
+}
+
+.property__design--listblock{
+  display: flex;
+}
+
+.color--list{
+  display: flex;
+  width: 250px;
+}
+
+.color--block{
+  margin-left: 24px;
+}
+
+.color--block h4{
+  margin: 0;
+  padding: 4px 0;
+}
+
+.color--block p{
+  margin: 0;
+}
+
+.property__design--subheading2{
+  font-weight: normal;
+  margin: 0;
+}
+
+.property__design--fontlist h5{
+  width: 200px;
+  font-weight: normal;
+  margin: 50px 0;
+}
+
+.property__design--fontlist h4{
+  width: 200px;
+  font-weight: normal;
+  margin: 0 0 35px 0;
+}
+
+.property__design--fontimg{
+  margin: 60px 0 40px 0;
+}
+
+.property__design--iconlist{
+  align-items: baseline;
+}
+
+.property__design--iconlist div{
+  margin-right: 30px;
+  margin-bottom: 32px;
+}
+
+.property__design--iconlist div h5{
+  font-weight: normal;
+}
+
+.property__screen--img{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.property__discover--img{
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 0 60px 0;
+}
+
+.property__challenge--img{
+  display: block;
+  margin: 0 auto;
+  padding: 50px 0 60px 0;
+}
