@@ -45,3 +45,242 @@ html{
     opacity: 1 !important;
     text-decoration: underline !important;
 }
+
+/* for tablets */
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .spaceHolder{
+        max-width: 0% !important;
+        padding: 0% !important;
+    }
+
+    .design__spaceCreator{
+        margin-left: 15px !important;
+    }
+
+    .sec--title{
+        margin-left: 0px !important;
+        font-size: 26px !important;
+        line-height: 26px !important;
+    }
+
+    .sec__heading{
+        font-size: 24px !important;
+        line-height: 26px !important;
+    }
+
+    .sec__subHeading{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .image-section{
+        justify-content: center !important;
+        flex-wrap: wrap ;
+    }
+
+    .sec__desc{
+        font-family: var(--relictrio-inter-font) !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 30px !important;
+        padding: 0% !important;
+    }
+
+    .portfolio_details__heading{
+        font-family: var(--relictrio-semiBold-font) !important;
+        font-size: 26px !important;
+        line-height: 31px !important;
+    }
+
+    .client_details{
+        font-family: var(--relictrio-inter-font) !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 24px !important;
+        flex: 0 0 65%;
+        max-width: 65%;
+    }
+
+    .rozgarkart__client{
+        margin-top: 20px !important;
+    }
+
+    .rozgarkart__banner{
+        margin-top: 30px !important;
+    }
+
+    .banner__text{
+        font-family: var(--relictrio-semiBold-font) !important;
+        font-size: 20px !important;
+        line-height: 25px !important;
+    }
+
+    .linear-grad--desc{
+        top: 7%;
+        left: 17%;
+    }
+
+    .welcome--img{
+        left: 10%;
+        top: 25%;
+    }
+
+    .property__menutab--list a{
+        font-size: 22px;
+        line-height: 23px;
+        opacity: 0.3;
+        color: var(--cetacean_blue-color);
+    }
+
+    .banner__image{
+        justify-content: center;
+    }
+
+    .wireframes-images{
+        top: 2%;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+
+    .color__title{
+        font-size: 20px !important;
+        line-height: 22px !important;
+    }
+
+    .color__desc{
+        font-family: var(--relictrio-inter-font) !important;
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .example__visibility{
+        display: none;
+    }
+}
+
+/* mobile screens */
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+    
+    .spaceHolder{
+        max-width: 0% !important;
+        padding: 0% !important;
+    }
+
+    .design__spaceCreator{
+        margin-left: 20px !important;
+    }
+
+    .sec--title{
+        margin-left: 0px !important;
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .sec__heading{
+        font-size: 16px !important;
+        line-height: 18px !important;
+    }
+
+    .sec__subHeading{
+        font-size: 12px !important;
+        line-height: 12px !important;
+    }
+
+    .image-section{
+        justify-content: center !important;
+        flex-wrap: wrap ;
+    }
+
+    .sec__desc{
+        font-family: var(--relictrio-inter-font) !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 22px !important;
+        padding: 0% !important;
+    }
+
+    .portfolio_details__heading{
+        font-family: var(--relictrio-semiBold-font) !important;
+        font-size: 18px !important;
+        line-height: 25px !important;
+    }
+
+    .rozgarkart__client{
+        margin-top: 20px !important;
+    }
+
+    .client_details{
+        font-family: var(--relictrio-inter-font) !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 16px !important;
+        flex: 0 0 65%;
+        max-width: 65%;
+    }
+
+    .rozgarkart__banner{
+        margin-top: 30px !important;
+    }
+
+    .banner__text{
+        font-family: var(--relictrio-semiBold-font) !important;
+        font-size: 12px !important;
+        line-height: 17px !important;
+    }
+
+    .linear-grad--desc{
+        top: 7%;
+        left: 13%;
+    }
+
+    .welcome--img{
+        left: 15%;
+        top: 25%;
+    }
+
+    .banner__image{
+        justify-content: center;
+    }
+
+    .property__menutab--list a{
+        font-size: 14px;
+        line-height: 15px;
+        opacity: 0.3;
+        color: var(--cetacean_blue-color);
+    }
+
+    .desc__spacing{
+        margin-top: 20px !important;
+    }
+
+    .wireframes-images{
+        top: 2%;
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+    }
+
+    .design__spaceCreator {
+        margin-left: 15px !important;
+    }
+
+    .color__title{
+        font-size: 12px !important;
+        line-height: 14px !important;
+    }
+
+    .color__desc{
+        font-family: var(--relictrio-inter-font) !important;
+        font-size: 12px !important;
+        line-height: 12px !important;
+    }
+
+    .example__visibility{
+        display: none;
+    }
+
+    .typography__section, .logo__section{
+        margin-top: 30px !important;
+    }
+}

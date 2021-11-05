@@ -4,7 +4,7 @@
             if ( $portfolio_detail_heading ) {
         ?>
   <div class="container">
-    <h1 class="heading txt-align--cent">
+    <h1 class="heading portfolio_details__heading txt-align--cent">
       <?php echo $portfolio_detail_heading; ?>
     </h1>
   </div>

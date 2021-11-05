@@ -1,15 +1,16 @@
-<div class="container dis--flx mar-top--80">
+<div class="container dis--flx align-items--center mar-top--80 rozgarkart__client">
     <div class="col--1"></div>
     <?php
-        $client_logo_image = get_field('client_logo_image');
-        if ( $client_logo_image ) {
+        $client_logo_images = get_field('client_logo_images');
+        if ( $client_logo_images ) {
+          foreach($client_logo_images as $client_logo_image)
     ?>
     <div class="col--4">
-      <img
-        class="res-img"
-        src="<?php echo $client_logo_image; ?>"
-        alt="rozgarkart details desk"
-      />
+    <picture>
+        <source media="(max-width: 600px)" srcset="<?php echo $client_logo_image['mobile_image']; ?>">
+        <source media="(max-width: 1024px)" srcset="<?php echo $client_logo_image['tab_image']; ?>">
+        <img src="<?php echo $client_logo_image['desk_image']; ?>" alt="client logo image">
+      </picture>  
     </div>
     <?php
         }
@@ -28,6 +29,7 @@
         align-items--center
         heading--variation4
         txt--electric_blue txt--normal
+        client_details
       "
     >
       Client: <?php echo $client_info['client_name']; ?><br />

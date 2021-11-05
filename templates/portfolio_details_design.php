@@ -17,8 +17,8 @@
             }
         ?>
         <div class="mar-top--60 dis--flx">
-          <div class="col--1"></div>
-          <div class="txt-align--left heading heading--variation1">
+          <div class="col--1 design__spaceCreator"></div>
+          <div class="txt-align--left heading heading--variation1 sec__heading">
             Color palette
           </div>
         </div>
@@ -29,20 +29,22 @@
                     foreach($color_palette_section as $color_palette_section){
             ?>
           <div class="dis--flx mar-top--50">
-            <div class="col--2"></div>
+            <div class="col--2 spaceHolder"></div>
             <div class="col--10">
               <h4 class="heading heading--variation4 txt-align--left"><?php echo $color_palette_section['section_heading'] ?></h4>
-              <div class="mar-top--30 dis--flx">
+              <div class="mar-top--30 dis--flx flex--wrap gap--60">
                   <?php
                     $color_info = $color_palette_section['color_info'];
                     if($color_info){
                         foreach($color_info as $color_info){
                   ?>
                 <div class="col--4 dis--flx pad--0">
-                  <img class="<?php echo $color_info['image_class']; ?>" src="<?php echo $color_info['color_image']; ?>" alt="<?php echo $color_info['image_alt_text']; ?>">
+                  <div class="dis-flx align-items--center">
+                    <img class="<?php echo $color_info['image_class']; ?>" src="<?php echo $color_info['color_image']; ?>" alt="<?php echo $color_info['image_alt_text']; ?>">
+                  </div>
                   <div class="mar-lft--20 dis--flx flex--column">
-                    <h4 class="heading heading--variation4 mar-lftrht--0 txt-align--left"><?php echo $color_info['color_name']; ?></h4>
-                    <div class="para para--variation2 mar-lftrht--0"><?php echo $color_info['color_description']; ?></div>
+                    <h4 class="heading heading--variation4 mar-lftrht--0 txt-align--left color__title"><?php echo $color_info['color_name']; ?></h4>
+                    <div class="para para--variation2 txt-align--left mar-lftrht--0 color__desc"><?php echo $color_info['color_description']; ?></div>
                   </div>
                 </div>
                 <?php
@@ -63,9 +65,9 @@
             if($typography_section){
                 foreach($typography_section as $typography_section){
         ?>
-        <div class="mar-top--90 dis--flx">
-          <div class="col--1"></div>
-          <div class="txt-align--left heading heading--variation1">
+        <div class="mar-top--90 dis--flx typography__section">
+          <div class="col--1 spaceHolder"></div>
+          <div class="txt-align--left heading heading--variation1 sec__heading ">
             <?php echo $typography_section['section_heading']; ?>
           </div>
         </div>
@@ -77,13 +79,13 @@
                     foreach($typography_info as $typography_info){
             ?>
           <div class="dis--flx mar-top--50">
-            <div class="col--2"></div>
+            <div class="col--2 spaceHolder"></div>
             <div class="col--10 dis--flx">
-              <div class="dis--flx flex--column col--3">
+              <div class="dis--flx flex--column">
                 <h4 class="<?php echo $typography_info['property_heading_class']; ?>"><?php echo $typography_info['property_heading']?></h4>
                 <div class="<?php echo $typography_info['property_description_class']; ?>"><?php echo $typography_info['property_description']; ?></div>
               </div>
-              <div class="">
+              <div class="example__visibility">
                 <h4 class="<?php echo $typography_info['property_example_class'] ?>"><?php echo $typography_info['property_example'] ?></h4>
               </div>
             </div>
@@ -103,23 +105,32 @@
             if($logo_section){
                 foreach($logo_section as $logo_section){
         ?>
-        <div class="mar-top--90 dis--flx">
+        <div class="mar-top--90 dis--flx logo__section">
           <div class="col--1"></div>
-          <div class="txt-align--left heading heading--variation1">
+          <div class="txt-align--left heading heading--variation1 sec__heading">
             <?php echo $logo_section['section_heading']; ?>
           </div>
         </div>
 
         <div class="mar-top--60 dis--flx">
-          <div class="col--2"></div>
+          <div class="col--2 spaceHolder"></div>
           <div class="pos--rel">
               <?php
                 $section_image = $logo_section['section_image'];
                 if($section_image){
                     foreach($section_image as $section_image){
               ?>
-            <img class="<?php echo $section_image['section_image_placeholder_class']; ?>" src="<?php echo $section_image['section_image_placeholder']; ?>" alt="<?php echo $section_image['section_image_placeholder_alt_text']; ?>">
-            <img class="<?php echo $section_image['section_image_class']; ?>" src="<?php echo $section_image['section_image']; ?>" alt="<?php echo $section_image['section_image_alt_text']; ?>">
+                <picture>
+                  <source media="(max-width: 600px)" srcset="<?php echo $section_image['section_image_placeholder_mobile']; ?>"/>
+                  <source media="(max-width: 1024px)" srcset="<?php echo $section_image['section_image_placeholder_tab']; ?>"/>
+                  <img class="<?php echo $section_image['section_image_placeholder_class']; ?>" src="<?php echo $section_image['section_image_placeholder']; ?>" alt="<?php echo $section_image['section_image_placeholder_alt_text']; ?>" />
+                </picture>
+            
+                <picture>
+                  <source media="(max-width: 600px)" srcset="<?php echo $section_image['section_image_mobile']; ?>"/>
+                  <source media="(max-width: 1024px)" srcset="<?php echo $section_image['section_image_tab']; ?>"/>
+                  <img class="<?php echo $section_image['section_image_class']; ?>" src="<?php echo $section_image['section_image']; ?>" alt="<?php echo $section_image['section_image_alt_text']; ?>" />
+                </picture> 
             <?php
                     }
                 }
@@ -137,7 +148,7 @@
         ?>
         <div class="mar-top--90 dis--flx">
           <div class="col--1"></div>
-          <div class="txt-align--left heading heading--variation1">
+          <div class="txt-align--left heading heading--variation1 sec__heading">
             <?php
               echo $icon_section['section_heading'];
             ?>
@@ -145,7 +156,7 @@
         </div>
 
         <div class="dis--flx">
-          <div class="col--2"></div>
+          <div class="col--2 spaceHolder"></div>
           <?php
             $ui_icon_section = $icon_section['ui_icon_section'];
             if($ui_icon_section){
@@ -153,10 +164,10 @@
           ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $ui_icon['section_heading']; ?></h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left sec__subHeading"><?php echo $ui_icon['section_heading']; ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
-              <div class="dis--flx gap--60">
+              <div class="dis--flx gap--60 flex--wrap">
                 <?php
                   $row_1_icons = $ui_icon['row_1_icons'];
                   if($row_1_icons){
@@ -202,7 +213,7 @@
         </div>
 
         <div class="dis--flx">
-          <div class="col--2"></div>
+          <div class="col--2 spaceHolder"></div>
           <?php 
             $workers_section = $icon_section['workers_section'];
             if($workers_section){
@@ -210,7 +221,7 @@
           ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $workers_section['section_heading']; ?></h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left sec__subHeading"><?php echo $workers_section['section_heading']; ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
               <div class="dis--flx justify-content--between"> 
@@ -246,7 +257,7 @@
         </div>
 
         <div class="dis--flx">
-          <div class="col--2"></div>
+          <div class="col--2 spaceHolder"></div>
           <?php
             $cities_section = $icon_section['cities_section'];
             if($cities_section){
@@ -254,7 +265,7 @@
           ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $cities_section['section_heading']; ?></h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left sec__subHeading"><?php echo $cities_section['section_heading']; ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
               <div class="dis--flx justify-content--between">
@@ -290,7 +301,7 @@
         </div>
 
         <div class="dis--flx">
-          <div class="col--2"></div>
+          <div class="col--2 spaceHolder"></div>
           <?php
             $illustrations_section = $icon_section['illustrations_section'];
             if($illustrations_section){
@@ -298,7 +309,7 @@
           ?>
           <div class="dis--flx flex--column">
             <div class="mar-top--50 dis--flx">
-              <h4 class="heading--variation3 txt--electric_blue txt-align--left"><?php echo $illustrations_section['section_heading'] ?></h4>
+              <h4 class="heading--variation3 txt--electric_blue txt-align--left sec__subHeading"><?php echo $illustrations_section['section_heading'] ?></h4>
             </div>
             <div class="mar-top--50 dis--flx flex--column">
               <div class="dis--flx justify-content--between">
