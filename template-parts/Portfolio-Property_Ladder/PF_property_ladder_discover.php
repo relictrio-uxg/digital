@@ -17,8 +17,8 @@
 
 <div class="property__discover">
   <div class="relictrio--row">
-    <div class="col--1"></div>
-    <div class="col--11">
+  <div class="col--1 col--remove"></div>
+  <div class="col--11 col--full">
 
     <?php 
     $discover_heading = get_field('discover_heading');
@@ -31,7 +31,7 @@
       }
     ?>
 
-      <div class="relictrio--row">
+      <div class="relictrio--row property--mobile">
 
       <?php 
             $discover_paragraph_block = get_field('discover_paragraph_block');

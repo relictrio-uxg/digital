@@ -17,8 +17,8 @@
 
 <div class="property__design">
   <div class="relictrio--row">
-    <div class="col--1"></div>
-    <div class="col--11">
+  <div class="col--1 col--remove"></div>
+  <div class="col--11 col--full">
 
       <?php 
     $design_heading = get_field('design_heading');
@@ -31,7 +31,7 @@
       }
     ?>
 
-      <div class="relictrio--row">
+      <div class="relictrio--row property--mobile">
 
         <?php 
             $design_paragraph_block = get_field('design_paragraph_block');
@@ -120,7 +120,7 @@
       <h3 class="heading property__design--subheading2">
       <?php echo $row['font_heading'] ;?>
       </h3>
-      <div class="relictrio--row">
+      <div class="relictrio--row property--mobile">
         <div class="col--5">
           <div class="property__design--fontlist dis--flx">
             <h5 class="heading heading--variation4">
