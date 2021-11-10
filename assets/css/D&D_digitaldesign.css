@@ -10,13 +10,27 @@
 }
 
 .designdevelop__digital--blocks{
-  margin: 20px 0;
-  padding: 20px 40px;
+  margin: 25px;
+  padding: 50px;
+  background: #E9EAFA;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  flex: 1;
 }
 
 .designdevelop__digital--blocks p{
   text-align: center;
   color: #5C5C5C;
+}
+
+.designdevelop__digital--blocks:hover{
+  background: #1DE1AE;
+  box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.designdevelop__digital--blocks:hover .designdevelop__digital--blockspara{
+  color: var(--cetacean_blue-color);
 }
 
 @media (max-width: 1024px) {
@@ -27,6 +41,10 @@
   .designdevelop__digital--para{
     font-size: 22px;
     line-height: 48px;
+  }
+  .designdevelop__digital--blocks{
+    margin: 15px;
+    padding: 20px;
   }
   .designdevelop__digital--blocks h3{
     font-size: 22px;

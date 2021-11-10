@@ -66,7 +66,7 @@
           if( $digital_design_section_result_block ) {
           foreach( $digital_design_section_result_block as $row ) {
         ?>
-        <div class="col--6">
+        <div class="col--6 dis--flx">
           <div class="designdevelop__digital--blocks">
 
           <picture>
@@ -78,7 +78,7 @@
             <h3 class="heading heading--variation3 text--center">
             <?php echo $row['block_heading'] ;?>
             </h3>
-            <p class="para">
+            <p class="para designdevelop__digital--blockspara">
             <?php echo $row['block_paragraph'] ;?>
             </p>
           </div>
