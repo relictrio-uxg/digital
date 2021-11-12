@@ -41,6 +41,11 @@
         #Portfolio - Property_Ladder Page
         wp_enqueue_style('relictrio-PF_property_ladder_banner-style', get_template_directory_uri()."/assets/css/PF_property_ladder_banner.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-PF_property_ladder_body-style', get_template_directory_uri()."/assets/css/PF_property_ladder_body.css", array(), $version, 'all');
+    
+        #Portfolio - MDR_Rugby Page
+        wp_enqueue_style('relictrio-PF_mdrrugby_banner-style', get_template_directory_uri()."/assets/css/PF_mdrrugby_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_mdrrugby_body-style', get_template_directory_uri()."/assets/css/PF_mdrrugby_body.css", array(), $version, 'all');
+    
     }
 
     add_action('wp_enqueue_scripts', 'relictrio_register_styles');

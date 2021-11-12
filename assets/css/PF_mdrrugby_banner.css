@@ -1,0 +1,121 @@
+.rugby__banner h2 {
+  font-family: var(--relictrio-semiBold-font);
+  font-weight: normal;
+  text-align: center;
+}
+
+.rugby__banner--img {
+  position: relative;
+}
+
+.rugby__banner--img img {
+  width: 100%;
+}
+
+.rugby__banner--overlayimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.rugby__banner--position {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  max-width: 90%;
+}
+
+.rugby__banner--overlayimg1 {
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 27px;
+}
+
+.rugby__banner--heading {
+  font-size: 40px;
+  line-height: 30px;
+  color: var(--eucalyptus-color);
+  margin: 30px 0;
+}
+
+.rugby__banner--list {
+  display: flex;
+}
+
+.rugby__banner--list li {
+  margin: 30px 60px 40px 0;
+}
+
+.rugby__banner--list-para1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.rugby__banner--list-para2 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .rugby__banner h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .rugby__banner--heading {
+    font-size: 35px;
+    line-height: 25px;
+  }
+  .rugby__banner--list li {
+    margin: 20px 60px 40px 0;
+  }
+}
+
+@media (max-width: 834px) {
+  .rugby__banner h2 {
+    font-family: Gilroy-Medium;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .rugby__banner--heading {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .rugby__banner--list li {
+    margin: 0px 60px 40px 0;
+  }
+  .rugby__banner--list-para1 {
+    font-weight: normal;
+  } 
+  .rugby__banner--list-para2 {
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 540px) {
+  .rugby__banner h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .rugby__banner--heading {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .rugby__banner--list li {
+    margin: 0px 50px 20px 0;
+  }
+  .rugby__banner--list li:last-child {
+    margin: 0px 0px 20px 0;
+  }
+  .rugby__banner--list-para1 {
+    font-size: 12px;
+    line-height: 15px;
+  } 
+  .rugby__banner--list-para2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
