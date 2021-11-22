@@ -27,10 +27,10 @@
   get_header(); 
 ?>
 
-<?php include('template-parts/Design & Development/D&D_banner.php') ?>
-<?php include('template-parts/Design & Development/D&D_digitalservices.php') ?>
-<?php include('template-parts/Design & Development/D&D_commerce.php') ?>
-<?php include('template-parts/Design & Development/D&D_digitaldesign.php') ?>
+<?php include('template-parts/design & development/D&D_banner.php') ?>
+<?php include('template-parts/design & development/D&D_digitalservices.php') ?>
+<?php include('template-parts/design & development/D&D_commerce.php') ?>
+<?php include('template-parts/design & development/D&D_digitaldesign.php') ?>
 
 <?php 
   get_footer();

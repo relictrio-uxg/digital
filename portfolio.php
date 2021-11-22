@@ -27,8 +27,8 @@
   get_header(); 
 ?>
 
-<?php include('template-parts/Portfolio/PF_banner.php') ?>
-<?php include('template-parts/Portfolio/PF_card.php') ?>
+<?php include('template-parts/portfolio/pf_banner.php') ?>
+<?php include('template-parts/portfolio/pf_card.php') ?>
 
     
 <?php 

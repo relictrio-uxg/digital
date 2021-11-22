@@ -15,36 +15,43 @@
 
         #About_Us Page
         wp_enqueue_style('relictrio-style', get_template_directory_uri()."/style.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-A_banner-style', get_template_directory_uri()."/assets/css/A_banner.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-A_leadership-style', get_template_directory_uri()."/assets/css/A_leadership.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-A_wanttoknow-style', get_template_directory_uri()."/assets/css/A_wanttoknow.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-A_whyus-style', get_template_directory_uri()."/assets/css/A_whyus.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-A_weareexperts-style', get_template_directory_uri()."/assets/css/A_weareexperts.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-A_banner-style', get_template_directory_uri()."/assets/css/a_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-A_leadership-style', get_template_directory_uri()."/assets/css/a_leadership.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-A_wanttoknow-style', get_template_directory_uri()."/assets/css/a_wanttoknow.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-A_whyus-style', get_template_directory_uri()."/assets/css/a_whyus.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-A_weareexperts-style', get_template_directory_uri()."/assets/css/a_weareexperts.css", array(), $version, 'all');
 
         #Design & Development Page
-        wp_enqueue_style('relictrio-D&D_banner-style', get_template_directory_uri()."/assets/css/D&D_banner.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-D&D_commerce-style', get_template_directory_uri()."/assets/css/D&D_commerce.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-D&D_digitaldesign-style', get_template_directory_uri()."/assets/css/D&D_digitaldesign.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-D&D_digitalservices-style', get_template_directory_uri()."/assets/css/D&D_digitalservices.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_banner-style', get_template_directory_uri()."/assets/css/d&d_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_commerce-style', get_template_directory_uri()."/assets/css/d&d_commerce.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_digitaldesign-style', get_template_directory_uri()."/assets/css/d&d_digitaldesign.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-D&D_digitalservices-style', get_template_directory_uri()."/assets/css/d&d_digitalservices.css", array(), $version, 'all');
 
         #Post_Live Page
-        wp_enqueue_style('relictrio-P_banner-style', get_template_directory_uri()."/assets/css/P_banner.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-P_digitalmanaged-style', get_template_directory_uri()."/assets/css/P_digitalmanaged.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-P_banner-style', get_template_directory_uri()."/assets/css/p_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-P_digitalmanaged-style', get_template_directory_uri()."/assets/css/p_digitalmanaged.css", array(), $version, 'all');
 
         #Portfolio Page
-        wp_enqueue_style('relictrio-PF_banner-style', get_template_directory_uri()."/assets/css/PF_banner.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-PF_card-style', get_template_directory_uri()."/assets/css/PF_card.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_banner-style', get_template_directory_uri()."/assets/css/pf_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_card-style', get_template_directory_uri()."/assets/css/pf_card.css", array(), $version, 'all');
 
-        #Footer Page
+        #Footer Section
         wp_enqueue_style('relictrio-footer-style', get_template_directory_uri()."/assets/css/footer.css", array(), $version, 'all');
 
         #Portfolio - Property_Ladder Page
-        wp_enqueue_style('relictrio-PF_property_ladder_banner-style', get_template_directory_uri()."/assets/css/PF_property_ladder_banner.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-PF_property_ladder_body-style', get_template_directory_uri()."/assets/css/PF_property_ladder_body.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_property_ladder_banner-style', get_template_directory_uri()."/assets/css/pf_property_ladder_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_property_ladder_body-style', get_template_directory_uri()."/assets/css/pf_property_ladder_body.css", array(), $version, 'all');
     
         #Portfolio - MDR_Rugby Page
-        wp_enqueue_style('relictrio-PF_mdrrugby_banner-style', get_template_directory_uri()."/assets/css/PF_mdrrugby_banner.css", array(), $version, 'all');
-        wp_enqueue_style('relictrio-PF_mdrrugby_body-style', get_template_directory_uri()."/assets/css/PF_mdrrugby_body.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_mdrrugby_banner-style', get_template_directory_uri()."/assets/css/pf_mdrrugby_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_mdrrugby_body-style', get_template_directory_uri()."/assets/css/pf_mdrrugby_body.css", array(), $version, 'all');
+    
+        #Header Section
+        wp_enqueue_style('relictrio-header-style', get_template_directory_uri()."/assets/css/header.css", array(), $version, 'all');
+
+        #Portfolio - Rozgarkart Page
+        wp_enqueue_style('relictrio-PF_rozgarkart_banner-style', get_template_directory_uri()."/assets/css/pf_rozgarkart_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-PF_rozgarkart_body-style', get_template_directory_uri()."/assets/css/pf_rozgarkart_body.css", array(), $version, 'all');
     
     }
 

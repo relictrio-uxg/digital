@@ -27,8 +27,8 @@
   get_header(); 
 ?>
 
-<?php include('template-parts/Post_Live/P_banner.php') ?>
-<?php include('template-parts/Post_Live/P_digitalmanaged.php') ?>
+<?php include('template-parts/post_live/p_banner.php') ?>
+<?php include('template-parts/post_live/p_digitalmanaged.php') ?>
 
 <?php 
   get_footer();

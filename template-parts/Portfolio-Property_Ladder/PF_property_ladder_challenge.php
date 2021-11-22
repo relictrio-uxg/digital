@@ -36,12 +36,12 @@
       ?>
     <div id="<?php echo $challenge_id_link; ?>">
     </div>
-    <?php 
-        }
-      ?>
+  <?php 
+      }
+    ?>
 
     <div class="property__challenge">
-      <div class="relictrio--row">
+      <div class="relictrio--row property--mobile">
         <div class="col--1 col--remove"></div>
         <div class="col--11 col--full">
 
@@ -56,7 +56,7 @@
               }
             ?>
 
-          <div class="relictrio--row property--mobile">
+          <div class="relictrio--row">
             <div class="col--6">
 
               <?php 

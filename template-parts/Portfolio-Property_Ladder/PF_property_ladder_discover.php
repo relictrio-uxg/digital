@@ -53,12 +53,16 @@
   </div>
 
   <?php 
-    $discover_image = get_field('discover_image');
-    if( $discover_image ) {
-    ?>
-  <img class="property__discover--img" src="<?php echo $discover_image; ?>"
-    alt="portfolio-property-ladder-discover-img">
-    <?php 
+    $discover_image_block = get_field('discover_image_block');
+    if( $discover_image_block ) {
+    foreach( $discover_image_block as $row ) {
+  ?>
+    <picture>
+      <source media="(max-width: 540px)" srcset="<?php echo $row['discover_image_mobile'] ;?>">
+      <img class="property__discover--img" src="<?php echo $row['discover_image'] ;?>" alt="portfolio-property-ladder-discover-img">
+    </picture>
+    <?php
+        }
       }
     ?>
 

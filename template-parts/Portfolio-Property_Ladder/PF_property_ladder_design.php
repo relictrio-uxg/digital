@@ -120,7 +120,7 @@
       <h3 class="heading property__design--subheading2">
       <?php echo $row['font_heading'] ;?>
       </h3>
-      <div class="relictrio--row property--mobile">
+      <div class="relictrio--row">
         <div class="col--5">
           <div class="property__design--fontlist dis--flx">
             <h5 class="heading heading--variation4">
@@ -148,7 +148,7 @@
 
         </div>
 
-        <div class="col--7">
+        <div class="col--7 property__design--font">
           <img class="property__design--fontimg" src="<?php echo $row['font_image'] ;?>"
             alt="portfolio-property-ladder-design-font-img">
           <p class="para--variation6">

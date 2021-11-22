@@ -27,10 +27,10 @@
   get_header(); 
 ?>
 
-<?php include('template-parts/Portfolio-Property_Ladder/PF_property_ladder_banner.php') ?>
-<?php include('template-parts/Portfolio-Property_Ladder/PF_property_ladder_challenge.php') ?>
-<?php include('template-parts/Portfolio-Property_Ladder/PF_property_ladder_discover.php') ?>
-<?php include('template-parts/Portfolio-Property_Ladder/PF_property_ladder_design.php') ?>
+<?php include('template-parts/portfolio-property_ladder/pf_property_ladder_banner.php') ?>
+<?php include('template-parts/portfolio-property_ladder/pf_property_ladder_challenge.php') ?>
+<?php include('template-parts/portfolio-property_ladder/pf_property_ladder_discover.php') ?>
+<?php include('template-parts/portfolio-property_ladder/pf_property_ladder_design.php') ?>
     
 <?php 
   get_footer();

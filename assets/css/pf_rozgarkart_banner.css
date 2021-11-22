@@ -1,0 +1,138 @@
+.rozgarkart__banner h2{
+  font-family: var(--relictrio-semiBold-font);
+  font-weight: normal;
+  text-align: center;
+  margin: 80px 0;
+}
+
+.rozgarkart__banner--icon{
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.rozgarkart__banner--icon img{
+  max-width: 100%;
+}
+
+.rozgarkart__banner--projectinfo li{
+  margin: 0;
+  color: var(--darkelectric_blue-color);
+}
+
+.rozgarkart__banner--imgblock{
+  background: linear-gradient(90deg, #00BFFE 0%, #EF6D56 100%);
+  border-radius: 0px 15px 15px 0px;
+  padding: 35px 0;
+  margin: 100px 0 50px 0;
+}
+
+.rozgarkart__banner--imgblock h3{
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: var(--white-color);
+  font-weight: normal;
+  margin: 0;
+}
+
+.rozgarkart__banner--imgblock img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+  .rozgarkart__banner--icon{
+    padding-left: 0px;
+  }
+  .rozgarkart__banner h2{
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .rozgarkart__banner--imgblock h3{
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1024px){
+  .rozgarkart__banner h2{
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .rozgarkart__banner--imgblock h3{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .rozgarkart__banner--imgblock img{
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 834px){
+  .rozgarkart__banner--icon{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .rozgarkart__banner--list{
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .rozgarkart__banner--projectinfo{
+    padding-left: 40px;
+  }
+  .rozgarkart__banner--projectinfo li{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .rozgarkart__banner--content{
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+  .rozgarkart__col--remove{
+    flex: 0 0 0%;
+    max-width: 0%;
+    padding: 0;
+  }
+  .rozgarkart__col--full{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .rozgarkart__banner--imgblock{
+    border-radius: 12px;
+    margin: 50px 0 50px 0;
+  }
+  .rozgarkart__banner h2{
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+  .rozgarkart__banner--imgblock h3{
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 540px){
+  .rozgarkart__banner--projectinfo{
+    padding-left: 20px;
+  }
+  .rozgarkart__banner--projectinfo li{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .rozgarkart__banner--imgblock{
+    margin: 30px 0 40px 0;
+    padding: 12px 0;
+  }
+  .rozgarkart__banner h2{
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 40px 0 20px 0;
+  }
+  .rozgarkart__banner--imgblock h3{
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

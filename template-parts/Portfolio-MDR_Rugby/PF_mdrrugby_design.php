@@ -21,15 +21,15 @@
     <div class="col--10 col--full">
 
       <?php 
-            $design_heading = get_field('design_heading');
-            if( $design_heading ) {
-            ?>
+      $design_heading = get_field('design_heading');
+      if( $design_heading ) {
+      ?>
       <h3 class="heading heading--variation2 rugby__challenge--heading">
         <?php echo $design_heading; ?>
       </h3>
       <?php 
-            }
-            ?>
+      }
+      ?>
 
       <div class="relictrio--row rugby__container">
 
@@ -123,16 +123,15 @@
 
       <div class="relictrio--row">
 
-      <?php 
+        <?php 
         $design_icon_block_1 = get_field('design_icon_block_1');
         if( $design_icon_block_1 ) {
         foreach( $design_icon_block_1 as $row ) {
       ?>
         <div class="col--4">
-          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image'] ;?>"
-            alt="rugby-design-icon-img">
+          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image'] ;?>" alt="rugby-design-icon-img">
         </div>
-      <?php
+        <?php
           }
         }
       ?>
@@ -140,18 +139,16 @@
       </div>
       <div class="relictrio--row">
 
-      <?php 
+        <?php 
         $design_icon_block_2 = get_field('design_icon_block_2');
         if( $design_icon_block_2 ) {
         foreach( $design_icon_block_2 as $row ) {
       ?>
         <div class="col--4">
-          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image'] ;?>"
-            alt="rugby-design-icon-img">
+          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image'] ;?>" alt="rugby-design-icon-img">
         </div>
         <div class="col--8">
-          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image_2'] ;?>"
-            alt="rugby-design-icon-img">
+          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image_2'] ;?>" alt="rugby-design-icon-img">
         </div>
         <?php
           }
@@ -161,14 +158,13 @@
       </div>
       <div class="relictrio--row">
 
-      <?php 
+        <?php 
         $design_icon_block_3 = get_field('design_icon_block_3');
         if( $design_icon_block_3 ) {
         foreach( $design_icon_block_3 as $row ) {
       ?>
         <div class="col--4">
-          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image'] ;?>"
-            alt="rugby-design-icon-img">
+          <img class="rugby__design--iconimg" src="<?php echo $row['icon_image'] ;?>" alt="rugby-design-icon-img">
         </div>
         <?php
           }
@@ -183,7 +179,7 @@
           </h3>
           <div class="rugby__design--scrollable">
 
-          <?php 
+            <?php 
             $design_scrollable_block_1 = get_field('design_scrollable_block_1');
             if( $design_scrollable_block_1 ) {
             foreach( $design_scrollable_block_1 as $row ) {
@@ -191,15 +187,15 @@
             <div>
               <img src="<?php echo $row['icon_image'] ;?>" alt="animation-image">
             </div>
-          <?php
+            <?php
               }
             }
           ?>
 
           </div>
           <div class="rugby__design--scrollable mar-top--50">
-            
-          <?php 
+
+            <?php 
             $design_scrollable_block_2 = get_field('design_scrollable_block_2');
             if( $design_scrollable_block_2 ) {
             foreach( $design_scrollable_block_2 as $row ) {
@@ -207,7 +203,7 @@
             <div>
               <img src="<?php echo $row['icon_image'] ;?>" alt="animation-image">
             </div>
-          <?php
+            <?php
               }
             }
           ?>
@@ -221,116 +217,142 @@
   <div class="relictrio--row">
     <div class="col--1 col--remove"></div>
     <div class="col--10 col--full">
+
+      <?php 
+            $design_screen_block_1 = get_field('design_screen_block_1');
+            if( $design_screen_block_1 ) {
+            foreach( $design_screen_block_1 as $row ) {
+          ?>
       <div class="rugby__design--screenblock">
         <div class="grid--1">
           <h3 class="heading heading--variation2 ruby__design--subheading">
-            Main screens
+            <?php echo $row['screen_heading'] ;?>
           </h3>
         </div>
         <div class="grid--2">
-          <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-1.png"
+          <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_1'] ;?>"
             alt="rugby-design-screen-img">
         </div>
         <div class="grid--3">
           <h3 class="heading heading--variation2 ruby__design--subheading2">
-            Home page
+            <?php echo $row['screen_subheading'] ;?>
           </h3>
-          <p class="para rugby__challenge--para">Lorem ipsum dolor sit amet, consectetur adipisci ng elit.
-            Laoreet et, ultricies a amet, venenatis arcu odio pellentesque. Mol estie tri stique libero quam
-            vel posuere feugiat lectus lacus.</p>
+          <p class="para rugby__challenge--para">
+            <?php echo $row['screen_content'] ;?>
+          </p>
         </div>
         <div class="grid--4">
-          <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-2.png"
+          <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_2'] ;?>"
             alt="rugby-design-screen-img">
         </div>
         <div class="grid--5">
-          <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-3.png"
+          <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_3'] ;?>"
             alt="rugby-design-screen-img">
         </div>
       </div>
+      <?php
+              }
+            }
+          ?>
+
     </div>
     <div class="col--1 col--remove"></div>
   </div>
 
+
+  <?php 
+    $design_screen_block_2 = get_field('design_screen_block_2');
+    if( $design_screen_block_2 ) {
+    foreach( $design_screen_block_2 as $row ) {
+  ?>
   <div class="rugby__design--screenblock2">
     <div class="grid__1">
       <h3 class="heading heading--variation2 ruby__design--subheading2">
-        Physical fitness
+        <?php echo $row['screen_subheading_1'] ;?>
       </h3>
-      <p class="para rugby__challenge--para">Lorem ipsum dolor sit amet, consectetur adipisci ng elit.
-        Laoreet et, ultricies a amet, venenatis arcu odio pellentesque. Mol estie tri stique libero quam
-        vel posuere feugiat lectus lacus.
+      <p class="para rugby__challenge--para">
+        <?php echo $row['screen_content_1'] ;?>
       </p>
     </div>
     <div class="grid__2">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-4.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_1'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__3">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-5.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_2'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__4">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-6.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_3'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__5">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-7.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_4'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__5a">
       <h3 class="heading heading--variation2 ruby__design--subheading2">
-        Rugby career
+        <?php echo $row['screen_subheading_2'] ;?>
       </h3>
-      <p class="para rugby__challenge--para">Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Laoreet et,
-        ultricies a amet, venenatis arcu odio pellentesque. Mol estie tri stique libero quam vel posuere feugiat
-        lectus lacus.
+      <p class="para rugby__challenge--para">
+        <?php echo $row['screen_content_2'] ;?>
       </p>
     </div>
     <div class="grid__6">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-8.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_5'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__6a">
-      <h3 class="heading heading--variation2 ruby__design--subheading2 text--right">
-        Wellness program
+      <h3 class="heading heading--variation2 ruby__design--subheading2">
+        <?php echo $row['screen_subheading_3'] ;?>
       </h3>
-      <p class="para rugby__challenge--para text--right">Lorem ipsum dolor sit amet, consectetur adipisci ng elit.
-        Laoreet et, ultricies a amet, venenatis arcu odio pellentesque. Mol estie tri stique libero quam vel
-        posuere feugiat lectus lacus.
+      <p class="para rugby__challenge--para">
+        <?php echo $row['screen_content_3'] ;?>
       </p>
     </div>
     <div class="grid__7">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-9.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_6'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__8">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-10.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_7'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__9">
-      <img class="rugby__design--screenimg" src="./resources/images/rugby-design-screen-img-11.png"
-        alt="rugby-design-screen-img">
+      <img class="rugby__design--screenimg" src="<?php echo $row['screen_image_8'] ;?>" alt="rugby-design-screen-img">
     </div>
     <div class="grid__9a">
       <h3 class="heading heading--variation2 ruby__design--subheading2">
-        Diet
+        <?php echo $row['screen_subheading_3'] ;?>
       </h3>
-      <p class="para rugby__challenge--para">Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Laoreet et,
-        ultricies a amet, venenatis arcu odio pellentesque. Mol estie tri stique libero quam vel posuere feugiat
-        lectus lacus.
+      <p class="para rugby__challenge--para">
+        <?php echo $row['screen_content_4'] ;?>
       </p>
     </div>
   </div>
+  <?php
+      }
+    }
+  ?>
+
 </div>
+
+<?php 
+  $design_subheading_5 = get_field('design_subheading_5');
+  if( $design_subheading_5 ) {
+  ?>
 <h3 class="heading heading--variation2 ruby__design--subheading">
-  Other screens
+  <?php echo $design_subheading_5; ?>
 </h3>
+<?php 
+  }
+  ?>
+
 </div>
 </div>
 
 <div class="container--fullwdh">
-  <img class="rugby__design--otherimg" src="./resources/images/rugby-design-other-img.png" alt="rugby-design-other-img">
+<?php 
+  $design_image_3 = get_field('design_image_3');
+  if( $design_image_3 ) {
+  ?>
+  <img class="rugby__design--otherimg" src="<?php echo $design_image_3; ?>" alt="rugby-design-other-img">
+  <?php 
+  }
+  ?>
 </div>
 
 

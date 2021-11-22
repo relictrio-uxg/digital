@@ -27,10 +27,10 @@
   get_header(); 
 ?>
 
-<?php include('template-parts/Portfolio-MDR_Rugby/PF_mdrrugby_banner.php') ?>
-<?php include('template-parts/Portfolio-MDR_Rugby/PF_mdrrugby_challenge.php') ?>
-<?php include('template-parts/Portfolio-MDR_Rugby/PF_mdrrugby_discover.php') ?>
-<?php include('template-parts/Portfolio-MDR_Rugby/PF_mdrrugby_design.php') ?>
+<?php include('template-parts/portfolio-mdr_rugby/pf_mdrrugby_banner.php') ?>
+<?php include('template-parts/portfolio-mdr_rugby/pf_mdrrugby_challenge.php') ?>
+<?php include('template-parts/portfolio-mdr_rugby/pf_mdrrugby_discover.php') ?>
+<?php include('template-parts/portfolio-mdr_rugby/pf_mdrrugby_design.php') ?>
 
 <?php 
   get_footer();

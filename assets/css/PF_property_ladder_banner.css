@@ -37,6 +37,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .property__banner--img{
@@ -49,6 +50,14 @@
 
 .overlaytext{
   position: absolute;
+  z-index: 99;
+}
+
+.overlayimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .property__banner--overlayheading{
@@ -85,8 +94,8 @@
     margin: 0;
   }
   .property__banner--heading{
-    font-size: 35px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 25px;
     margin: 80px 0 45px 0;
   }
   .property__banner--list li{
@@ -94,8 +103,9 @@
     margin-bottom: 40px;
   }
   .property__banner--overlayheading{
-    font-size: 35px;
-    line-height: 50px;  
+    font-size: 30px;
+    line-height: 45px;  
+    padding: 0 20px;
   }
 }
 
@@ -104,19 +114,26 @@
     margin: 0;
   }
   .property__banner--heading{
-    font-size: 25px;
+    font-size: 18px;
     line-height: 25px;
-    margin: 60px 0 35px 0;
+    margin: 20px 0 10px 0;
   }
-  .property__banner--list li{
-    margin-right: 35px;
-    margin-bottom: 30px;
+  .property__banner--list-para1{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
   }
   .property__banner--list-para2{
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .property__banner--list li{
+    margin-right: 30px;
+    margin-bottom: 20px;
   }
   .property__banner--overlayheading{
-    font-size: 25px;
-    line-height: 40px;  
+    font-size: 18px;
+    line-height: 22px;  
   }
 }

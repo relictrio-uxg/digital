@@ -1,176 +1,215 @@
-<?php
-  /*
-  * Template Name: Footer
-  *
-  * @package Relictrio Digital
-  */
- ?>
+<footer>
+  <div class="container container--fluid">
+    <div class="container--content">
+      <div class="relictriofooter relictrio--row justify-content--between">
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <?php
-    wp_head();
-  ?>
-
-  <title>Footer Section</title>
-
-</head>
-<body>
-
-<?php 
-  get_header(); 
-?>
-
-<?php 
-          $footer_block = get_field('footer_block');
-          if( $footer_block ) {
-          foreach( $footer_block as $row ) {
+        <div class="col--1">
+          <?php 
+          $footer_image_link = get_field('footer_image_link');
+          if( $footer_image_link ) {
         ?>
+          <a href="<?php echo $footer_image_link; ?>">
+            <?php 
+          }
+        ?>
+            <?php 
+          $footer_icon_image = get_field('footer_icon_image');
+          if( $footer_icon_image ) {
+        ?>
+            <img class="relictriofooter__logo" src="<?php echo $footer_icon_image; ?>" alt="relictrio-logo">
+            <?php 
+          }
+        ?>
+          </a>
 
- <footer>
-    <div class="container container--fluid">
-      <div class="container--content">
-        <div class="relictriofooter relictrio--row justify-content--between">
-          <div class="col--1">
-            <a href="#">
-              <img class="relictriofooter__logo" src="<?php echo $row['footer_main_logo'] ;?>"
-                alt="relictrio-logo">
-            </a>
-          </div>
-          <div class="col--1"></div>
-          <div class="col--3 relictriofooter__hover--1">
-            <h3 class="relictriofooter__heading heading heading--variation4">
-            <?php echo $row['footer_heading_1'] ;?>
-            </h3>
-            <ul class="relictriofooter__link">
-              <li class="heading heading--variation4 mar-top--0">
-                <span class="relictriofooter__img">
-                  <img src="<?php echo $row['footer_icon_1'] ;?>" alt="logo">
-                </span>
-                <?php echo $row['footer_content_1'] ;?>
-              </li>
-            </ul>
-          </div>
-          <div class="col--3 relictriofooter__hover--2">
-            <h3 class="relictriofooter__heading heading heading--variation4">
-            <?php echo $row['footer_heading_2'] ;?>
-            </h3>
-            <ul class="relictriofooter__link">
-              <li class="heading heading--variation4 mar-top--0">
-                <span class="relictriofooter__img">
-                  <img src="<?php echo $row['footer_icon_2'] ;?>" alt="logo">
-                </span>
-                <?php echo $row['footer_content_2'] ;?>
-              </li>
-            </ul>
-          </div>
-          <div class="col--4 relictriofooter__hover--3">
-            <h3 class="relictriofooter__heading heading heading--variation4">
-            <?php echo $row['footer_heading_3'] ;?>
-            </h3>
-            <ul class="relictriofooter__link">
-              <li class="heading heading--variation4 mar-top--0">
-                <span class="relictriofooter__img">
-                  <img src="<?php echo $row['footer_icon_3'] ;?>" alt="logo">
-                </span>
-                <?php echo $row['footer_content_3'] ;?>
-              </li>
-            </ul>
-          </div>
+        </div>
+
+        <div class="col--1"></div>
+
+        <div class="col--3 relictriofooter__hover">
+
+          <?php 
+          $footer_heading_1 = get_field('footer_heading_1');
+          if( $footer_heading_1 ) {
+          ?>
+          <h3 class="relictriofooter__heading heading heading--variation4">
+            <?php echo $footer_heading_1; ?>
+          </h3>
+          <?php 
+          }
+          ?>
+
+          <ul class="relictriofooter__link">
+            <li class="heading heading--variation4 mar-top--0">
+
+              <span class="relictriofooter__img">
+
+                <?php 
+                $footer_icon_block_1 = get_field('footer_icon_block_1');
+                if( $footer_icon_block_1 ) {
+                foreach( $footer_icon_block_1 as $row ) {
+              ?>
+                <img class="relictriofooter__img--img" src="<?php echo $row['icon_image'] ;?>" alt="logo">
+                <div class="relictriofooter__img--hover">
+                  <img src="<?php echo $row['icon_image_hover'] ;?>" alt="logo">
+                </div>
+                <?php
+                  }
+                }
+              ?>
+
+              </span>
+
+              <?php 
+                $footer_content_1 = get_field('footer_content_1');
+                if( $footer_content_1 ) {
+              ?>
+              <?php echo $footer_content_1; ?>
+              <?php 
+                }
+              ?>
+
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col--3 relictriofooter__hover">
+
+          <?php 
+          $footer_heading_2 = get_field('footer_heading_2');
+          if( $footer_heading_2 ) {
+          ?>
+          <h3 class="relictriofooter__heading heading heading--variation4">
+            <?php echo $footer_heading_2; ?>
+          </h3>
+          <?php 
+          }
+          ?>
+
+          <ul class="relictriofooter__link">
+            <li class="heading heading--variation4 mar-top--0">
+
+              <span class="relictriofooter__img">
+
+                <?php 
+                $footer_icon_block_2 = get_field('footer_icon_block_2');
+                if( $footer_icon_block_2 ) {
+                foreach( $footer_icon_block_2 as $row ) {
+                ?>
+                <img class="relictriofooter__img--img" src="<?php echo $row['icon_image'] ;?>" alt="logo">
+                <div class="relictriofooter__img--hover">
+                  <img src="<?php echo $row['icon_image_hover'] ;?>" alt="logo">
+                </div>
+                <?php
+                  }
+                }
+              ?>
+
+              </span>
+
+              <?php 
+                $footer_content_2 = get_field('footer_content_2');
+                if( $footer_content_2 ) {
+              ?>
+              <?php echo $footer_content_2; ?>
+              <?php 
+                }
+              ?>
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="col--4 relictriofooter__hover">
+
+          <?php 
+          $footer_heading_3 = get_field('footer_heading_3');
+          if( $footer_heading_3 ) {
+          ?>
+          <h3 class="relictriofooter__heading heading heading--variation4">
+            <?php echo $footer_heading_3; ?>
+          </h3>
+          <?php 
+          }
+          ?>
+
+          <ul class="relictriofooter__link">
+            <li class="heading heading--variation4 mar-top--0">
+
+              <span class="relictriofooter__img">
+
+                <?php 
+                $footer_icon_block_3 = get_field('footer_icon_block_3');
+                if( $footer_icon_block_3 ) {
+                foreach( $footer_icon_block_3 as $row ) {
+              ?>
+                <img class="relictriofooter__img--img" src="<?php echo $row['icon_image'] ;?>" alt="logo">
+                <div class="relictriofooter__img--hover">
+                  <img src="<?php echo $row['icon_image_hover'] ;?>" alt="logo">
+                </div>
+                <?php
+                  }
+                }
+              ?>
+
+              </span>
+
+              <?php 
+                $footer_content_3 = get_field('footer_content_3');
+                if( $footer_content_3 ) {
+              ?>
+              <?php echo $footer_content_3; ?>
+              <?php 
+                }
+              ?>
+
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
-    <div class="relictriofooterbottom relictrio--row jus-cnt--cent">
-      <div class="col--5"></div>
-      <div class="col--4 relictriofooter__order--2">
-        <p class="para para--variation2 mar-bot--0">
-        <?php echo $row['footer_bottom_content'] ;?>
-        </p>
-      </div>
-      <div class="col--3 relictriofooter__order--1">
-        <span class="relictriofooterbottom__icon">
-          <img class="relictriofooterbottom__icon--1" src="<?php echo $row['footer_bottom_icon_1'] ;?>" alt="linkedin-logo">
-          <img class="relictriofooterbottom__icon--2" src="<?php echo $row['footer_bottom_icon_2'] ;?>" alt="instagram-logo">
-          <img class="relictriofooterbottom__icon--3" src="<?php echo $row['footer_bottom_icon_3'] ;?>" alt="facebook-logo">
-          <img class="relictriofooterbottom__icon--4" src="<?php echo $row['footer_bottom_icon_4'] ;?>" alt="twitter-logo">
-        </span>
-      </div>
+  </div>
+  <div class="relictriofooterbottom relictrio--row jus-cnt--cent">
+    <div class="col--5"></div>
+    <div class="col--4 relictriofooter__order--2">
+
+    <?php 
+      $footer_copyright = get_field('footer_copyright');
+      if( $footer_copyright ) {
+    ?>
+      <p class="para para--variation2 mar-bot--0">
+        <?php echo $footer_copyright; ?>
+      </p>
+    <?php 
+      }
+    ?>
+    
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".relictriofooter__hover--1").hover(function () {
-        $(this).find('img').attr('src', '<?php echo $row['footer_icon_hover_1'] ;?>');
-      },
-        function () {
-          $(this).find('img').attr('src', '<?php echo $row['footer_icon_1'] ;?>');
-        });
-    });
-    $(document).ready(function () {
-      $(".relictriofooter__hover--2").hover(function () {
-        $(this).find('img').attr('src', '<?php echo $row['footer_icon_hover_2'] ;?>');
-      },
-        function () {
-          $(this).find('img').attr('src', '<?php echo $row['footer_icon_2'] ;?>');
-        });
-    });
-    $(document).ready(function () {
-      $(".relictriofooter__hover--3").hover(function () {
-        $(this).find('img').attr('src', '<?php echo $row['footer_icon_hover_3'] ;?>');
-      },
-        function () {
-          $(this).find('img').attr('src', '<?php echo $row['footer_icon_3'] ;?>');
-        });
-    });
+    <div class="col--3 relictriofooter__order--1">
 
-    //Footer Bottom Icon
-    $(document).ready(function () {
-      $(".relictriofooterbottom__icon--1").hover(function () {
-        $(this).attr('src', '<?php echo $row['footer_bottom_hover_icon_1'] ;?>');
-      },
-        function () {
-          $(this).attr('src', '<?php echo $row['footer_bottom_icon_1'] ;?>');
-        });
-    });
-    $(document).ready(function () {
-      $(".relictriofooterbottom__icon--2").hover(function () {
-        $(this).attr('src', '<?php echo $row['footer_bottom_hover_icon_2'] ;?>');
-      },
-        function () {
-          $(this).attr('src', '<?php echo $row['footer_bottom_icon_2'] ;?>');
-        });
-    });
-    $(document).ready(function () {
-      $(".relictriofooterbottom__icon--3").hover(function () {
-        $(this).attr('src', '<?php echo $row['footer_bottom_hover_icon_3'] ;?>');
-      },
-        function () {
-          $(this).attr('src', '<?php echo $row['footer_bottom_icon_3'] ;?>');
-        });
-    });
-    $(document).ready(function () {
-      $(".relictriofooterbottom__icon--4").hover(function () {
-        $(this).attr('src', '<?php echo $row['footer_bottom_hover_icon_4'] ;?>');
-      },
-        function () {
-          $(this).attr('src', '<?php echo $row['footer_bottom_icon_4'] ;?>');
-        });
-    });
-  </script>
-
-  </footer>
-  
-  <?php
-              }
-            }
-          ?>
-
-</body>
-</html>
+    <?php 
+      $footer_social_icon_block = get_field('footer_social_icon_block');
+      if( $footer_social_icon_block ) {
+      foreach( $footer_social_icon_block as $row ) {
+    ?>
+      <span class="relictriofooterbottom__icon">
+        <a href="<?php echo $row['social_link'] ;?>">
+          <img class="relictriofooterbottom__icon--img" src="<?php echo $row['scoial_icon'] ;?>"
+            alt="linkedin-logo">
+          <div class="relictriofooterbottom__icon--hoverblock">
+            <img class="relictriofooterbottom__icon--hover" src="<?php echo $row['scoial_icon_hover'] ;?>"
+              alt="linkedin-logo">
+          </div>
+        </a>
+      </span>
+    <?php
+        }
+      }
+    ?>
+      
+    </div>
+  </div>
+</footer>
