@@ -3,6 +3,7 @@
 }
 
 .postlive__digital p{
+  font-weight: normal;
   line-height: 50px;
   text-align: center;
   letter-spacing: 2px;
@@ -13,18 +14,22 @@
   margin: 60px 0;
 }
 
-.postlive__digital--heading{
-  margin-left: 50px;
-}
-
 .postlive__digital--icon{
   display: flex;
   align-self: center;
 }
 
+.postlive__digital--icon img{
+  max-width: 100%;
+}
+
 .postlive__digital--arrow{
   display: flex;
   align-self: center;
+}
+
+.postlive__digital--arrow img{
+  max-width: 100%;
 }
 
 .postlive__digital--blockpara{
@@ -46,16 +51,18 @@
 }
 
 @media (max-width: 1024px) {
-  .flex--remove{
+  .postlive__flex--remove{
     flex: 0 0 0%;
     max-width: 0%;
+    padding: 0;
+  }
+  .postlive__flex--full{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .postlive__digital--heading{
     flex: 0 0 58.33333%;
     max-width: 58.33333%;
-  }
-  .postlive__digital--heading{
-    margin-left: 75px;
   }
   .postlive__digital h2{
     font-size: 40px;

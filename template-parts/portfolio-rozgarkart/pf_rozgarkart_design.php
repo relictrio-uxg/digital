@@ -6,483 +6,297 @@
 */
 ?>
 
-<div id="design" class="rozgarkart__design">
+<?php 
+  $design_id_link = get_field('design_id_link');
+  if( $design_id_link ) {
+?>
+<div id="<?php echo $design_id_link; ?>" class="rozgarkart__design">
+  <?php 
+    }
+  ?>
+
+  <?php 
+  $design_heading = get_field('design_heading');
+  if( $design_heading ) {
+?>
   <h3 class="heading heading--variation2 rozgarkart__challenge--heading">
-    Design
+    <?php echo $design_heading; ?>
   </h3>
+  <?php 
+    }
+  ?>
+
+
   <div class="relictrio--row">
     <div class="col--1 rozgarkart__col--remove"></div>
     <div class="col--11 rozgarkart__col--full">
+
+      <?php 
+      $design_subheading_1 = get_field('design_subheading_1');
+      if( $design_subheading_1 ) {
+    ?>
       <h3 class="heading heading--variation1 rozgarkart__design--subheading">
-        Color pollet
+        <?php echo $design_subheading_1; ?>
       </h3>
+      <?php 
+      }
+    ?>
+
+
       <div class="relictrio--row">
         <div class="col--1"></div>
         <div class="col--11">
 
+          <?php 
+          $design_color_block = get_field('design_color_block');
+          if( $design_color_block ) {
+          foreach( $design_color_block as $row ) {
+        ?>
           <div class="relictrio--row">
             <div class="rozgarkart__design--colorlist">
-              <h4 class="heading heading--variation4">Primery</h4>
+              <h4 class="heading heading--variation4">
+                <?php echo $row['color_block_heading'] ;?>
+              </h4>
               <div class="rozgarkart__design--listblock">
 
+                <?php 
+                foreach( $row['color_block_list'] as $list ) {
+              ?>
                 <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
+                  <img src="<?php echo $list['color_image'] ;?>" alt="portfolio-property-ladder-design-color-1">
                   <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
+                    <h4 class="heading heading--variation4">
+                      <?php echo $list['color_name'] ;?>
+                    </h4>
+                    <p class="para para--variation2">
+                      <?php echo $list['color_content'] ;?>
+                    </p>
                   </div>
                 </div>
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
+                <?php
+                }
+              ?>
 
               </div>
             </div>
           </div>
-
-          <div class="relictrio--row">
-            <div class="rozgarkart__design--colorlist">
-              <h4 class="heading heading--variation4">Primery</h4>
-              <div class="rozgarkart__design--listblock">
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="relictrio--row">
-            <div class="rozgarkart__design--colorlist">
-              <h4 class="heading heading--variation4">Primery</h4>
-              <div class="rozgarkart__design--listblock">
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-                <div class="rozgarkart__color--list">
-                  <img src="./resources/images/portfolio-property-ladder-design-color-1.png"
-                    alt="portfolio-property-ladder-design-color-1">
-                  <div class="rozgarkart__color--block">
-                    <h4 class="heading heading--variation4">#076EBA</h4>
-                    <p class="para para--variation2">Branding</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
+          <?php
+            }
+          }
+        ?>
 
         </div>
       </div>
 
+
       <h3 class="heading heading--variation1 rozgarkart__design--subheading">
         Typography
       </h3>
+
 
       <div class="relictrio--row">
         <div class="col--1"></div>
         <div class="col--11">
           <div class="relictrio--row">
             <div class="col--12 mobile--row">
+
+              <?php 
+              $design_font_block = get_field('design_font_block');
+              if( $design_font_block ) {
+              foreach( $design_font_block as $row ) {
+              ?>
               <span class="font__mobile--col">
+                <?php 
+                foreach( $row['font_block'] as $list ) {
+                ?>
                 <div class="rozgarkart__fontblock">
                   <div class="rozgarkart__fontblock--left">
                     <h4 class="heading heading--variation3">
-                      H1 Heading
+                      <?php echo $list['font_heading'] ;?>
                     </h4>
                     <p class="para para--variation7">
-                      Inter, Black, 18px
+                      <?php echo $list['font_subheading'] ;?>
                     </p>
                   </div>
                   <div class="rozgarkart__fontblock--right">
-                    <h4 class="para para--variation7 custom__font--1">
-                      Welcome to Rozgarkart
+                    <h4 class="para para--variation7 <?php echo $list['font_custom_class'] ;?>">
+                      <?php echo $list['font_content'] ;?>
                     </h4>
                   </div>
                 </div>
-                <div class="rozgarkart__fontblock">
-                  <div class="rozgarkart__fontblock--left">
-                    <h4 class="heading heading--variation3">
-                      H2 Heading
-                    </h4>
-                    <p class="para para--variation7">
-                      Inter, Medium, 18px
-                    </p>
-                  </div>
-                  <div class="rozgarkart__fontblock--right">
-                    <h4 class="para para--variation7 custom__font--2">
-                      Select your preferred language
-                    </h4>
-                  </div>
-                </div>
-                <div class="rozgarkart__fontblock">
-                  <div class="rozgarkart__fontblock--left">
-                    <h4 class="heading heading--variation3">
-                      Text field - Selection
-                    </h4>
-                    <p class="para para--variation7">
-                      Inter, Medium, 16px
-                    </p>
-                  </div>
-                  <div class="rozgarkart__fontblock--right">
-                    <h4 class="para para--variation1 custom__font--3">
-                      English (default)
-                    </h4>
-                  </div>
-                </div>
+                <?php
+                }
+                ?>
               </span>
-              <span class="font__mobile--col">
-                <div class="rozgarkart__fontblock">
-                  <div class="rozgarkart__fontblock--left">
-                    <h4 class="heading heading--variation3">
-                      Text field - Typing
-                    </h4>
-                    <p class="para para--variation7">
-                      Inter, Bold, 16px
-                    </p>
-                  </div>
-                  <div class="rozgarkart__fontblock--right">
-                    <h4 class="para para--variation1 custom__font--4">
-                      9876 543 210
-                    </h4>
-                  </div>
-                </div>
-                <div class="rozgarkart__fontblock">
-                  <div class="rozgarkart__fontblock--left">
-                    <h4 class="heading heading--variation3">
-                      Paragraph
-                    </h4>
-                    <p class="para para--variation7">
-                      Inter, Regular, 14px
-                    </p>
-                  </div>
-                  <div class="rozgarkart__fontblock--right">
-                    <h4 class="para para--variation2 custom__font--5">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis magna eu orci laoreet
-                    </h4>
-                  </div>
-                </div>
-                <div class="rozgarkart__fontblock">
-                  <div class="rozgarkart__fontblock--left">
-                    <h4 class="heading heading--variation3">
-                      Caption
-                    </h4>
-                    <p class="para para--variation7">
-                      Inter, Regular, 12px
-                    </p>
-                  </div>
-                  <div class="rozgarkart__fontblock--right">
-                    <h4 class="para para--variation2 custom__font--6">
-                      Problem log in? <b> Forgot password </b>
-                    </h4>
-                  </div>
-                </div>
-              </span>
+              <?php
+                }
+              }
+              ?>
+
             </div>
 
           </div>
         </div>
       </div>
 
+      <?php 
+        $design_subheading_3 = get_field('design_subheading_3');
+        if( $design_subheading_3 ) {
+      ?>
       <h3 class="heading heading--variation1 rozgarkart__design--subheading">
-        Logo
+        <?php echo $design_subheading_3; ?>
       </h3>
-
+      <?php 
+        }
+      ?>
+      
       <div class="relictrio--row">
         <div class="col--1"></div>
         <div class="col--11">
           <div class="rozgarkart__design--logoblock">
-            <img src="./resources/images/rozgarkart-design-logo-img.png" alt="rozgarkart-design-logo-img">
+            
+          <?php 
+            $design_rozgarkart_icon = get_field('design_rozgarkart_icon');
+            if( $design_rozgarkart_icon ) {
+          ?>
+            <img src="<?php echo $design_rozgarkart_icon; ?>" alt="rozgarkart-design-logo-img">
+          <?php 
+            }
+          ?>
+
           </div>
         </div>
       </div>
 
+      <?php 
+        $design_subheading_4 = get_field('design_subheading_4');
+        if( $design_subheading_4 ) {
+      ?>      
       <h3 class="heading heading--variation1 rozgarkart__design--subheading">
-        Icon, Illustration
+        <?php echo $design_subheading_4; ?>
       </h3>
+      <?php 
+        }
+      ?>
 
       <div class="relictrio--row">
         <div class="col--1"></div>
         <div class="col--11">
-          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
-            UI Icons
-          </h4>
-          <div class="rozgarkart__design--uiiconblock">
-            <img src="./resources/images/rozgarkart-design-icon-1.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-2.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-3.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-4.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-5.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-6.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-7.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-8.png" alt="rozgarkart-design-uiicon">
-          </div>
-          <div class="rozgarkart__design--uiiconblock">
-            <img src="./resources/images/rozgarkart-design-icon-9.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-10.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-11.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-12.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-13.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-14.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-15.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-16.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-17.png" alt="rozgarkart-design-uiicon">
-          </div>
-          <div class="rozgarkart__design--uiiconblock">
-            <img src="./resources/images/rozgarkart-design-icon-18.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-19.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-20.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-21.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-22.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-23.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-24.png" alt="rozgarkart-design-uiicon">
-            <img src="./resources/images/rozgarkart-design-icon-25.png" alt="rozgarkart-design-uiicon">
-          </div>
-          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
-            Workers
-          </h4>
 
-          <!-- <div class="col--12 rozgarkart__design--workerblock">
-                    
-                      <img src="./resources/images/rozgarkart-design-worker-img-1.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-2.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-3.png" alt="rozgarkart-design-worker">
-                    
-                    
-                      <img src="./resources/images/rozgarkart-design-worker-img-4.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-5.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-6.png" alt="rozgarkart-design-worker">
-                    
-                  </div>
-                  <div class="col--12 rozgarkart__design--workerblock">
-                    
-                      <img src="./resources/images/rozgarkart-design-worker-img-7.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-8.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-9.png" alt="rozgarkart-design-worker">
-                    
-                    
-                      <img src="./resources/images/rozgarkart-design-worker-img-10.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-11.png" alt="rozgarkart-design-worker">
-                      <img src="./resources/images/rozgarkart-design-worker-img-12.png" alt="rozgarkart-design-worker">
-                    
-                  </div> -->
+          <?php 
+            $design_icon_subheading_1 = get_field('design_icon_subheading_1');
+            if( $design_icon_subheading_1 ) {
+          ?>  
+          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
+            <?php echo $design_icon_subheading_1; ?>
+          </h4>
+          <?php 
+            }
+          ?>    
+
+          <?php 
+          $design_ui_icon_block = get_field('design_ui_icon_block');
+          if( $design_ui_icon_block ) {
+          foreach( $design_ui_icon_block as $row ) {
+          ?>
+          <div class="rozgarkart__design--uiiconblock">
+            <?php 
+              foreach( $row['ui_icon_block'] as $list ) {
+            ?>
+            <img src="<?php echo $list['icon_image'] ;?>" alt="rozgarkart-design-uiicon">
+            <?php
+              }
+            ?>
+          </div>
+          <?php
+              }
+            }
+          ?>
+
+          <?php 
+            $design_icon_subheading_2 = get_field('design_icon_subheading_2');
+            if( $design_icon_subheading_2 ) {
+          ?>  
+          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
+            <?php echo $design_icon_subheading_2; ?>
+          </h4>
+          <?php 
+            }
+          ?>    
+
+          <div class="rozgarkart__design--workerblock">
+          
+            <?php 
+              $design_worker_block = get_field('design_worker_block');
+              if( $design_worker_block ) {
+              foreach( $design_worker_block as $row ) {
+            ?>
+            <div class="<?php echo $row['worker_class_name'] ;?>">
+              <img src="<?php echo $row['worker_icon_image'] ;?>" alt="rozgarkart-design-worker">
+            </div>
+            <?php
+                }
+              }
+            ?>    
+
+          </div>
+
+          <?php 
+            $design_icon_subheading_3 = get_field('design_icon_subheading_3');
+            if( $design_icon_subheading_3 ) {
+          ?>  
+          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
+            <?php echo $design_icon_subheading_3; ?>
+          </h4>
+          <?php 
+            }
+          ?>    
+
           <div class="rozgarkart__design--workerblock">
 
-            <div class="workerblock--1">
-              <img src="./resources/images/rozgarkart-design-worker-img-1.png" alt="rozgarkart-design-worker">
+          <?php 
+              $design_cities_block = get_field('design_cities_block');
+              if( $design_cities_block ) {
+              foreach( $design_cities_block as $row ) {
+            ?>
+            <div class="<?php echo $row['cities_class_name'] ;?>">
+              <img src="<?php echo $row['cities_icon_image'] ;?>" alt="rozgarkart-design-cities">
             </div>
-            <div class="workerblock--2">
-              <img src="./resources/images/rozgarkart-design-worker-img-2.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--3">
-              <img src="./resources/images/rozgarkart-design-worker-img-3.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--4">
-              <img src="./resources/images/rozgarkart-design-worker-img-4.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--5">
-              <img src="./resources/images/rozgarkart-design-worker-img-5.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--6">
-              <img src="./resources/images/rozgarkart-design-worker-img-6.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--7">
-              <img src="./resources/images/rozgarkart-design-worker-img-7.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--8">
-              <img src="./resources/images/rozgarkart-design-worker-img-8.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--9">
-              <img src="./resources/images/rozgarkart-design-worker-img-9.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--10">
-              <img src="./resources/images/rozgarkart-design-worker-img-10.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--11">
-              <img src="./resources/images/rozgarkart-design-worker-img-11.png" alt="rozgarkart-design-worker">
-            </div>
-            <div class="workerblock--12">
-              <img src="./resources/images/rozgarkart-design-worker-img-12.png" alt="rozgarkart-design-worker">
-            </div>
+            <?php
+                }
+              }
+            ?>    
 
           </div>
+
+          <?php 
+            $design_icon_subheading_4 = get_field('design_icon_subheading_4');
+            if( $design_icon_subheading_4 ) {
+          ?>  
           <h4 class="para para--variation5 rozgarkart__challenge--subheading">
-            Cities
+            <?php echo $design_icon_subheading_4; ?>
           </h4>
-          <div class="rozgarkart__design--workerblock">
-            <!-- <div class="col--12 rozgarkart__design--workerblock">
+          <?php 
+            }
+          ?>    
 
-                    <img src="./resources/images/rozgarkart-design-city-img-1.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-2.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-3.png" alt="rozgarkart-design-city">
-
-
-                    <img src="./resources/images/rozgarkart-design-city-img-4.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-5.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-6.png" alt="rozgarkart-design-city">
-
-                  </div>
-                  <div class="col--12 rozgarkart__design--workerblock">
-
-                    <img src="./resources/images/rozgarkart-design-city-img-7.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-8.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-9.png" alt="rozgarkart-design-city">
-
-
-                    <img src="./resources/images/rozgarkart-design-city-img-10.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-11.png" alt="rozgarkart-design-city">
-                    <img src="./resources/images/rozgarkart-design-city-img-12.png" alt="rozgarkart-design-city">
-
-                  </div> -->
-            <div class="workerblock--1">
-              <img src="./resources/images/rozgarkart-design-city-img-1.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--2">
-              <img src="./resources/images/rozgarkart-design-city-img-2.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--3">
-              <img src="./resources/images/rozgarkart-design-city-img-3.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--4">
-              <img src="./resources/images/rozgarkart-design-city-img-4.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--5">
-              <img src="./resources/images/rozgarkart-design-city-img-5.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--6">
-              <img src="./resources/images/rozgarkart-design-city-img-6.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--7">
-              <img src="./resources/images/rozgarkart-design-city-img-7.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--8">
-              <img src="./resources/images/rozgarkart-design-city-img-8.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--9">
-              <img src="./resources/images/rozgarkart-design-city-img-9.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--10">
-              <img src="./resources/images/rozgarkart-design-city-img-10.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--11">
-              <img src="./resources/images/rozgarkart-design-city-img-11.png" alt="rozgarkart-design-city">
-            </div>
-            <div class="workerblock--12">
-              <img src="./resources/images/rozgarkart-design-city-img-12.png" alt="rozgarkart-design-city">
-            </div>
-
-          </div>
-          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
-            Illustrations
-          </h4>
           <div class="rozgarkart__design--illustrationblock">
-            <div class="illustrationblock--1">
-              <img src="./resources/images/rozgarkart-design-illustration-img-1.png"
-                alt="rozgarkart-design-illustration">
+            
+            <?php 
+              $design_illustrations_block = get_field('design_illustrations_block');
+              if( $design_illustrations_block ) {
+              foreach( $design_illustrations_block as $row ) {
+            ?>
+            <div class="<?php echo $row['illustrations_class_name'] ;?>">
+              <img src="<?php echo $row['illustrations_icon_image'] ;?>" alt="rozgarkart-design-illustration">
             </div>
-            <div class="illustrationblock--2">
-              <img src="./resources/images/rozgarkart-design-illustration-img-2.png"
-                alt="rozgarkart-design-illustration">
-            </div>
-            <div class="illustrationblock--3">
-              <img src="./resources/images/rozgarkart-design-illustration-img-3.png"
-                alt="rozgarkart-design-illustration">
-            </div>
-            <div class="illustrationblock--4">
-              <img src="./resources/images/rozgarkart-design-illustration-img-4.png"
-                alt="rozgarkart-design-illustration">
-            </div>
-            <div class="illustrationblock--5">
-              <img src="./resources/images/rozgarkart-design-illustration-img-5.png"
-                alt="rozgarkart-design-illustration">
-            </div>
-            <div class="illustrationblock--6">
-              <img src="./resources/images/rozgarkart-design-illustration-img-6.png"
-                alt="rozgarkart-design-illustration">
-            </div>
+            <?php
+                }
+              }
+            ?>  
+
           </div>
-          <!-- <div class="relictrio--row rozgarkart__design--illustrationmobile">
-                  <div class="col--6">
-                    <img src="./resources/images/rozgarkart-design-illustration-img-1.png"
-                      alt="rozgarkart-design-illustration">
-                  </div>
-                  <div class="col--6">
-                    <img src="./resources/images/rozgarkart-design-illustration-img-2.png"
-                      alt="rozgarkart-design-illustration">
-                  </div>
-                  <div class="col--6">
-                    <img src="./resources/images/rozgarkart-design-illustration-img-5.png"
-                      alt="rozgarkart-design-illustration">
-                  </div>
-                  <div class="col--6">
-                    <img src="./resources/images/rozgarkart-design-illustration-img-3.png"
-                      alt="rozgarkart-design-illustration">
-                  </div>
-                  <div class="col--8">
-                    <img src="./resources/images/rozgarkart-design-illustration-img-4.png"
-                      alt="rozgarkart-design-illustration">
-                  </div>
-                  <div class="illustrationblock">
-                    <img src="./resources/images/rozgarkart-design-illustration-img-6.png"
-                      alt="rozgarkart-design-illustration">
-                  </div>
-                </div> -->
+
         </div>
       </div>
 

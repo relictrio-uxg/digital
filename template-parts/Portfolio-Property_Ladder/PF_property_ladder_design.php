@@ -57,9 +57,9 @@
       <h3 class="heading heading--variation2 property__design--subheading">
         <?php echo $design_subheading_1; ?>
       </h3>
-      <?php 
-        }
-      ?>
+    <?php 
+      }
+    ?>
 
 
 

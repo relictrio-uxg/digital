@@ -1,87 +1,88 @@
-.postlive__banner--logo {
+.inception__banner--logo {
   color: var(--cetacean_blue-color);
   opacity: 0.2;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.postlive__banner--heading {
+.inception__banner--heading {
   color: var(--cetacean_blue-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
-.postlive__banner {
+.inception__banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.postlive__banner--img {
+.inception__banner--img {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   max-width: 100%;
 }
 
 @media (max-width: 1200px) {
-  .postlive__banner--logo {
+  .inception__banner--logo {
     font-size: 60px;
     line-height: 60px;
   }
 
-  .postlive__banner--heading {
+  .inception__banner--heading {
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 @media (max-width: 1024px) {
-  .postlive__banner--logo {
+  .inception__banner--logo {
     font-size: 48px;
     line-height: 48px;
   }
 
-  .postlive__banner--heading {
+  .inception__banner--heading {
     font-size: 48px;
     line-height: 48px;
   }
   
-  .postlive__banner img{
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 834px) {
-  .postlive__banner--logo {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .postlive__banner--heading {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .postlive__banner img{
+  .inception__banner img{
     max-width: 100px;
   }
 }
 
+@media (max-width: 834px) {
+  .inception__banner--logo {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .inception__banner--heading {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 0px;
+  }
+
+  .inception__banner img{
+    max-width: 70px;
+  }
+}
+
 @media (max-width: 540px) {
-  .postlive__banner--logo {
+  .inception__banner--logo {
     font-size: 18px;
     line-height: 20px;
   }
 
-  .postlive__banner--heading {
+  .inception__banner--heading {
     font-size: 18px;
     line-height: 20px;
   }
 
-  .postlive__banner h3{
+  .inception__banner h3{
     margin-bottom: 5px !important;
   }
 
-  .postlive__banner img{
+  .inception__banner img{
     max-width: 40px;
   }
 }

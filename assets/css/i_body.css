@@ -1,0 +1,256 @@
+.inception__body {
+  margin: 60px 0;
+}
+
+.inception__body p {
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #5c5c5c;
+}
+
+.inception__body--blocklist1 {
+  margin: 60px 0;
+}
+
+.inception__body--icon {
+  display: flex;
+  align-self: center;
+}
+
+.inception__body--icon img {
+  max-width: 100%;
+}
+
+.inception__body--arrow {
+  display: flex;
+  align-self: center;
+}
+
+.inception__body--arrow img {
+  max-width: 100%;
+}
+
+.inception__body--blockpara {
+  margin: 30px 0 0 0;
+  color: #5c5c5c;
+}
+
+.blocklist1--content {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--black-color);
+  margin: 25px 0;
+}
+
+.blocklist1--content span {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 50px;
+  color: var(--black-color);
+  display: block;
+}
+
+.blocklist1--content li {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black-color);
+  margin: 25px 0;
+}
+
+.blocklist1--disc {
+  padding-left: 30px;
+}
+
+.blocklist1--disc li {
+  list-style: disc;
+}
+
+.blocklist4--content {
+  display: flex;
+}
+
+.blocklist4--left {
+  flex: 1;
+}
+
+.blocklist4--left p {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--black-color);
+  margin: 12.5px 0;
+}
+
+.blocklist4--right {
+  flex: 2;
+}
+
+.blocklist4--right p {
+  font-weight: normal;
+  letter-spacing: -0.8px;
+  color: var(--black-color);
+  margin: 12.5px 0;
+}
+
+@media (max-width: 1200px) {
+  .inception__body h2 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .inception__body--heading h2 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inception__flex--remove {
+    flex: 0 0 0%;
+    max-width: 0%;
+    padding: 0;
+  }
+  .inception__flex--full {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .inception__body h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .inception__body p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .inception__body--heading h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .inception__body--icon img {
+    max-width: 100px;
+  }
+  .inception__body--blockpara {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .blocklist1--content li {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .blocklist1--content {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .blocklist4--left p {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .blocklist4--right p {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 834px) {
+  .inception__body h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .inception__body p {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .inception__body--arrow {
+    display: none;
+  }
+  .inception__body--icon {
+    justify-content: center;
+  }
+  .inception__body--heading {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .inception__body--heading h2 {
+    font-size: 25px;
+    line-height: 45px;
+    margin-left: 20px;
+  }
+  .inception__body--icon img {
+    max-width: 80px;
+  }
+  .inception__body--blockpara {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .blocklist1--content li {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .blocklist1--content {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .blocklist4--left p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .blocklist4--right p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .inception__body{
+    margin: 25px 0;
+  }
+  .inception__body--blocklist1 {
+    margin: 0;
+    padding: 25px 0;
+  }
+  .inception__body--icon img {
+    max-width: 100%;
+  }
+  .inception__body h2 {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+  }
+  .inception__body p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+  .inception__body--heading h2 {
+    font-size: 18px;
+    line-height: 34px;
+    margin: 0 0 0 15px;
+  }
+  .inception__body--blockpara {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+  .blocklist1--content li {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 4px 0;
+  }
+  .blocklist1--content {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 4px 0;
+  }
+  .blocklist1--content span {
+    line-height: 20px;
+  }
+  .blocklist4--left p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .blocklist4--right p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

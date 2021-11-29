@@ -52,7 +52,15 @@
         #Portfolio - Rozgarkart Page
         wp_enqueue_style('relictrio-PF_rozgarkart_banner-style', get_template_directory_uri()."/assets/css/pf_rozgarkart_banner.css", array(), $version, 'all');
         wp_enqueue_style('relictrio-PF_rozgarkart_body-style', get_template_directory_uri()."/assets/css/pf_rozgarkart_body.css", array(), $version, 'all');
+
+        #Contact_Us Page
+        wp_enqueue_style('relictrio-Contact_form-style', get_template_directory_uri()."/assets/css/contact_form.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-Contactus-style', get_template_directory_uri()."/assets/css/contactus.css", array(), $version, 'all');
     
+        #Inception Page
+        wp_enqueue_style('relictrio-I_banner-style', get_template_directory_uri()."/assets/css/i_banner.css", array(), $version, 'all');
+        wp_enqueue_style('relictrio-I_body-style', get_template_directory_uri()."/assets/css/i_body.css", array(), $version, 'all');
+
     }
 
     add_action('wp_enqueue_scripts', 'relictrio_register_styles');

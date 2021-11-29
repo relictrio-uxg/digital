@@ -17,7 +17,7 @@
         $hero_section_number = get_field('hero_section_number');
         if( $hero_section_number ) {
         ?>
-          <span class="postlive__banner--logo">
+          <span class="heading heading--variation5 postlive__banner--logo">
               <?php echo $hero_section_number; ?>
           </span>
         <?php 
@@ -37,7 +37,7 @@
           $hero_section_heading = get_field('hero_section_heading');
           if( $hero_section_heading ) {
         ?>
-          <h3 class="postlive__banner--heading text--center">
+          <h3 class="heading heading--variation5 postlive__banner--heading text--center">
           <?php echo $hero_section_heading; ?>
           </h3>
         <?php 

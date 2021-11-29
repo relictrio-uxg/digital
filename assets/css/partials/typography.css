@@ -34,6 +34,13 @@
     font-size: 20px;
     line-height: 28px;
   }
+  .heading--variation5 {
+    font-family: var(--relictrio-semiBold-font);
+    font-style: normal; 
+    font-size: 72px;
+    line-height: 72px;
+  }
+  
   .para {
     font-family: var(--relictrio-inter-font);
     font-style: normal;
@@ -83,6 +90,14 @@
     font-size: 30px;
     line-height: 36px;
     color: var(--cetacean_blue-color);
+  }
+  .para--variation7 {
+    font-family: var(--relictrio-inter-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #BDBDBD;
   }
   .btn-fill--pri{
     background: var(--white-color);
