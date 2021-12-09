@@ -1,136 +1,160 @@
-.designdevelop__service--para{
-  font-family: var(--relictrio-semiBold-font);
-  font-size: 32px;
+.designdevelop__service {
+  padding-top: 80px;
+}
+
+.designdevelop__service--para {
   line-height: 50px;
   text-align: center;
   letter-spacing: 2px;
-  color: #5C5C5C;
+  font-weight: normal;
+  color: var(--davy_grey-color);
   margin: 30px 0;
 }
 
-.designdevelop__service--parablue{
-  font-family: var(--relictrio-font);
-  font-size: 32px;
+.designdevelop__service--parablue {
   line-height: 51px;
   text-align: center;
+  font-weight: normal;
   color: var(--cetacean_blue-color);
-  margin: 30px 0;
+  margin: 70px 0 0 0;
 }
 
-.designdevelop__service--icons{
+.designdevelop__service--icons {
   display: block;
   margin: 0 auto;
 }
 
-.designdevelop__service--block{
+.designdevelop__service--block {
   align-items: baseline;
+  margin-top: 55px;
 }
 
 /*slider-code*/
 
-.slick-slide{
+.slick-slide {
   margin: 0 20px;
 }
-.slick-slide img{
+.slick-slide img {
   width: 100%;
 }
-.slick-slider{
+.slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
 }
-.slick-list{
+.slick-list {
   position: relative;
   display: block;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.slick-track{
+.slick-track {
   position: relative;
   top: 0;
   left: 0;
   display: block;
 }
-.slick-slide{
+.slick-slide {
   display: none;
   float: left;
   height: 100%;
   min-height: 1px;
 }
-.slick-slide img{
+.slick-slide img {
   display: block;
 }
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
   display: block;
 }
 
 @media (max-width: 1024px) {
-  .designdevelop__service h2{
-    font-size: 42px;
-    line-height: 58px;
+  .designdevelop__service {
+    padding-top: 50px;
   }
-  .designdevelop__service--para{
-    font-size: 30px;
+  .designdevelop__service h2 {
+    font-size: 38px;
     line-height: 45px;
   }
-  .designdevelop__service--parablue{
+  .designdevelop__service--para {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .designdevelop__service--parablue {
     font-size: 30px;
     line-height: 45px;
+    margin-top: 50px;
   }
-  .designdevelop__service--block p{
-    font-size: 18px;
-    line-height: 25px;
+  .designdevelop__service--block p {
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
 @media (max-width: 834px) {
-  .designdevelop__service h2{
-    font-size: 40px;
-    line-height: 55px;
+  .designdevelop__service {
+    padding-top: 25px;
   }
-  .designdevelop__service--para{
-    font-size: 28px;
-    line-height: 42px;
+  .designdevelop__service h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 0px;
   }
-  .designdevelop__service--parablue{
-    font-size: 28px;
-    line-height: 42px;
+  .designdevelop__service--para {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0px;
   }
-  .designdevelop__service--block div{
+  .designdevelop__service--parablue {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .designdevelop__service--block div {
     flex: 0 0 25%;
     max-width: 25%;
   }
-  .designdevelop__service--block p{
+  .designdevelop__service--block p {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 30px;
   }
+  .designdevelop__service--block {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 540px) {
-  .designdevelop__service h2{
+  .designdevelop__service {
+    padding-top: 0px;
+  }
+  .designdevelop__service h2 {
     font-size: 18px;
     line-height: 25px;
+    margin-bottom: 15px;
   }
-  .designdevelop__service--para{
+  .designdevelop__service--para {
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 20px;
   }
-  .designdevelop__service--parablue{
+  .designdevelop__service--parablue {
     font-size: 14px;
     line-height: 20px;
+    margin-top: 20px;
   }
-  .designdevelop__service--block div{
+  .designdevelop__service--block div {
     flex: 0 0 25%;
     max-width: 25%;
   }
-  .designdevelop__service--block p{
+  .designdevelop__service--block p {
     font-size: 12px;
-    line-height: 10px;
+    line-height: 13px;
     margin-bottom: 30px;
   }
-  .designdevelop__service--icons{
+  .designdevelop__service--icons {
     max-height: 40px;
+  }
+  .designdevelop__service--block {
+    margin-top: 20px;
   }
 }

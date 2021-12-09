@@ -1,0 +1,232 @@
+.prelive__digital{
+  margin: 60px 0;
+}
+
+.prelive__digital h2 {
+  text-align: center;
+}
+
+.prelive__digital p:nth-child(2){
+  font-weight: normal;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #5C5C5C;
+}
+
+.prelive__digital p:nth-child(3){
+  line-height: 51px;
+  text-align: center;
+}
+
+.prelive__digital p:last-child{
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.prelive__digital--quoteimg{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.prelive__digital--quoteimg img{
+  margin: 65px 0;
+}
+
+
+.prelive__digital--blocklist{
+  margin: 60px 0;
+}
+
+.prelive__digital--icon{
+  display: flex;
+  align-self: center;
+}
+
+.prelive__digital--icon img{
+  max-width: 100%;
+}
+
+.prelive__digital--arrow{
+  display: flex;
+  align-self: center;
+}
+
+.prelive__digital--arrow img{
+  max-width: 100%;
+}
+
+.prelive__digital--blockpara{
+  margin: 40px 0 !important;
+  color: #5C5C5C;
+}
+
+.prelive__digital--list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.prelive__digital--list p{
+  margin-left: 35px;
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--black-color);
+}
+
+@media (max-width: 1024px) {
+  .prelive__flex--remove{
+    flex: 0 0 0%;
+    max-width: 0%;
+    padding: 0;
+  }
+  .prelive__flex--full{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .prelive__digital--heading{
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .prelive__digital h2{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .prelive__digital p:nth-child(2){
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .prelive__digital p:nth-child(3){
+    font-size: 28px;
+    line-height: 45px;
+  }
+  .prelive__digital p:last-child{
+    font-size: 40px;
+    line-height: 60px
+  }
+  .prelive__digital--heading h2{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .prelive__digital--blockpara{
+    font-size: 22px;
+    line-height: 35px;
+    margin: 25px 0 !important;
+  }
+  .prelive__digital--list p{
+      font-size: 22px;
+      line-height: 28px;
+  }
+}
+
+@media (max-width: 834px) {
+  .prelive__digital{
+    margin: 15px 0 30px 0 !important;
+  }
+  .prelive__digital--arrow{
+    display: none;
+  }
+  .prelive__digital--icon{
+    flex: 0 0 20%;
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .prelive__digital--heading{
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin: 0;
+  }
+  .prelive__digital h2{
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .prelive__digital p:nth-child(2){
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .prelive__digital p:nth-child(3){
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .prelive__digital p:last-child{
+    font-size: 30px;
+    line-height: 40px
+  }
+  .prelive__digital--quoteimg img{
+    margin: 45px 0;
+    max-width: 250px;
+  }
+  .prelive__digital--heading h2{
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .prelive__digital--blockpara{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 0 !important;
+  }
+  .prelive__digital--list p{
+      font-size: 20px;
+      line-height: 25px;
+      margin-left: 25px;
+  }
+  .prelive__digital--icon img{
+      max-width: 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .prelive__digital{
+    margin: 0 0 30px 0 !important;
+  }
+  .prelive__digital--blocklist{
+    margin: 30px 0 !important;
+  }
+  .prelive__digital h2{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 15px 0;
+  }
+  .prelive__digital p:nth-child(2){
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .prelive__digital p:nth-child(3){
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .prelive__digital p:last-child{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .prelive__digital--quoteimg img{
+    margin: 30px 0 20px 0;
+    max-width: 120px;
+  }
+  .prelive__digital--heading h2{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .prelive__digital--blockpara{
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 0 15px 0 !important;
+  }
+  .prelive__digital--list p{
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 15px;
+  }
+  .prelive__digital--icon img{
+      max-width: 45px;
+  }
+  .prelive__digital--list img{
+      max-width: 25px;
+  }
+}

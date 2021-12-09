@@ -27,11 +27,11 @@
   get_header(); 
 ?>
 
-<?php include('template-parts/about_Us/a_banner.php') ?>
-<?php include('template-parts/about_Us/a_leadership.php') ?>
-<?php include('template-parts/about_Us/a_weareexperts.php') ?>
-<?php include('template-parts/about_Us/a_whyus.php') ?>
-<?php include('template-parts/about_Us/a_wanttoknow.php') ?>
+<?php include('template-parts/about_us/a_banner.php') ?>
+<?php include('template-parts/about_us/a_leadership.php') ?>
+<?php include('template-parts/about_us/a_weareexperts.php') ?>
+<?php include('template-parts/about_us/a_whyus.php') ?>
+<?php include('template-parts/about_us/a_wanttoknow.php') ?>
     
 <?php 
   get_footer();

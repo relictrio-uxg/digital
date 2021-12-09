@@ -1,0 +1,231 @@
+.services__slist {
+  text-align: center;
+  max-width: 900px;
+  margin: 60px auto;
+}
+.services__slist h2 {
+  line-height: 57px;
+}
+
+.services__slistblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services__slistblock--logo {
+  color: var(--cetacean_blue-color);
+  opacity: 0.2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.services__slistblock--heading {
+  color: var(--cetacean_blue-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.services__slistblock--img {
+  position: relative;
+}
+.services__slistblock--overlayimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.services__slistblock--img img,
+.services__slistblock--overlayimg img {
+  max-width: 100%;
+}
+
+.services__slistblock--content {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+.services__slistblock--content img {
+  margin-left: 70px;
+}
+.services__slistblock--content h2 {
+  margin: 0;
+}
+.services__slistblock--para {
+  margin: 40px 0 !important;
+  color: #5c5c5c;
+}
+.services__slistblock--list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.services__slistblock--list p {
+  margin-left: 35px;
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--black-color);
+}
+
+.services__slistblock--listlink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.services__slistblock--listlink p {
+  margin-left: 28px;
+  line-height: 28px;
+  letter-spacing: 0.142857px;
+  color: var(--darkelectric_blue-color);
+}
+.services__slistblock--listlink a {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .services__slist h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .services__slistblock--logo {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .services__slistblock--heading {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .services__slistblock--content h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services__col--remove {
+    flex: 0 0 0%;
+    max-width: 0%;
+    padding: 0;
+  }
+  .services__col--full {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .services__slist h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .services__slistblock--logo {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  .services__slistblock h3 img {
+    max-width: 100px;
+  }
+  .services__slistblock--heading {
+    font-size: 55px;
+    line-height: 65px;
+    margin: 0;
+  }
+  .services__slistblock--content h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .services__slistblock--para {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .services__slistblock--list p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 834px) {
+  .services__slistblock--content img {
+    display: none;
+  }
+  .services__slist {
+    max-width: 500px;
+  }
+  .services__slist h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .services__slistblock--overlayimg {
+    padding: 0px;
+  }
+  .services__slistblock--logo {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .services__slistblock h3 img {
+    max-width: 80px;
+  }
+  .services__slistblock--heading {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .services__slistblock--content h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .services__slistblock--para {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 540px) {
+  .services__slist {
+    max-width: 240px;
+    margin: 50px auto;
+  }
+  .services__slist h2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .services__slistblock h3 {
+    margin-bottom: 15px !important;
+  }
+  .services__slistblock--logo {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .services__slistblock h3 img {
+    max-width: 100%;
+  }
+  .services__slistblock--heading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .services__slistblock--content {
+    margin-top: 20px;
+  }
+  .services__slistblock--content h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .services__slistblock--para {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 12px 0 20px 0 !important;
+  }
+  .services__slistblock--list {
+    margin-bottom: 20px;
+  }
+  .services__slistblock--list p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 12px;
+  }
+  .services__slistblock--listlink p {
+    font-size: 14px;
+    line-height: 15px;
+    margin-left: 10px;
+  }
+  .services__slistblock--listlink img {
+    max-width: 12px;
+  }
+}

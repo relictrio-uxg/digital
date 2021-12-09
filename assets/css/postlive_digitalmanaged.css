@@ -88,6 +88,9 @@
 }
 
 @media (max-width: 834px) {
+  .postlive__digital{
+    margin: 25px 0;
+  }
   .postlive__digital--arrow{
     display: none;
   }
@@ -103,8 +106,8 @@
     margin: 0;
   }
   .postlive__digital h2{
-    font-size: 38px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 50px;
   }
   .postlive__digital p{
     font-size: 25px;
@@ -131,7 +134,7 @@
 
 @media (max-width: 540px) {
   .postlive__digital{
-    margin: 30px 0 !important;
+    margin: 0 0 25px 0;
   }
   .postlive__digital--blocklist{
     margin: 30px 0 !important;
@@ -139,7 +142,7 @@
   .postlive__digital h2{
     font-size: 18px;
     line-height: 25px;
-    margin: 15px 0;
+    margin: 0 0 15px 0;
   }
   .postlive__digital p{
     font-size: 14px;

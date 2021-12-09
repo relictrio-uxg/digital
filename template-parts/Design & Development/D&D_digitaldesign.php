@@ -102,7 +102,7 @@
             }
         ?>
 
-        <div class="relictrio--row jus-cnt--spbtw mar-top--40 mar-bot--30">
+        <div class="relictrio--row jus-cnt--spbtw mar-top--40 mar-bot--30 designdevelop__digital--includeblocklist">
 
         <?php 
           $digital_design_section_creative_block = get_field('digital_design_section_creative_block');

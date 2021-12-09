@@ -33,7 +33,7 @@
             <?php 
               }
             ?>
-            
+
             <?php 
               $banner_section_image = get_field('banner_section_image');
               if( $banner_section_image ) {
@@ -50,7 +50,7 @@
         <?php 
           $banner_section_heading = get_field('banner_section_heading');
           if( $banner_section_heading ) {
-        ?>      
+        ?>
         <h3 class="heading heading--variation5 inception__banner--heading text--center">
           <?php echo $banner_section_heading; ?>
         </h3>
@@ -60,7 +60,7 @@
 
       </div>
       <div class="col--7">
-        
+
         <?php 
           $banner_section_right_image = get_field('banner_section_right_image');
           if( $banner_section_right_image ) {
@@ -70,6 +70,20 @@
         <?php 
           }
         ?>
+
+        <div class="inception__banner--overlayimg">
+          <?php 
+            $banner_section_right_image_overlay = get_field('banner_section_right_image_overlay');
+            if( $banner_section_right_image_overlay ) {
+          ?>
+            <img class="inception__banner--img" src="<?php echo $banner_section_right_image_overlay; ?>"
+              alt="inception-banner-image-overlay">
+          <?php 
+            }
+          ?>
+        </div>
+
+
 
       </div>
     </div>

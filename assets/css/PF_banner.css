@@ -1,6 +1,7 @@
 .portfolio__banner--heading{
   text-align: center;
   color: var(--eucalyptus-color);
+  margin-top: 50px;
 }
 
 .portfolio__banner--para{

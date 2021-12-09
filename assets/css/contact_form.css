@@ -1,16 +1,15 @@
 .relictrio--contact--form {
+  position: relative;
   width: 100%;
 }
+
+
+
+
 
 .contact__form {
   max-width: 100%;
 }
-
-h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
-}
-
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -24,15 +23,47 @@ input[type="url"],
 textarea,
 select {
   border: 1.2px solid var(--darkelectric_blue-color);
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  margin-bottom: 30px;
   box-sizing: border-box;
   border-radius: 4px;
+  height: 100px;
+  width: 100%;
+  outline: none;
+  padding: 0 50px 0 50px;
+  margin: 30px 0 50px 0;
+  font-size: 32px;
+  line-height: 22px;  
+  color: var(--darkelectric_blue-color);
+}
+
+input[type="text"]:focus,
+input[type="text"]:focus-visible,
+input[type="password"]:focus,
+input[type="password"]:focus-visible,
+input[type="date"]:focus,
+input[type="date"]:focus-visible,
+input[type="datetime"]:focus,
+input[type="datetime"]:focus-visible,
+input[type="email"]:focus,
+input[type="email"]:focus-visible,
+input[type="number"]:focus,
+input[type="number"]:focus-visible,
+input[type="search"]:focus,
+input[type="search"]:focus-visible,
+input[type="tel"]:focus,
+input[type="tel"]:focus-visible,
+input[type="time"]:focus,
+input[type="time"]:focus-visible,
+input[type="url"]:focus,
+input[type="url"]:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible {
+  border: 2px solid var(--cetacean_blue-color);
+  font-size: 32px;
+  line-height: 22px;
+  color: var(--cetacean_blue-color);
+  opacity: 0.8;
 }
 
 input[type="radio"],
@@ -40,63 +71,17 @@ input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
 
-select {
-  padding: 0px 20px;
-  height: 60px;
-  border-radius: 5px;
-}
-
-button {
-  padding: 19px 39px 18px 39px;
-  color: #fff;
-  background-color: #4bc970;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-  margin-bottom: 10px;
-}
-
 fieldset.fiedet__form {
-  padding: 50px 200px;
-}
-
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
+  padding: 50px 187px;
 }
 
 .form_label {
-  display: block;
   margin-bottom: 0px !important;
-  font-family: inter;
+  font-family: var(--relictrio-inter-font);
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
   line-height: 30.26px;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 100%;
 }
 
 .dropdown {
@@ -118,13 +103,11 @@ label.light {
   line-height: 31px;
   cursor: pointer;
 }
+
 textarea#project_InputText {
   height: 150px;
 }
 
-.relictrio_send__btn {
-  text-align: center;
-}
 button.send_btn {
   width: 250px;
   height: 70px;
@@ -166,7 +149,7 @@ button.send_btn {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
   .relictrio--contact--form {
     padding: 30px 15px;
   }
@@ -175,11 +158,6 @@ button.send_btn {
     max-width: 100%;
     margin: 5px auto;
     padding: 5px 10px;
-  }
-
-  h1 {
-    margin: 0 0 30px 0;
-    text-align: center;
   }
 
   input[type="text"],
@@ -194,16 +172,11 @@ button.send_btn {
   input[type="url"],
   textarea,
   select {
-    border: 1.2px solid var(--darkelectric_blue-color);
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    border-radius: 4px;
+    height: 70px;
+    padding: 0 40px 0 40px;
+    margin: 25px 0 45px 0;
+    font-size: 25px;
+    line-height: 20px;  
   }
 
   input[type="radio"],
@@ -211,63 +184,8 @@ button.send_btn {
     margin: 0 4px 8px 0;
   }
 
-  select {
-    padding: 6px;
-    height: 30px;
-    border-radius: 2px;
-  }
-
-  button {
-    padding: 19px 39px 18px 39px;
-    color: #fff;
-    background-color: #4bc970;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid #3ac162;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    margin-bottom: 10px;
-  }
-
   fieldset.fiedet__form {
     padding: 0px 15px;
-  }
-
-  legend {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-
-  .form_label {
-    display: block;
-    margin-bottom: 10px;
-    font-family: inter;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  label.light {
-    font-weight: 300;
-    display: inline;
-  }
-
-  .number {
-    background-color: #5fcf80;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 100%;
   }
 
   .dropdown {
@@ -333,23 +251,8 @@ button.send_btn {
     text-align: center;
     color: #536083;
   }
-
-  div#bac-nav {
-    height: 100vh !important;
-    width: 100% !important;
-    position: fixed !important;
-    left: 0 !important;
-    top: 0 !important;
-    background: rgba(0, 0, 0, 0.8) !important;
-    z-index: 999 !important;
-  }
-  #mySidenav {
-    height: 100vh !important;
-  }
-  #bac-nav {
-    height: 110vh !important;
-  }
 }
+
 
 input.wpcf7-form-control.wpcf7-submit.send_btn {
   width: 150px !important;

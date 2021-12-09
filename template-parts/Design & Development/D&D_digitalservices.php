@@ -8,54 +8,54 @@
 
 <div class="container container--fluid">
   <div class="container--content">
-    <div class="relictrio--row jus-cnt--cent mar-tpbt--40">
+    <div class="relictrio--row jus-cnt--cent">
       <div class="col--12 designdevelop__service">
 
         <?php 
-                $digital_services_section_heading = get_field('digital_services_section_heading');
-                if( $digital_services_section_heading ) {
-            ?>
+          $digital_services_section_heading = get_field('digital_services_section_heading');
+          if( $digital_services_section_heading ) {
+        ?>
         <h2 class="heading heading--variation1 text--center">
           <?php echo $digital_services_section_heading; ?>
         </h2>
         <?php 
-                }
-            ?>
+          }
+        ?>
 
         <?php 
-                $digital_services_section_paragraph_block = get_field('digital_services_section_paragraph_block');
-                if( $digital_services_section_paragraph_block ) {
-                foreach( $digital_services_section_paragraph_block as $row ) {
-                ?>
-        <p class="designdevelop__service--para">
+          $digital_services_section_paragraph_block = get_field('digital_services_section_paragraph_block');
+          if( $digital_services_section_paragraph_block ) {
+          foreach( $digital_services_section_paragraph_block as $row ) {
+        ?>
+        <p class="heading heading--variation2 designdevelop__service--para">
           <?php echo $row['para_section'] ;?>
         </p>
         <?php
-                    }
-                  }
-            ?>
+              }
+            }
+        ?>
 
       </div>
     </div>
   </div>
 
   <!--slider sec: start-->
-  <div class="container container--fluid bg--white pad-tpbt--120 slider__pad-tpbt">
+  <div class="container container--fluid bg--white slider__pad-tpbt">
     <div class="container--content container--fxdwdh">
       <section class="customer-logos slider mar-top--50">
 
         <?php 
-                $digital_services_section_slider = get_field('digital_services_section_slider');
-                if( $digital_services_section_slider ) {
-                foreach( $digital_services_section_slider as $row ) {
-              ?>
+          $digital_services_section_slider = get_field('digital_services_section_slider');
+          if( $digital_services_section_slider ) {
+          foreach( $digital_services_section_slider as $row ) {
+        ?>
         <div class="slide">
           <img src="<?php echo $row['slider_section'] ;?>" alt="slider images">
         </div>
         <?php
-                    }
-                   }
-              ?>
+            }
+          }
+        ?>
 
       </section>
     </div>
@@ -63,14 +63,14 @@
   <!--slider sec: end-->
 
   <div class="container--content">
-    <div class="relictrio--row jus-cnt--cent mar-tpbt--40">
+    <div class="relictrio--row jus-cnt--cent">
       <div class="col--12">
 
         <?php 
                 $digital_services_section_paragraph = get_field('digital_services_section_paragraph');
                 if( $digital_services_section_paragraph ) {
             ?>
-        <p class="designdevelop__service--para">
+        <p class="heading heading--variation2 designdevelop__service--para">
           <?php echo $digital_services_section_paragraph; ?>
         </p>
         <?php 
@@ -81,7 +81,7 @@
                 $digital_services_section_paragraph_blue = get_field('digital_services_section_paragraph_blue');
                 if( $digital_services_section_paragraph_blue ) {
             ?>
-        <p class="designdevelop__service--parablue">
+        <p class="heading heading--variation2 designdevelop__service--parablue">
           <?php echo $digital_services_section_paragraph_blue; ?>
         </p>
         <?php 

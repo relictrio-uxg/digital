@@ -1,67 +1,106 @@
-.relictrio--contact--Box-model {
-    border: 1px solid rgba(34, 28, 28, 0.342);
-    box-shadow: 0 0 10px rgba(153, 153, 153, 0.342);
+/*reset css*/
+fieldset {
+    border: 0;
 }
-.form_col {
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+
+.contact__body {
+    padding: 60px 0 0 0;
 }
-.relictrio__Contact__heading {
-    height: 80px;
+.relictrio__contact--box-model {
+    background: #ffffff;
+    box-shadow: 0px 0px 28px rgba(75, 0, 129, 0.12);
+    border-radius: 10px;
 }
-.logo__img {
-    height: 70px;
-    width: 180px;
+.contact__body--content {
+    padding: 40px 0 0 0;
 }
-.relictrio__contact__logoimg {
-    text-align: center !important;
-    padding: 20px 0px;
+.contact__body--content > p {
+    color: #5c5c5c;
+    line-height: 50px;
 }
-.relictrio__Contact__para1 {
+.relictrio__contact--logoimg {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 30px 0;
+}
+.contact__body--content h3 {
+    font-weight: 600;
     font-size: 30px;
-    text-align: center;
     line-height: 41px;
-    letter-spacing: 0.21px;
-    font-family: inter;
+    text-align: center;
+    letter-spacing: 0.214286px;
     color: var(--cetacean_blue-color);
 }
 
-@media only screen and (min-width: 1024px) {
-    .relictrio--contactus--container {
-        padding: 100px 20px;
+@media (max-width: 1200px) {
+    .contact__body--content h2 {
+        font-size: 40px;
+        line-height: 58px;
     }
-    .relictrio--contact--Box-model {
-        border-radius: 10px;
+    .contact__body--content > p {
+        font-size: 30px;
+        line-height: 45px;
     }
+    .contact__body--content h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
 
- /*   .relictrio--row {
-        margin: 25px;
-    }*/
-    .form_col {
-        padding: 0px 0px;
+@media (max-width: 1024px) {
+    .contact__body--content h2 {
+        font-size: 35px;
+        line-height: 40px;
     }
-    .col__2 {
-        display: none;
+    .contact__body--content > p {
+        font-size: 28px;
+        line-height: 40px;
     }
-    .relictrio__Contact__heading {
+    .contact__body--content h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .relictrio__contact--logoimg img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 834px) {
+    .contact__body--content h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .contact__body--content > p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .relictrio__contact--logoimg img {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact__body--content {
+        padding: 0px;
+    }
+    .contact__body--content h2 {
         font-size: 18px;
-        height: auto;
+        line-height: 60px;
+        margin: 0;
     }
-    .relictrio__contact__para {
+    .contact__body--content > p {
         font-size: 14px;
         line-height: 20px;
-        padding: 0px 50px;
+        margin: 0;
     }
-    .logo__img {
-        height: 40px;
-        width: 120px;
-        text-align: center !important;
-        padding: 0px 0px;
-    }
-    .relictrio__Contact__para1 {
-        font-weight: 600;
+    .contact__body--content h3 {
         font-size: 14px;
         line-height: 41px;
+    }
+    .relictrio__contact--logoimg {
+        padding: 24px 0 20px 0;
+    }
+    .relictrio__contact--logoimg img {
+        max-width: 95px;
     }
 }

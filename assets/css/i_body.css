@@ -153,6 +153,9 @@
 }
 
 @media (max-width: 834px) {
+  .inception__body{
+    margin: 25px 0;
+  }
   .inception__body h2 {
     font-size: 30px;
     line-height: 50px;
@@ -203,7 +206,7 @@
 
 @media (max-width: 540px) {
   .inception__body{
-    margin: 25px 0;
+    margin: 0 0 25px 0;
   }
   .inception__body--blocklist1 {
     margin: 0;
@@ -216,6 +219,7 @@
     font-size: 18px;
     line-height: 25px;
     margin: 0;
+    width: 268px;
   }
   .inception__body p {
     font-size: 14px;
@@ -224,7 +228,7 @@
   }
   .inception__body--heading h2 {
     font-size: 18px;
-    line-height: 34px;
+    line-height: 20px;
     margin: 0 0 0 15px;
   }
   .inception__body--blockpara {

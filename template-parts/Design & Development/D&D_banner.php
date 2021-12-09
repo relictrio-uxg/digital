@@ -6,67 +6,85 @@
   */
  ?>
 
-  <div class="container container--fluid">
-    <div class="container--content">
-      <div class="relictrio--row jus-cnt--cent mar-tpbt--40">
-        <div class="designdevelop__banner col--5">
-          <h3 class="text--center mar-bot--25">
+
+<div class="container container--fluid">
+  <div class="container--content">
+    <div class="relictrio--row jus-cnt--cent mar-tpbt--40">
+      <div class="designdevelop__banner col--5">
+        <h3 class="text--center mar-bot--25">
 
           <?php 
-                $hero_section_number = get_field('hero_section_number');
-                if( $hero_section_number ) {
-            ?>
-            <span class="designdevelop__banner--logo"><?php echo $hero_section_number; ?></span>
-            <?php 
-                }
-            ?>
-            
-            <?php 
-            $hero_section_icon_block = get_field('hero_section_icon_block');
-            if( $hero_section_icon_block ) {
-            foreach( $hero_section_icon_block as $row ) {
-            ?>
-            <picture>
-              <source media="(max-width: 834px)" srcset="<?php echo $row['hero_section_icon_mobile'] ;?>">
-              <source media="(max-width: 1024px)" srcset="<?php echo $row['hero_section_icon_tab'] ;?>">
-              <img src="<?php echo $row['hero_section_icon'] ;?>" alt="d&d-banner-icon">
-            </picture>
-            </h3>
-            <?php
-                }
-              }
-            ?>
-
-          <?php 
-                $hero_section_heading = get_field('hero_section_heading');
-                if( $hero_section_heading ) {
-            ?>
-          <h3 class="designdevelop__banner--heading text--center">
-            <?php echo $hero_section_heading; ?>
-          </h3>
-          <?php 
-                }
-            ?>
-
-        </div>
-        <div class="col--7">
-
-          <?php 
-            $hero_section_right_image_block = get_field('hero_section_right_image_block');
-            if( $hero_section_right_image_block ) {
-            foreach( $hero_section_right_image_block as $row ) {
+            $hero_section_number = get_field('hero_section_number');
+            if( $hero_section_number ) {
           ?>
-          <picture>
-            <source media="(max-width: 834px)" srcset="<?php echo $row['right_image_mobile'] ;?>">
-            <source media="(max-width: 1024px)" srcset="<?php echo $row['right_image_tab'] ;?>">
-            <img class="designdevelop__banner--img" src="<?php echo $row['right_image'] ;?>" alt="inception group icon">
-          </picture>
-          <?php
-              }
+          <span class="heading heading--variation5 designdevelop__banner--logo">
+            <?php echo $hero_section_number; ?>
+          </span>
+          <?php 
             }
           ?>
 
+          <picture>
+
+            <?php 
+              $hero_section_icon_mobile = get_field('hero_section_icon_mobile');
+              if( $hero_section_icon_mobile ) {
+            ?>
+            <source media="(max-width: 540px)" srcset="<?php echo $hero_section_icon_mobile; ?>">
+            <?php 
+              }
+            ?>
+
+            <?php 
+              $hero_section_icon = get_field('hero_section_icon');
+              if( $hero_section_icon ) {
+            ?>
+            <img src="<?php echo $hero_section_icon; ?>" alt="designdevelop-banner-icon">
+            <?php 
+              }
+            ?>
+
+          </picture>
+
+        </h3>
+
+        <?php 
+          $hero_section_heading = get_field('hero_section_heading');
+          if( $hero_section_heading ) {
+        ?>
+        <h3 class="heading heading--variation5 designdevelop__banner--heading text--center">
+          <?php echo $hero_section_heading; ?>
+        </h3>
+        <?php 
+          }
+        ?>
+
+      </div>
+      <div class="col--7">
+
+        <?php 
+          $hero_section_right_image = get_field('hero_section_right_image');
+          if( $hero_section_right_image ) {
+        ?>
+        <img class="designdevelop__banner--img" src="<?php echo $hero_section_right_image; ?>"
+          alt="inception-banner-image">
+        <?php 
+          }
+        ?>
+
+        <div class="designdevelop__banner--overlayimg">
+          <?php 
+            $hero_section_right_image_overlay = get_field('hero_section_right_image_overlay');
+            if( $hero_section_right_image_overlay ) {
+          ?>
+            <img class="designdevelop__banner--img" src="<?php echo $hero_section_right_image_overlay; ?>"
+              alt="inception-banner-image-overlay">
+          <?php 
+            }
+          ?>
         </div>
+
       </div>
     </div>
   </div>
+</div>

@@ -32,6 +32,7 @@
 <?php include('template-parts/portfolio-rozgarkart/pf_rozgarkart_discover.php') ?>
 <?php include('template-parts/portfolio-rozgarkart/pf_rozgarkart_define.php') ?>
 <?php include('template-parts/portfolio-rozgarkart/pf_rozgarkart_design.php') ?>
+<?php include('template-parts/portfolio-rozgarkart/pf_rozgarkart_otherscreen.php') ?>
     
 <?php 
   get_footer();

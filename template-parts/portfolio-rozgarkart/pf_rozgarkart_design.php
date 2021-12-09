@@ -300,9 +300,12 @@
         </div>
       </div>
 
+      <?php include('pf_rozgarkart_mainscreen.php') ?>
+
     </div>
   </div>
 </div>
 
 </div>
 </div>
+

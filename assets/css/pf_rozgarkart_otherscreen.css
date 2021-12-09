@@ -1,0 +1,159 @@
+.rozgarkart__design--otherscreen {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: 50px 0;
+}
+
+.otherscreen--left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 0 0 0 120px;
+}
+
+.otherscreen--right {
+  display: flex;
+  width: 70%;
+}
+
+.otherscreen--left h2 {
+  margin: 0 0 16px 0;
+}
+
+.otherscreen--left p {
+  color: var(--darkelectric_blue-color);
+}
+
+.otherscreen--slider {
+  width: 100%;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: -32%;
+  cursor: pointer;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  cursor: pointer;
+}
+
+.otherscreen--block {
+  width: 200px;
+  margin: 5px 15px;
+}
+
+.otherscreen--img {
+  width: 100%;
+}
+
+.otherscreen--img img{
+  max-width: 210px;
+}
+
+.otherscreen--content {
+  padding: 15px 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 6px 6px;
+  width: 200px;
+  margin: -2px 0 0 5px;
+}
+
+.otherscreen--content h2 {
+  font-family: var(--relictrio-semiBold-font);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  color: #ff5670;
+  margin-bottom: 10px;
+}
+
+.otherscreen--content p {
+  font-family: var(--relictrio-semiBold-font);
+  font-size: 12px;
+  line-height: 15px;
+  color: #00005c;
+}
+
+@media (max-width: 1200px) {
+  .slick-prev {
+    top: 55%;
+    left: -28%;
+  }
+  .slick-next {
+    top: 55%;
+    left: -19%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .otherscreen--left h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .slick-prev {
+    top: 55%;
+    left: -23%;
+  }
+  .slick-next {
+    top: 55%;
+    left: -12%;
+  }
+}
+
+@media (max-width: 834px) {
+  .rozgarkart__design--otherscreen {
+    flex-direction: column;
+  }
+  .otherscreen--left {
+    width: 100%;
+    padding: 0 0 0 40px;
+    margin-bottom: 50px;
+  }
+  .otherscreen--right {
+    width: 100%;
+  }
+  .otherscreen--left h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .slick-prev {
+    top: 105%;
+    left: 70%;
+  }
+  .slick-next {
+    top: 105%;
+    left: 80%;
+  }
+}
+
+@media (max-width: 540px) {
+  .otherscreen--left {
+    margin-bottom: 20px;
+  }
+  .otherscreen--left h2 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .otherscreen--left p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .otherscreen--content h2{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .slick-prev {
+    width: 30px;
+  }
+  .slick-next {
+    width: 30px;
+  }
+}

@@ -7,44 +7,59 @@
 ?>
 
 
-<?php
-  $logoimg = get_header_image();
-?>
+<section class="container--content contact__body">
+  <div class="relictrio__contact--box-model">
+    <div class="contact__body--content">
 
-<section class="relictrio--contactus--container pad-tblr--80">
-  <div class="relictrio--contact--Box-model b--radius10">
-    
-   <div class="form_col pad-tpbt--20">
-   <?php 
-                $contact_heading = get_field('contact_heading');
-                if( $contact_heading ) {
-            ?>
-      <h1 class="relictrio__Contact__heading text--center heading--variation20"><?php echo $contact_heading ; ?></h1>
       <?php 
-           }
-        ?>
-         <?php 
-                $contact_para = get_field('contact_para');
-                if( $contact_para) {
-            ?>
-      <p class="relictrio__contact__para para--variation20"><?php echo $contact_para ?></p>
-      <?php 
-          }
+        $contact_form_heading = get_field('contact_form_heading');
+        if( $contact_form_heading ) {
       ?>
-      <div class="relictrio__contact__logoimg">
-      <img src="<?php echo $logoimg; ?>" class="logo__img">
-     </div>
-     <h2 class="relictrio__Contact__para1">Now, a bit about you.</h2>
-     <div>
-    
-     <?php include('contact_form.php') ?>
+      <h2 class="heading heading--variation1 text--center">
+        <?php echo $contact_form_heading ; ?>
+      </h2>
+      <?php 
+        }
+      ?>
 
-     </div>
+      <?php 
+        $contact_form_paragraph = get_field('contact_form_paragraph');
+        if( $contact_form_paragraph) {
+      ?>
+      <p class="para para--variation5 text--center">
+        <?php echo $contact_form_paragraph ?>
+      </p>
+      <?php 
+        }
+      ?>
+
+      <div class="relictrio__contact--logoimg">
+      <?php 
+        $contact_form_image = get_field('contact_form_image');
+        if( $contact_form_image) {
+      ?>
+        <img src="<?php echo $contact_form_image ?>" class="contact-form-logo">
+      <?php 
+        }
+      ?>
+      </div>
+
+      <?php 
+        $contact_form_subheading = get_field('contact_form_subheading');
+        if( $contact_form_subheading) {
+      ?>
+      <h3 class="para para--variation5">
+        <?php echo $contact_form_subheading ?>
+      </h3>
+      <?php 
+        }
+      ?>
+
+      <div>
+        <?php include('contact_form.php') ?>
+      </div>
+
     </div>
-   </div>
- </div>
+  </div>
+  </div>
 </section>
-
-
-
-
