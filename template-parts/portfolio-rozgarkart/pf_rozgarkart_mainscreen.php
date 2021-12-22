@@ -28,10 +28,10 @@
               foreach( $design_main_screen_text as $row ) {
             ?>
         <div>
-          <p class="para para--variation5">
+          <p class="para para--variation5 mainscreentext--heading">
             <?php echo $row['main_screen_heading'] ;?>
           </p>
-          <p class="heading heading--variation3">
+          <p class="heading heading--variation3 mainscreentext--subheading">
             <?php echo $row['main_screen_subheading'] ;?>
           </p>
         </div>
@@ -86,11 +86,29 @@ $('.rozgarkart__design--mainscreenimage').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
-  prevArrow: "<img class='slick-prev' src='./resources/images/rozgarkart-design-mainscreen-left-arrow.png'>",
-  nextArrow: "<img class='slick-next' src='./resources/images/rozgarkart-design-mainscreen-right-arrow.png'>",
+
+<?php 
+    $design_main_screen_left_arrow_image = get_field('design_main_screen_left_arrow_image');
+    if( $design_main_screen_left_arrow_image ) {
+  ?> 
+  prevArrow: "<img class='slick-prev' src='<?php echo $design_main_screen_left_arrow_image; ?>'>",
+  <?php 
+    }
+  ?>
+
+  <?php 
+    $design_main_screen_right_arrow_image = get_field('design_main_screen_right_arrow_image');
+    if( $design_main_screen_right_arrow_image ) {
+  ?> 
+  nextArrow: "<img class='slick-next' src='<?php echo $design_main_screen_right_arrow_image; ?>'>",
+  <?php 
+    }
+  ?>
+
   asNavFor: '.rozgarkart__design--mainscreentext',
   autoplay: true,
   autoplaySpeed: 1000,
+
 
   responsive: [{
       breakpoint: 1500,

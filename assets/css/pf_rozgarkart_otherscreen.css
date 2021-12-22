@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   position: relative;
-  margin: 50px 0;
+  margin: 70px 0 90px 0;
 }
 
 .otherscreen--left {
@@ -29,14 +29,14 @@
   width: 100%;
 }
 
-.slick-prev {
+.otherscreen--slider .slick-prev {
   position: absolute;
   top: 50%;
   left: -32%;
   cursor: pointer;
 }
 
-.slick-next {
+.otherscreen--slider .slick-next {
   position: absolute;
   top: 50%;
   left: -25%;
@@ -83,11 +83,11 @@
 }
 
 @media (max-width: 1200px) {
-  .slick-prev {
+  .otherscreen--slider .slick-prev {
     top: 55%;
     left: -28%;
   }
-  .slick-next {
+  .otherscreen--slider .slick-next {
     top: 55%;
     left: -19%;
   }
@@ -98,11 +98,11 @@
     font-size: 35px;
     line-height: 45px;
   }
-  .slick-prev {
+  .otherscreen--slider .slick-prev {
     top: 55%;
     left: -23%;
   }
-  .slick-next {
+  .otherscreen--slider .slick-next {
     top: 55%;
     left: -12%;
   }
@@ -124,17 +124,20 @@
     font-size: 30px;
     line-height: 40px;
   }
-  .slick-prev {
+  .otherscreen--slider .slick-prev {
     top: 105%;
     left: 70%;
   }
-  .slick-next {
+  .otherscreen--slider .slick-next {
     top: 105%;
     left: 80%;
   }
 }
 
 @media (max-width: 540px) {
+  .rozgarkart__design--otherscreen {
+    margin: 0 0 50px 0;
+}
   .otherscreen--left {
     margin-bottom: 20px;
   }
@@ -150,10 +153,10 @@
     font-size: 14px;
     line-height: 16px;
   }
-  .slick-prev {
+  .otherscreen--slider .slick-prev {
     width: 30px;
   }
-  .slick-next {
+  .otherscreen--slider .slick-next {
     width: 30px;
   }
 }

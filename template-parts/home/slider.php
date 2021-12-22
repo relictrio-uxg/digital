@@ -6,8 +6,8 @@
   */
  ?>
 
-<div class="container container--fluid  bg--white pad-tpbt--120 slider__pad-tpbt">
-  <div class="container--content container--fxdwdh">
+<div class="container--fullwdh bg--white pad-tpbt--120 slider__pad-tpbt">
+
     <div class="relictrio--row ">
       <div class="col--12">
         <?php 
@@ -35,5 +35,5 @@
             }
         ?>
     </section>
-  </div>
+
 </div>

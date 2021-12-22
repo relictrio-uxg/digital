@@ -7,12 +7,12 @@
 }
 
 .rozgarkart__design--mainscreenimage .slick-current img {
-  width: 277px;
-  height: 493px;
-  margin: 25px auto 0 auto;
+  width: 277px !important;
+  height: 493px !important;
+  margin: 25px auto 0 auto !important;
 }
 
-.rozgarkart__design--mainscreenimage img {
+.rozgarkart__design--mainscreenimage .slick-slide img {
   width: 260px;
   height: 462.74px;
   margin: 40px auto 0 auto;
@@ -24,7 +24,7 @@
 
 .rozgarkart__design--mainscreenimage .slick-prev {
   position: absolute;
-  top: -30%;
+  top: -35%;
   right: 15%;
   cursor: pointer;
   width: 74px !important;
@@ -34,7 +34,7 @@
 
 .rozgarkart__design--mainscreenimage .slick-next {
   position: absolute;
-  top: -30%;
+  top: -35%;
   right: 5%;
   cursor: pointer;
   width: 74px !important;
@@ -42,6 +42,77 @@
   margin: 0 !important;
 }
 
-.rozgarkart__design--mainscreentext p:first-child{
+.rozgarkart__design--mainscreentext p:first-child {
   color: var(--darkelectric_blue-color);
+}
+
+@media (max-width: 1400px) {
+  .rozgarkart__design--mainscreenimage .slick-prev {
+    top: -40%;
+    right: 15%;
+  }
+
+  .rozgarkart__design--mainscreenimage .slick-next {
+    top: -40%;
+    right: 5%;
+  }
+}
+@media (max-width: 1200px) {
+  .rozgarkart__design--mainscreenimage .slick-prev {
+    top: -40%;
+    right: 18%;
+  }
+  .rozgarkart__design--mainscreenimage .slick-next {
+    top: -40%;
+    right: 5%;
+  }
+}
+@media (max-width: 1024px) {
+  .mainscreentext--heading {
+    font-size: 30px;
+  }
+  .rozgarkart__design--mainscreenimage .slick-prev {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .rozgarkart__design--mainscreenimage .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+@media (max-width: 834px) {
+  .mainscreentext--heading {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .mainscreentext--subheading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .mainscreentext--heading {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    color: var(--cetacean_blue-color) !important;
+  }
+  .mainscreentext--subheading {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    margin-top: 0;
+  }
+  .rozgarkart__design--mainscreenimage .slick-prev {
+    width: 26px !important;
+    height: 26px !important;
+    top: -17%;
+    right: 18%;
+  }
+  .rozgarkart__design--mainscreenimage .slick-next {
+    width: 26px !important;
+    height: 26px !important;
+    top: -17%;
+    right: 5%;
+  }
 }

@@ -96,6 +96,7 @@ fieldset {
     .contact__body--content h3 {
         font-size: 14px;
         line-height: 41px;
+        margin-bottom: 0;
     }
     .relictrio__contact--logoimg {
         padding: 24px 0 20px 0;

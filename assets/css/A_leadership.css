@@ -7,12 +7,14 @@
 .leadershipsection h2{
   color: var(--black-color);
   margin-top: 0px;
+  font-weight: normal;
 }
 
 .leadershipsection h3{
   line-height: 50px;
   color: var(--black-color);
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 
 .leadershipsection p{
@@ -41,13 +43,13 @@
     line-height: 50px;
   }
   .leadershipsection h3{
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
     margin-bottom: 15px;
   }
   .leadershipsection p{
-    font-size: 25px;
-    line-height: 45px;
+    font-size: 22px;
+    line-height: 35px;
   }
 }
 

@@ -78,6 +78,8 @@ $('.otherscreen--slider').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
 
   <?php 
     $other_screen_left_arrow_image = get_field('other_screen_left_arrow_image');

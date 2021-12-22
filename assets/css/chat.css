@@ -1,129 +1,140 @@
-/*.chat__sec h2,h3, img{
-  margin: 0 auto !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.chat__sec--para{
-  font-size: 30px;
-  line-height: 41px;
-  font-weight: 600;
-  padding: 30px 0px 60px 0px;
-}
-.chat__sec__img{
-  padding-top: 3.2rem;
-}
-.chat__sec--text{
-  width: 100%;
-  text-align: center;
-}
-.chat__sec--text span{
-  font-family: var(--relictrio-inter-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px !important;
-  line-height: 22px !important;
-  color: var(--darkelectric_blue-color) !important;
-  opacity: 0.8;
-}
-.chat__sec--text img{
-  padding: 12px 0px 17px 0px;
-}
-.chat__sec--sendbtn button{
-  background-color: var(--black-color) ;
-  color: var(--white-color);
-  border-radius: 5px;
-  padding: 8px 42px;
+.chat__body {
+  position: absolute;
+  top: 110px;
+  right: 15px;
 }
 
-.relictriochatform{
-  display: flex;
-  justify-content: center;
+.chat__body--block {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  width: 437px;
+  z-index: 999;
+  display: none;
 }
-.chatmsgform__input::placeholder {
-  font-family: var(--relictrio-inter-font);
+
+.chat__body:hover .chat__body--block {
+  display: block;
+}
+
+.chat__fixedimg {
+  margin-left: 100px;
+}
+
+.chat__body--blockbtn {
+  background-color: var(--black-color);
+  border-radius: 33px;
+  padding: 15px 0;
+  text-align: center;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px !important;
-  line-height: 22px !important;
-  color: var(--darkelectric_blue-color) !important;
-  opacity: 0.8;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--white-color);
 }
-.chat__sec--sendbtn{
-  text-align: center;
+
+.chat__active {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.chat__body--hide {
+  display: none;
+  padding: 20px 25px;
+  border: 1px solid var(--black-color);
+  border-radius: 0px 0px 33px 33px;
+  background-color: var(--white-color);
+}
+
+.chat__body--hide p:first-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--black-color);
+  margin-bottom: 26px;
 }
 
 .relictriochatform__field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-.relictriochatform__input::placeholder {
+
+.chatmsgform__input::placeholder {
+  font-family: var(--relictrio-inter-font) !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
   color: var(--darkelectric_blue-color) !important;
+  opacity: 0.8 !important;
+}
+
+.chatmsgform__input {
+  padding: 14px 0px 14px 26px !important;
+  height: 50px !important;
+  margin: 0px !important;
+}
+
+.relictriochatform__field > textarea {
+  height: 120px !important;
+}
+
+.chat__sec--sendbtn {
+  text-align: center;
+}
+
+.chat__sec--sendbtn button {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  padding: 8px 42px;
+}
+
+.relictriochatform__field--signin p {
   font-family: var(--relictrio-inter-font);
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 30px;
-}
-.chatmsgform__input{
- padding: 14px 0px 14px 26px !important;
-}
-.chatmsg__expand--content{
-   width: 437px;
-   border: 1px solid var(--black-color);
-   border-radius: 0px 0px 33px 33px;
-   padding: 20px 24px 20px 29px;
-}
-.chatmsg__expand--head span{
-   padding: 15px 100px 15px 111px !important;
-   text-align: center;
-   width: 437px;
-   border-radius: 33px  33px 0px   0px !important;
-}
-.chat__sec__head{
-   display: none;
-}
-.chat__sec__head span{
-  padding: 17px 90px !important;
-}
-.chat__icon:hover .chat__sec__head{
-  display: block;
-  position: absolute;
-  left: -21rem;
-  top: 4rem;
-}
-#chat__expand{
-   display: none;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--darkelectric_blue-color);
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
-.chatmsg__expand--sec{
-  position: absolute;
-  top: 39rem;
-  right: 4rem;
-  z-index: 3;
+.relictriochatform__field--socialicon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17px;
 }
 
-@media (min-width: 320px) and (max-width: 539.98px)  
-{
-  .textinput {
-     padding: 10px 0px 10px 20px;
-  }
-  .chat__sec h2{
-     font-size: 18px;
-     line-height: 60px;
-  }
-  .chat__sec h3{
-     font-size: 14px;
-     line-height: 20px;
-     padding: 18px 0px 20px 0px !important;
-  }
-  .chat__sec--para{
-     font-size: 14px;
-     padding: 20px 0px 20px 0px;
+.relictriochatform__field--socialicon img:first-child {
+  margin-right: 15px;
+}
+
+@media (max-width: 1024px) {
+  .chat__body {
+    right: 0px;
   }
 }
-@media (min-width: 540px) and (max-width: 834px) 
-{
-  
-} */
+@media (max-width: 834px) {
+  .chat__body {
+    top: 10px;
+  }
+  .chat__fixedimg {
+    width: 35px;
+  }
+  .chat__body--block {
+    top: -8px;
+    right: 75px;
+    width: 350px;
+  }
+  .chat__body--hide p:first-child {
+    font-size: 16px;
+    line-height: 21px;
+}
+}

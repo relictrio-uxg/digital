@@ -40,9 +40,9 @@
   </div>
 
   <!--slider sec: start-->
-  <div class="container container--fluid bg--white slider__pad-tpbt">
-    <div class="container--content container--fxdwdh">
-      <section class="customer-logos slider mar-top--50">
+  <div class="container--fullwdh bg--white">
+    
+      <section class="designdevelop__service--slider">
 
         <?php 
           $digital_services_section_slider = get_field('digital_services_section_slider');
@@ -58,7 +58,7 @@
         ?>
 
       </section>
-    </div>
+    
   </div>
   <!--slider sec: end-->
 

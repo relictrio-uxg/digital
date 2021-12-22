@@ -1,3 +1,6 @@
+.services__experts {
+  margin-bottom: 120px;
+}
 .services__experts h2 {
   margin-bottom: 60px;
 }
@@ -103,9 +106,13 @@
 }
 
 @media (max-width: 1024px) {
+  .services__experts {
+    margin-bottom: 100px;
+  }
   .services__experts h2 {
     font-size: 40px;
     line-height: 55px;
+    margin-top: 0px;
   }
 }
 
@@ -113,6 +120,9 @@
   .services__experts h2 {
     font-size: 30px;
     line-height: 40px;
+  }
+  .services__experts {
+    margin-bottom: 80px;
   }
   .experts__grid--1 {
     grid-column: 1/4;
@@ -185,5 +195,22 @@
   .experts__grid--18 {
     grid-column: 4/7;
     grid-row: 5/6;
+  }
+}
+
+@media (max-width: 540px) {
+  .services__experts h2 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .services__experts {
+    margin-bottom: 50px;
+  }
+  .services__experts--grid {
+    grid-auto-rows: minmax(44px, auto);
+  }
+  .services__experts--grid img {
+    max-width: 71px;
   }
 }

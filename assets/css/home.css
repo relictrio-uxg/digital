@@ -122,11 +122,11 @@ section {
   width: 76px;
   height: 76px;
 }
-.help__brand--card:hover{
+.help__brand--card:hover {
   background: var(--eucalyptus-color);
 }
-.help__brand--card:hover .card__head{
-  background: #B0C6E8;
+.help__brand--card:hover .card__head {
+  background: #b0c6e8;
 }
 .help__brand--card:hover .card__para {
   color: var(--cetacean_blue-color);
@@ -241,11 +241,12 @@ section {
   margin-top: 28px;
 }
 /**slider css: start**/
-.slick-slide {
+.customer-logos .slick-slide {
   margin: 0 20px;
 }
-.slick-slide img {
-  width: 100%;
+.customer-logos .slick-slide img {
+  display: block;
+  width: 197px !important;
 }
 .slick-slider {
   position: relative;
@@ -271,14 +272,15 @@ section {
   height: 100%;
   min-height: 1px;
 }
-.slick-slide img {
-  display: block;
+.slider__head {
+  margin: 0;
 }
+
 .slick-initialized .slick-slide {
   display: block;
 }
 .slider {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 /** slider css: end**/
 
@@ -334,6 +336,10 @@ section {
   }
   .magento__img {
     max-width: 220px;
+  }
+  /*slider*/
+  .customer-logos .slick-slide img {
+    width: 150px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -391,6 +397,7 @@ section {
   .maturity__text h3 {
     font-size: 14px !important;
     margin: 7px 0;
+    font-weight: normal;
   }
   .maturity__img {
     width: 33px !important;
@@ -416,6 +423,14 @@ section {
   .slider__head {
     font-size: 16px;
     line-height: 36px;
+  }
+  .magento__arc--right,
+  .magento__arc--left {
+    width: 63.13px;
+  }
+  /*slider*/
+  .customer-logos .slick-slide img {
+    width: 70px !important;
   }
 }
 /**media query for tab **/
@@ -466,9 +481,13 @@ section {
     line-height: 26px !important;
     font-weight: 500 !important;
   }
+  /*slider*/
   .slider__head {
     font-size: 24px;
     line-height: 64px;
+  }
+  .customer-logos .slick-slide img {
+    width: 130px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 834px) {
@@ -537,6 +556,9 @@ section {
     flex: 0 0 100%;
     order: 1;
   }
+  .digital__mature--sec .mar-top--20 {
+    margin: 0 !important;
+  }
   .digital__mature .col--6 {
     max-width: calc(100% - 8.33% - 45px) !important;
     flex: 0 0 calc(100% - 8.33% - 45px) !important;
@@ -567,11 +589,12 @@ section {
   .arrow__text {
     display: none !important;
   }
+  
   .slider__pad-tpbt {
-    padding-top: 30px !important;
+    padding-top: 50px !important;
     padding-bottom: 50px !important;
   }
   .slider {
-    margin-top: 0px !important;
+    margin-top: 20px !important;
   }
 }

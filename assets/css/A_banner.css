@@ -3,6 +3,7 @@
   text-align: center;
   letter-spacing: 1px;
   color: var(--black-color);
+  font-weight: normal;
 }
 
 .aboutussection__img{

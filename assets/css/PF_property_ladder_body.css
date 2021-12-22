@@ -69,7 +69,7 @@ html {
   font-size: 30px;
   line-height: 35px;
   color: #076eba;
-  margin: 75px 0;
+  margin: 60px 0 75px 0;
 }
 
 .property__design--listblock {
@@ -80,9 +80,14 @@ html {
   padding: 0 15px;
 }
 
+.property__design--colorlist h4 {
+  margin: 0 0 30px 0;
+}
+
 .color--list {
   display: flex;
-  width: 250px;
+  width: 333px;
+  margin-bottom: 30px;
 }
 
 .color--block {
@@ -136,9 +141,7 @@ html {
 
 .property__screen--img {
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-bottom: 120px;
 }
 
 .property__discover--img {
@@ -187,12 +190,19 @@ html {
     font-size: 45px;
     line-height: 60px;
   }
+  .color--list {
+    width: 265px;
+  }
+  .property__screen--img {
+    width: 100%;
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 834px) {
   .property__menutab {
     display: flex;
-    margin: 60px 0 0 0;
+    margin: 40px 0 0 0;
   }
   .property__menutab--list a {
     font-size: 25px;
@@ -227,21 +237,23 @@ html {
     font-size: 28px;
     line-height: 40px;
   }
-  .color--list {
-    width: 220px;
-  }
   .property__design--listblock {
     flex-wrap: wrap;
   }
 
   /*Color pollet heading*/
-  .property__design--colorlist h4 {
+  .property__design--colorlist > h4 {
     font-size: 18px;
     line-height: 25px;
+    margin: 0 0 20px 0;
   }
   .color--block h4 {
     font-size: 18px;
     line-height: 25px;
+  }
+  .color--list {
+    width: 220px;
+    margin-bottom: 25px;
   }
   /*Typography heading*/
   .property__design--font p {
@@ -249,6 +261,10 @@ html {
     font-size: 25px;
     line-height: 30px;
     text-align: justify;
+  }
+  /*Other screen image*/
+  .property__screen--img {
+    margin-bottom: 60px;
   }
 }
 
@@ -303,9 +319,10 @@ html {
   .property__design--colorlist {
     padding: 0px;
   }
-  .property__design--colorlist h4 {
+  .property__design--colorlist > h4 {
     font-size: 12px;
     line-height: 12px;
+    margin-bottom: 10px;
   }
   .color--block h4 {
     font-size: 12px;
@@ -318,9 +335,7 @@ html {
   }
   .color--list {
     width: 140px;
-  }
-  .color--list:nth-child(3) {
-    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .color--list img {
     width: 30px;
@@ -364,4 +379,8 @@ html {
     line-height: 12px;
     margin: 15px 0;
   }
+    /*Other screen image*/
+    .property__screen--img {
+      margin-bottom: 50px;
+    }
 }

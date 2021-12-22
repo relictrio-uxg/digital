@@ -2,11 +2,6 @@
   position: relative;
   width: 100%;
 }
-
-
-
-
-
 .contact__form {
   max-width: 100%;
 }
@@ -30,8 +25,8 @@ select {
   outline: none;
   padding: 0 50px 0 50px;
   margin: 30px 0 50px 0;
-  font-size: 32px;
-  line-height: 22px;  
+  font-size: 25px;
+  line-height: 30px;
   color: var(--darkelectric_blue-color);
 }
 
@@ -108,6 +103,11 @@ textarea#project_InputText {
   height: 150px;
 }
 
+.relictrio_send__btn {
+  display: flex;
+  justify-content: center;
+}
+
 button.send_btn {
   width: 250px;
   height: 70px;
@@ -143,15 +143,71 @@ button.send_btn {
   color: #536083;
 }
 
+input.wpcf7-form-control.wpcf7-submit.send_btn {
+  width: 150px !important;
+  height: 50px !important;
+  text-align: center !important;
+  background-color: white !important;
+  border: 2px solid #00005c !important;
+  box-sizing: border-box !important;
+  border-radius: 10px !important;
+  color: #00005c !important;
+  font-family: Inter !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 0px !important;
+  margin: 50px 0px !important;
+}
+
+input#fileupload {
+  width: 100% !important;
+  padding: 40px !important;
+  background: #ffffff !important;
+  border: 1.2px dashed #536083 !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+  color: #536083 !important;
+}
+
+input.wpcf7-form-control.wpcf7-file.wpcf7-validates-as-required {
+  width: 100% !important;
+  padding: 40px !important;
+  background: #ffffff !important;
+  border: 1.2px dashed #536083 !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+  color: #536083 !important;
+}
+.btn_send {
+  text-align: center;
+}
+.wpcf7-form-control-wrap.DragDrop {
+  width: 100%;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  border: dashed 1.2px #536083;
+  border-radius: 4px;
+  border-spacing: 2px;
+  align-items: center;
+  position: relative;
+}
+.wpcf7-form-control-wrap.DragDrop input {
+  position: static;
+}
+
 @media screen and (max-width: 1200px) {
   fieldset.fiedet__form {
     padding: 50px 100px;
   }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1024px) {
   .relictrio--contact--form {
-    padding: 30px 15px;
+    padding: 30px 55px;
   }
 
   form {
@@ -176,7 +232,7 @@ button.send_btn {
     padding: 0 40px 0 40px;
     margin: 25px 0 45px 0;
     font-size: 25px;
-    line-height: 20px;  
+    line-height: 20px;
   }
 
   input[type="radio"],
@@ -253,59 +309,122 @@ button.send_btn {
   }
 }
 
+@media screen and (max-width: 834px) {
+  .relictrio--contact--form {
+    padding: 30px 15px;
+  }
 
-input.wpcf7-form-control.wpcf7-submit.send_btn {
-  width: 150px !important;
-  height: 50px !important;
-  text-align: center !important;
-  background-color: white !important;
-  border: 2px solid #00005c !important;
-  box-sizing: border-box !important;
-  border-radius: 10px !important;
-  color: #00005c !important;
-  font-family: Inter !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-  line-height: 0px !important;
-  margin: 50px 0px !important;
+  .form_label {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    height: 50px;
+    padding: 0 40px 0 40px;
+    margin: 25px 0 45px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  input[type="text"]:focus,
+  input[type="text"]:focus-visible,
+  input[type="password"]:focus,
+  input[type="password"]:focus-visible,
+  input[type="date"]:focus,
+  input[type="date"]:focus-visible,
+  input[type="datetime"]:focus,
+  input[type="datetime"]:focus-visible,
+  input[type="email"]:focus,
+  input[type="email"]:focus-visible,
+  input[type="number"]:focus,
+  input[type="number"]:focus-visible,
+  input[type="search"]:focus,
+  input[type="search"]:focus-visible,
+  input[type="tel"]:focus,
+  input[type="tel"]:focus-visible,
+  input[type="time"]:focus,
+  input[type="time"]:focus-visible,
+  input[type="url"]:focus,
+  input[type="url"]:focus-visible,
+  textarea:focus,
+  textarea:focus-visible,
+  select:focus,
+  select:focus-visible {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-input#fileupload {
-  width: 100% !important;
-  padding: 40px !important;
-  background: #ffffff !important;
-  border: 1.2px dashed #536083 !important;
-  box-sizing: border-box !important;
-  border-radius: 4px !important;
-  text-align: center !important;
-  color: #536083 !important;
-}
+@media screen and (max-width: 834px) {
+  .relictrio--contact--form {
+    padding: 20px 15px;
+  }
+  .form_label {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-input.wpcf7-form-control.wpcf7-file.wpcf7-validates-as-required {
-  width: 100% !important;
-  padding: 40px !important;
-  background: #ffffff !important;
-  border: 1.2px dashed #536083 !important;
-  box-sizing: border-box !important;
-  border-radius: 4px !important;
-  text-align: center !important;
-  color: #536083 !important;
-}
-.btn_send {
-  text-align: center;
-}
-.wpcf7-form-control-wrap.DragDrop {
-  width: 100%;
-  display: flex;
-  padding: 50px 0;
-  justify-content: center;
-  border: dashed 1.2px #536083;
-  border-radius: 4px;
-  border-spacing: 2px;
-  align-items: center;
-  position: relative;
-}
-.wpcf7-form-control-wrap.DragDrop input {
-  position: static;
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    height: 34px;
+    padding: 0 16px 0 16px;
+    margin: 10px 0 20px 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  input[type="text"]:focus,
+  input[type="text"]:focus-visible,
+  input[type="password"]:focus,
+  input[type="password"]:focus-visible,
+  input[type="date"]:focus,
+  input[type="date"]:focus-visible,
+  input[type="datetime"]:focus,
+  input[type="datetime"]:focus-visible,
+  input[type="email"]:focus,
+  input[type="email"]:focus-visible,
+  input[type="number"]:focus,
+  input[type="number"]:focus-visible,
+  input[type="search"]:focus,
+  input[type="search"]:focus-visible,
+  input[type="tel"]:focus,
+  input[type="tel"]:focus-visible,
+  input[type="time"]:focus,
+  input[type="time"]:focus-visible,
+  input[type="url"]:focus,
+  input[type="url"]:focus-visible,
+  textarea:focus,
+  textarea:focus-visible,
+  select:focus,
+  select:focus-visible {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  input.wpcf7-form-control.wpcf7-submit.send_btn {
+    width: 136px !important;
+    height: 44px !important;
+    margin: 30px 0px !important;
+  }
 }

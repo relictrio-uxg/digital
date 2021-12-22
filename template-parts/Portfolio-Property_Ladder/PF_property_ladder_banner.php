@@ -47,27 +47,72 @@
 </div>
 <div class="container--fullwdh">
 
-  <?php 
-            $hero_banner_image_block = get_field('hero_banner_image_block');
-            if( $hero_banner_image_block ) {
-            foreach( $hero_banner_image_block as $row ) {
-          ?>
   <div class="property__banner--overlay">
-    <img class="property__banner--img" src="<?php echo $row['banner_image'] ;?>"
-      alt="portfolio-property-ladder-banner-img">
+
+    <picture>
+
+      <?php 
+        $hero_banner_mobile_image = get_field('hero_banner_mobile_image');
+        if( $hero_banner_mobile_image ) {
+      ?>
+      <source media="(max-width: 540px)" srcset="<?php echo $hero_banner_mobile_image; ?>">
+      <?php 
+        }
+      ?>
+
+      <?php 
+        $hero_banner_image = get_field('hero_banner_image');
+        if( $hero_banner_image ) {
+      ?>
+      <img class="property__banner--img" src="<?php echo $hero_banner_image; ?>"
+        alt="portfolio-property-ladder-banner-img">
+      <?php 
+        }
+      ?>
+
+    </picture>
+
+
     <div class="overlaytext">
+
+      <?php 
+        $hero_banner_overlay_heading = get_field('hero_banner_overlay_heading');
+        if( $hero_banner_overlay_heading ) {
+      ?>
       <h2 class="heading property__banner--overlayheading">
-        <?php echo $row['overlay_text'] ;?>
+        <?php echo $hero_banner_overlay_heading; ?>
       </h2>
+      <?php 
+        }
+      ?>
+
     </div>
     <div class="overlayimg">
-      <img class="property__banner--img" src="<?php echo $row['overlay_img'] ;?>"
-        alt="portfolio-property-ladder-banner-img">
-    </div>
-  </div>
-  <?php
-              }
+
+      <picture>
+
+        <?php 
+            $hero_banner_mobile_overlay_image = get_field('hero_banner_mobile_overlay_image');
+            if( $hero_banner_mobile_overlay_image ) {
+          ?>
+        <source media="(max-width: 540px)" srcset="<?php echo $hero_banner_mobile_overlay_image; ?>">
+        <?php 
             }
           ?>
+
+        <?php 
+            $hero_banner_overlay_image = get_field('hero_banner_overlay_image');
+            if( $hero_banner_overlay_image ) {
+          ?>
+        <img class="property__banner--img" src="<?php echo $hero_banner_overlay_image; ?>"
+          alt="portfolio-property-ladder-banner-overlay-img">
+        <?php 
+            }
+          ?>
+
+      </picture>
+
+    </div>
+  </div>
 
 </div>

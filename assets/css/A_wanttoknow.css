@@ -1,19 +1,26 @@
 .wanttoknowsection{
   background: linear-gradient(90deg, #C1C0C0 0%, #E9EAFA 100%);
   padding: 68px 0;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1024px) {
+  .wanttoknowsection{
+    margin-bottom: 75px;
+  }
   .wanttoknowsection h3{
-    font-size: 40px;
-    line-height: 55px;
+    font-size: 35px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 834px) {
+  .wanttoknowsection{
+    margin-bottom: 60px;
+  }
   .wanttoknowsection h3{
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 45px;
     padding-bottom: 20px;
     text-align: center;
   }
@@ -25,11 +32,14 @@
     justify-content: center;
   }
   .wanttoknowsection{
-    padding: 48px 0;
+    padding: 35px 0;
   }
 }
 
 @media (max-width: 540px) {
+  .wanttoknowsection{
+    margin-bottom: 30px;
+  }
   .wanttoknowsection h3{
     font-size: 14px;
     line-height: 20px;

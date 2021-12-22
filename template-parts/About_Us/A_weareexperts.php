@@ -20,8 +20,8 @@
     ?>
 
     <!--slider sec: start-->
-    <div class="container container--fluid bg--white pad-tpbt--120 slider__pad-tpbt">
-        <section class="customer-logos slider mar-top--50">
+    <div class="container--fullwdh bg--white">
+        <section class="weareexperts__slider">
 
         <?php 
                 $experts_section_slider = get_field('experts_section_slider');

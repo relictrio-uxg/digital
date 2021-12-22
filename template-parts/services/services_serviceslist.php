@@ -53,9 +53,9 @@
 
       <div class="col--7 services__slistblock--img">
 
-        <img src="<?php echo $row['services_overlay_image'] ;?>" alt="services-digital-image">
+        <img src="<?php echo $row['services_image'] ;?>" alt="services-digital-image">
         <div class="services__slistblock--overlayimg">
-          <img src="<?php echo $row['services_image'] ;?>" alt="services-digital-image">
+          <img src="<?php echo $row['services_overlay_image'] ;?>" alt="services-digital-image">
         </div>
       </div>
 

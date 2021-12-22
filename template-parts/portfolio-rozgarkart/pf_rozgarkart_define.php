@@ -47,7 +47,7 @@
             $define_subheading = get_field('define_subheading');
             if( $define_subheading ) {
           ?>
-          <h4 class="para para--variation5 rozgarkart__challenge--subheading">
+          <h4 class="para para--variation5 rozgarkart__challenge--subheading rozgarkart__custom--space">
             <?php echo $define_subheading; ?>
           </h4>
           <?php 
@@ -58,21 +58,23 @@
             $define_paragraph_2 = get_field('define_paragraph_2');
             if( $define_paragraph_2 ) {
           ?>
-          <p class="para rozgarkart__challenge--para">
+          <p class="para rozgarkart__challenge--para rozgarkart__custom--space">
             <?php echo $define_paragraph_2; ?>
           </p>
           <?php 
             }
           ?>
 
-          <div class="rozgarkart__define--wireframeblock">
+          <div class="rozgarkart__define--wireframeblock rozgarkart__custom--space">
 
             <?php 
               $define_wireframe_block = get_field('define_wireframe_block');
               if( $define_wireframe_block ) {
               foreach( $define_wireframe_block as $row ) {
             ?>
+            <div class="<?php echo $row['wireframe_class_name'] ;?>">
               <img src="<?php echo $row['wireframe_image'] ;?>" alt="rozgarkart-define-img">
+            </div>
             <?php
                 }
               }

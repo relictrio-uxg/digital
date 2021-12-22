@@ -111,7 +111,7 @@
   }
   .services__slist h2 {
     font-size: 35px;
-    line-height: 55px;
+    line-height: 45px;
   }
   .services__slistblock--logo {
     font-size: 55px;
@@ -121,13 +121,13 @@
     max-width: 100px;
   }
   .services__slistblock--heading {
-    font-size: 55px;
-    line-height: 65px;
+    font-size: 44px;
+    line-height: 54px;
     margin: 0;
   }
   .services__slistblock--content h2 {
     font-size: 35px;
-    line-height: 55px;
+    line-height: 50px;
   }
   .services__slistblock--para {
     font-size: 24px;
@@ -146,10 +146,11 @@
   }
   .services__slist {
     max-width: 500px;
+    margin: 40px auto;
   }
   .services__slist h2 {
     font-size: 30px;
-    line-height: 50px;
+    line-height: 42px;
   }
   .services__slistblock--overlayimg {
     padding: 0px;
@@ -172,6 +173,12 @@
   .services__slistblock--para {
     font-size: 22px;
     line-height: 35px;
+  }
+  .services__slistblock--listlink {
+    margin-bottom: 80px;
+  }
+  .services__experts {
+    margin-bottom: 80px;
   }
 }
 
@@ -227,5 +234,8 @@
   }
   .services__slistblock--listlink img {
     max-width: 12px;
+  }
+  .services__slistblock--listlink {
+    margin-bottom: 60px;
   }
 }

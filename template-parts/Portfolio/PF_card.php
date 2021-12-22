@@ -6,6 +6,8 @@
   */
  ?>
 
+<!-- portfolio_card_menu_block -->
+
 <div class="container container--fluid">
   <div class="container--content">
     <div class="portfolio__card">
@@ -26,6 +28,9 @@
 
       </ul>
     </div>
+
+    <!-- portfolio__card--cardlist -->
+
     <div class="portfolio__card--cardlist">
       <div class="relictrio--row">
 
@@ -37,10 +42,10 @@
 
         <div class="col--6 portfolio__card--col--6">
           <div class="portfolio__card--card">
-
             <?php 
               foreach( $row['card_image_block'] as $list ) {
               ?>
+              <a href="<?php echo $row['card_link'] ;?>">
             <div class="portfolio__card--imgblock">
               <img class="portfolio__card--img" src="<?php echo $list['card_image'] ;?>" alt="portfolio-card-image">
               <div class="portfolio__card--imghover">
@@ -75,6 +80,7 @@
 
               </ul>
             </div>
+            </a>
           </div>
         </div>
 
